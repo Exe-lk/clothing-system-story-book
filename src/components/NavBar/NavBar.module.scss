@@ -1,0 +1,31 @@
+@import '../../app/globals';
+
+.navBar{
+  height: 70px;
+}
+
+.navBar{
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{ 
+      @include my-font;
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+      padding: 20px 40px;
+      font-size: 14px;
+      color: #000;
+    }
+  }
+}
+
+.navBar{
+  nav{
+    a:nth-child(1){
+      color: #AB5D02;
+    }
+  }
+}

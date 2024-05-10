@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@mixin my-font {
+  font-family: 'Montserrat';
+}
+
+@mixin my-button{
+  font-size: 9px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@mixin sub-headings{
+  text: {
+    align: center;
+    transform: capitalize;
+  } 
+  padding-block-end: 0;
+  margin-block-end: 0
+}
+
+@mixin sub-paras{
+  text: {
+    align: center;
+    transform: capitalize;
+  } 
+  padding-bottom: 35px;
+}
+
