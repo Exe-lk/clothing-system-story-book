@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './ShopByCategories.module.scss';
 import Image from 'next/image';
 import forWomens from '../../../public/forWomens.svg';
@@ -5,10 +7,12 @@ import forMens from '../../../public/forMens.svg';
 import rightArrow2 from '../../../public/rightArrow2.svg';
 import forKids from '../../../public/forKids.svg';
 import React from 'react';
+import { useTheme } from '../ThemeContext';
 
 const ShopByCategories = () => {
+  const {theme} = useTheme();
   return (
-    <div className={styles.shopByCategories}>
+    <div className={`${styles.shopByCategories} ${theme==='dark' ? styles.darkShopByCategories : ''}`}>
       <h1>shop by categories</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
       <div className={styles.content}>

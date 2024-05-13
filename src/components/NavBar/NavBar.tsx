@@ -1,9 +1,13 @@
+'use client';
+
 import styles from './NavBar.module.scss';
-import React from 'react'
+import React from 'react';
+import { useTheme } from '../ThemeContext';
 
 const NavBar = () => {
+  const {theme} = useTheme();
   return (
-    <div className={styles.navBar}>
+    <div className={`${styles.navBar} ${theme==='dark' ? styles.darkNavBar : ''}`}>
       <nav>
         <a href="#">home</a>
         <a href="#">women</a>

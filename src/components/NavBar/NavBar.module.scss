@@ -2,6 +2,11 @@
 
 .navBar{
   height: 70px;
+  position: sticky;
+  top: 91px;
+  z-index: 100;
+  background: #FFF;
+  border-bottom: 1px solid #FFF;
 }
 
 .navBar{
@@ -23,6 +28,42 @@
 }
 
 .navBar{
+  nav{
+    a:nth-child(1){
+      color: #AB5D02;
+    }
+  }
+}
+
+// for dark theme
+
+.darkNavBar{
+  height: 70px;
+  background-color: #000;
+  position: sticky;
+  top: 91px;
+  z-index: 100;
+}
+
+.darkNavBar{
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{ 
+      @include my-font;
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+      padding: 20px 40px;
+      font-size: 14px;
+      color: #FFF;
+    }
+  }
+}
+
+.darkNavBar{
   nav{
     a:nth-child(1){
       color: #AB5D02;

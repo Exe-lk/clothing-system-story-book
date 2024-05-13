@@ -1,11 +1,14 @@
+'use client';
+
 import styles from './NewArrivals.module.scss';
 import React from 'react';
 import Image from 'next/image';
 import { newArrivalsList } from './NewArrivalsList';
 import notFav from '../../../public/assets/newArrivals/notFav.svg';
 import rightArrow2 from '../../../public/rightArrow2.svg';
+import { FaHeart } from "react-icons/fa";
 
-const NewArrivals = () => {;
+const NewArrivals = () => {
   return (
     <div className={styles.newArrivals}>
       <h1>new arrivals</h1>
@@ -16,7 +19,9 @@ const NewArrivals = () => {;
             return(
               <div className={styles.item} >
                 <Image src={item.id} alt='item' />
-                {!item.favourite?(<Image src={notFav} alt='notFav' className={styles.notFav} />):null}        
+                {!item.favourite?(<Image src={notFav} alt='notFav' className={styles.notFav} />):(<FaHeart className={styles.fav}/>)}        
+                <p>{item.des}</p>
+                <p>{item.price}</p>
               </div>
             )
           })

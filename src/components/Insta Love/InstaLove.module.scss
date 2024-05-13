@@ -62,3 +62,18 @@ $font-heading: 'Bad Script';
 
   }
 }
+
+// for dark theme
+
+.darkInstaLove{
+  .content{
+    background: #000;
+
+    ul{
+      li{
+        border: 1px solid #FFF;
+        border-radius: 10px;
+      }
+    }
+  }
+}

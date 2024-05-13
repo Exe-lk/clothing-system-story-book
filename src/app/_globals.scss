@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
 @mixin my-font {
   font-family: 'Montserrat';
 }
 
+@mixin ultra-bold{
+  font-family: 'Rubik';
+}
+
+@mixin cursive{
+  font-family: 'Style Script';
+}
+
 @mixin my-button{
-  font-size: 9px;
+  font-size: 13px;
   border-radius: 10px;
   text-transform: uppercase;
   padding: 10px;

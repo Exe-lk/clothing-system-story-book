@@ -5,6 +5,7 @@
   height: 550px;
   position: relative;
   margin-bottom: 50px;
+  z-index: 100;
 }
 
 .banner{
@@ -43,7 +44,7 @@
   }
 
   .buttons{
-    width: 230px;
+    width: 320px;
     padding: 10px 0 0 90px;
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,7 @@
       background-color: #AB5D02;
       color: #FFF;
       font-weight: 500;
+      width: 196px;
       
       .rightArrow1{
         padding-left: 5px;

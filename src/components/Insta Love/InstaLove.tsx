@@ -2,10 +2,12 @@ import styles from './InstaLove.module.scss';
 import React from 'react';
 import InstaLoversList from './InstaLoversList';
 import Image from 'next/image';
+import { useTheme } from '../ThemeContext';
 
 const InstaLove = () => {
+  const {theme} = useTheme();
   return (
-    <div className={styles.instaLove}>
+    <div className={`${styles.instaLove} ${theme==='dark' ? styles.darkInstaLove : ''}`}>
       <div className={styles.heading}>
         <p>instalove</p>
         <p><em>@fashionnova</em></p>

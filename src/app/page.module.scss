@@ -3,6 +3,16 @@
   height: 1000%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  // overflow: hidden;
+  // position: relative;
+}
 
+.darkHome{
+  width: 100%;
+  height: 1000%;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #FFF;
+  z-index: -1;
 }
