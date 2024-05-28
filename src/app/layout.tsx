@@ -21,7 +21,7 @@ export default function RootLayout({
     <ThemeContext.Provider value={{theme, toggleTheme:()=>setTheme(theme === 'light'?'dark':'light')}}>
       <html lang="en">
         <body className={inter.className}>
-            {children}
+          {children}
         </body>
       </html>
     </ThemeContext.Provider>

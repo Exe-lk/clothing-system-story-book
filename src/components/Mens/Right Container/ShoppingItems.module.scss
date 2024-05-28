@@ -17,25 +17,30 @@
     flex-direction: column;
     align-items: center;
 
-    .fav,
-    .notFav{
-      position: absolute;
-      top: 32px;
-      right: 67px;
-    }
-
-    .fav{
+    .link{
+      text-decoration: none;
       color: #000;
-      background: #FFF;
-      padding: 7px;
-      border-radius: 100%;
-    }
 
-    p{
-      margin-block-start: 0;
-      margin-block-end: 0;
-      padding-bottom: 10px;
-      text-align: start;
+      .fav,
+      .notFav{
+        position: absolute;
+        top: 32px;
+        right: 67px;
+      }
+  
+      .fav{
+        color: #000;
+        background: #FFF;
+        padding: 7px;
+        border-radius: 100%;
+      }
+  
+      p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-bottom: 10px;
+        text-align: start;
+      }
     }
   }
 }

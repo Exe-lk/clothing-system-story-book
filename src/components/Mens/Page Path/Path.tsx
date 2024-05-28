@@ -2,11 +2,11 @@ import styles from './Path.module.scss';
 import { useTheme } from '@/components/ThemeContext';
 import React from 'react';
 
-const Path = () => {
+const Path = ({prevPath, currentPath}:{prevPath:any, currentPath:any}) => {
   const {theme} = useTheme();
   return (
     <div className={`${styles.path} ${theme==='dark'?styles.darkPath:''}`}>
-      <p>home <span>{' > '}men's</span></p>
+      <p>{prevPath} <span>{currentPath}</span></p>
     </div>
   )
 }
