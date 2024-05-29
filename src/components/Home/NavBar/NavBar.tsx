@@ -11,9 +11,9 @@ const NavBar = () => {
     <div className={`${styles.navBar} ${theme==='dark' ? styles.darkNavBar : ''}`}>
       <nav>
         <Link href="/" className={styles.link}>home</Link>
-        <Link href="/" className={styles.link}>women</Link>
+        <Link href="/women" className={styles.link}>women</Link>
         <Link href="/mens" className={styles.link}>men</Link>
-        <Link href="/" className={styles.link}>kids</Link>
+        <Link href="/kids" className={styles.link}>kids</Link>
         <Link href="/" className={styles.link}>about us</Link>
         <Link href="/" className={styles.link}>contact us</Link>
       </nav>

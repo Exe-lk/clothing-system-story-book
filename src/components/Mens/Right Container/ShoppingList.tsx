@@ -1,4 +1,4 @@
-import one from '../../../../public/assets/newArrivals/5.svg'; 
+import one from '../../../../public/assets/newArrivals/5.svg';
 import two from '../../../../public/assets/newArrivals/6.svg'; 
 import three from '../../../../public/assets/newArrivals/8.svg'; 
 
