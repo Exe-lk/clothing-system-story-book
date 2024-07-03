@@ -5,7 +5,6 @@ import MainHeading from './Heading/MainHeading';
 import NewArrivals from './Arrivals/NewArrivals';
 import { CiSearch } from "react-icons/ci";
 import { Montserrat } from 'next/font/google';
-import styles from './Header.module.scss';
 import { useTheme } from '../../ThemeContext';
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
