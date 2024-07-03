@@ -8,7 +8,7 @@ import login from '../../../public/assets/loginRegister/login1.svg'
 import register from '../../../public/assets/loginRegister/register.png'
 import MainHeading from '@/components/Home/Header/Heading/MainHeading';
 
-const page = () => {
+const LoginPage = () => {
 
   const PasswordErrorMessage = () => { 
     return ( 
@@ -271,4 +271,4 @@ const page = () => {
   )
 }
 
-export default page
+export default LoginPage

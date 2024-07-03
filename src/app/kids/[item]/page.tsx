@@ -23,7 +23,7 @@ import { IoHeartCircleSharp } from "react-icons/io5";
 import { BiHeartCircle } from "react-icons/bi";
 
 
-const page = () => {
+const KidsItem = () => {
   const {theme} = useTheme();
   const [value, setValue] = useState(0);
   const searchParams = useSearchParams();
@@ -168,10 +168,10 @@ const page = () => {
 
 
 {
-        kidsCartList.map(item=>(
+        kidsCartList.map((item:any, key:any)=>(
           item.itemId==searchParams.get('id') && item.name==searchParams.get('name')? (
 
-            <div className='container-fluid h-100'>
+            <div className='container-fluid h-100' key={key}>
               
               <div className='row m-2 p-2 justify-content-between w-100' style={{height:'110px'}}>
                 <Header />
@@ -185,7 +185,7 @@ const page = () => {
                 <nav aria-label="breadcrumb" className=' my-auto'>
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item"><a href="/" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>Home</a></li>
-                    <li className="breadcrumb-item"><a href="/mens" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>Men's</a></li>
+                    <li className="breadcrumb-item"><a href="/mens" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>{`Kid's`}</a></li>
                     <li className="breadcrumb-item active" aria-current="page">{item.name}</li>
                   </ol>
                 </nav>
@@ -236,11 +236,11 @@ const page = () => {
                         <div className="row">
                           <ul className='d-grid ' style={{gridTemplateColumns: 'auto auto'}}>
                             {
-                              sizesLi.map(i=>{
+                              sizesLi.map((item:any,key:any)=>{
                                 return(
-                                  <div className='p-2'>
+                                  <div className='p-2' key={key}>
                                     <input type="radio" id="sizes" name="sizes" value={item.size}/>
-                                    <label className='ps-1 fs-6 fs-sm-6 fs-md-6 fs-lg-5 fs-xl-5 fs-xxl-5'>{i.size}</label>
+                                    <label className='ps-1 fs-6 fs-sm-6 fs-md-6 fs-lg-5 fs-xl-5 fs-xxl-5'>{item.size}</label>
                                   </div>
                                 )
                               })
@@ -309,7 +309,7 @@ const page = () => {
                 {
                   kidsRelatedItemsList.map((item:any, key:any)=>{
                     return(
-                      <div className='col-md-6 col-sm-6 col-lg-3 position-relative d-flex flex-column align-items-center' >
+                      <div className='col-md-6 col-sm-6 col-lg-3 position-relative d-flex flex-column align-items-center' key={key}>
                         <Image src={item.id} alt='item' className='img-fluid card-img-top'/>
                         <div className="card-img-overlay">
                           {!item.favourite?(<IoHeartCircleSharp className='card-title fs-3' />):(<BiHeartCircle className='fs-3'/>)}        
@@ -337,4 +337,4 @@ const page = () => {
   )
 }
 
-export default page
+export default KidsItem

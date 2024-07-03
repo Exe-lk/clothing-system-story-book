@@ -10,9 +10,9 @@ import { useTheme } from '@/components/ThemeContext';
 import Link from 'next/link';
 
 const page = () => {
-  const {theme} = useTheme();
+  // const {theme} = useTheme();
   return (
-    <div className={`${styles.wrapper} ${theme==='dark'?styles.darkWrapper:''}`}>
+    <div className=''>
       <div className={styles.aside}>
         <SideBar />
       </div>

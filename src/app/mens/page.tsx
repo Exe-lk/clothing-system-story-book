@@ -13,7 +13,7 @@ import ShoppingItems from '@/components/Mens/Right Container/ShoppingItems';
 import SideBar from '@/components/Side Bar/SideBar';
 import { useTheme } from '@/components/ThemeContext';
 
-const page = () => {
+const MensPage = () => {
   const {theme} = useTheme();
   return (
     // <div className={`${styles.mensContainer} ${theme==='dark'?styles.darkMensContainer:''}`}>
@@ -52,7 +52,7 @@ const page = () => {
         <nav aria-label="breadcrumb" className=' my-auto'>
           <ol className="breadcrumb">
             <li className="breadcrumb-item"><a href="#" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>Home</a></li>
-            <li className="breadcrumb-item active" aria-current="page">Men's</li>
+            <li className="breadcrumb-item active" aria-current="page">{`Men's`}</li>
           </ol>
         </nav>
       </div>
@@ -87,4 +87,4 @@ const page = () => {
   )
 }
 
-export default page
+export default MensPage

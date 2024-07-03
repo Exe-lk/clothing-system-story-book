@@ -44,7 +44,7 @@ const NewArrivals = () => {
           {
             newArrivalsList.map((item:any, key:any)=>{
               return(
-                <div className='col-md-6 col-sm-6 col-lg-3 position-relative d-flex flex-column align-items-center' >
+                <div className='col-md-6 col-sm-6 col-lg-3 position-relative d-flex flex-column align-items-center' key={key}>
                   <Image src={item.id} alt='item' className='img-fluid card-img-top'/>
                   <div className="card-img-overlay">
                     {!item.favourite?(<IoHeartCircleSharp className={`${styles.notFav} card-title fs-3 `} />):(<BiHeartCircle className={`${styles.fav} fs-3`}/>)}        

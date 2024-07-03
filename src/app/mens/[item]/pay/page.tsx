@@ -11,7 +11,7 @@ import cartItem1 from '../../../../../public/assets/mens cloths/item1/1.jpg'
 import cartItem2 from '../../../../../public/assets/womens cloths/2.jpg'
 import cartItem3 from '../../../../../public/assets/kids cloths/2.jpg'
 
-const page = () => {
+const MensItemPay = () => {
   return (
     <div className='container-fluname '>
       <div className="row mx-0 p-1 ">
@@ -181,4 +181,4 @@ const page = () => {
   )
 }
 
-export default page
+export default MensItemPay

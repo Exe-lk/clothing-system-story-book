@@ -10,7 +10,7 @@ import Footer from '@/components/Home/Footer/Footer';
 
 const page = () => {
   return (
-    <div className={`${styles.mainContainer} container-fluid h-100 w-100 m-0 p-0`}>
+    <div className={`${styles.mainContainer} container-fluid h-100 w-100 m-0 p-0`} >
       
       <div className='row m-2 p-2 justify-content-between' >
         <Header />
@@ -29,8 +29,8 @@ const page = () => {
         <img src={aboutus.src} alt="aboutus" className='img-fluid object-fit-cover mx-0 px-0' />
       </div>
 
-      <div className='row m-xxl-2 m-xl-2 m-lg-2 m-md-2 m-sm-2 m-0 d-flex align-items-center justify-content-center'>
-        <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-8 col-sm-9 col-9  p-1  my-xxl-5 my-4 my-sm-5 my-lg-5">
+      <div className='row m-xxl-2 m-xl-2 m-lg-2 m-md-2 m-sm-2 m-0 d-flex align-items-center justify-content-center' >
+        <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-8 col-sm-9 col-9  p-1  my-xxl-5 my-4 my-sm-5 my-lg-5" >
           <h1 className=' text-capitalize text-center'>our story  </h1>
           <p className='text-center mt-xxl-5 mt-2  fs-xxl-6 fs-xl-6 fs-lg-6 fs-md-6 fs-sm-7 fs-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>

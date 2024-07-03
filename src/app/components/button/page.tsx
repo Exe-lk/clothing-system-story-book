@@ -14,9 +14,8 @@ import Shadow from '@/components/Button Component/Shadow';
 import { useTheme } from '@/components/ThemeContext';
 
 const page = () => {
-  const {theme} = useTheme();
   return (
-    <div className={`${styles.wrapper} ${theme==='dark'?styles.darkWrapper:''}`}>
+    <div className=''>
       <div className={styles.aside}>
         <SideBar />
       </div>

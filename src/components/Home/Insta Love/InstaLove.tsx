@@ -34,9 +34,9 @@ const InstaLove = () => {
       </div>
       <div className='col-12 mx-auto d-flex align-items-center justify-content-center ' style={{width:'100%',height:'300px',background:'#F5F5F5'}}>
           {
-            InstaLoversList.map((item:any)=>{
+            InstaLoversList.map((item:any,key:any)=>{
               return(
-                <ul className='list-unstyled'>
+                <ul className='list-unstyled' key={key}>
                   <li className='px-3'>
                     <Image src={item.id} alt='item' className='img-fluid'/>
                   </li>

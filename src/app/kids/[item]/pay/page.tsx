@@ -1,7 +1,7 @@
 import styles from './page.module.scss';
 import React from 'react';
 
-const page = () => {
+const KidsItemPay = () => {
   return (
     <div className={styles.pay}>
       <p>hello</p>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default KidsItemPay

@@ -34,7 +34,7 @@ const ShoppingItems = () => {
       {
           shoppingList.map((item:any, key:any)=>{
             return(
-              <div className='col-md-6 col-sm-6 col-lg-4 position-relative d-flex flex-column align-items-center text-capitalize'>
+              <div className='col-md-6 col-sm-6 col-lg-4 position-relative d-flex flex-column align-items-center text-capitalize' key={key}>
                 <Link href={{pathname: "/women/#", query: {id: item.id, name: item.des}}} className='text-decoration-none text-black'>
                   <Image src={item.name} alt='item' className='img-fluid card-img-top'/>
                   <div className="card-img-overlay ps-4">

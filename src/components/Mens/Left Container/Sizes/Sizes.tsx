@@ -28,12 +28,12 @@ const Sizes = () => {
       <p>sizes</p>
       <ul className='d-grid list-unstyled' style={{gridTemplateColumns: 'auto auto'}}>
         {
-          sizesLi.map(i=>{
+          sizesLi.map((item:any,key:any)=>{
             return(
 
-              <div className='px-4 py-1'>
+              <div className='px-4 py-1' key={key}>
                 <input type="radio" id="sizes" name="sizes" />
-                <label className='ps-1'>{i.size}</label>
+                <label className='ps-1'>{item.size}</label>
               </div>
             )
           })
