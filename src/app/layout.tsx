@@ -8,7 +8,7 @@ import { ThemeContext } from "@/components/ThemeContext";
 import '/node_modules/bootstrap/scss/bootstrap.scss';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import '/node_modules/bootstrap/scss/bootstrap-utilities.scss';
-import 'bootstrap/custom.scss';
+import '../../custom.scss';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import SideBar from '@/components/Side Bar/SideBar';
