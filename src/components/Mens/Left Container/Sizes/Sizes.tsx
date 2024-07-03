@@ -7,16 +7,33 @@ import { useTheme } from '@/components/ThemeContext';
 const Sizes = () => {
   const {theme} = useTheme();
   return (
-    <div className={`${styles.sizes} ${theme==='dark'?styles.darkSizes:''}`}>
+    // <div className={`${styles.sizes} ${theme==='dark'?styles.darkSizes:''}`}>
+    //   <p>sizes</p>
+    //   <ul>
+    //     {
+    //       sizesLi.map(i=>{
+    //         return(
+
+    //           <div className={styles.range}>
+    //             <input type="radio" id="sizes" name="sizes" />
+    //             <label>{i.size}</label>
+    //           </div>
+    //         )
+    //       })
+    //     }
+    //   </ul>
+    // </div>
+
+    <div className='p-1 m-1 text-capitalize'>
       <p>sizes</p>
-      <ul>
+      <ul className='d-grid list-unstyled' style={{gridTemplateColumns: 'auto auto'}}>
         {
           sizesLi.map(i=>{
             return(
-              // <li>{i.item}</li>
-              <div className={styles.range}>
+
+              <div className='px-4 py-1'>
                 <input type="radio" id="sizes" name="sizes" />
-                <label>{i.size}</label>
+                <label className='ps-1'>{i.size}</label>
               </div>
             )
           })

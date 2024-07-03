@@ -1,8 +1,10 @@
-import one from '../../public/assets/women/1.jpg';
+import one from '../../public/assets/womens cloths/item1/1.jpg';
+import two from '../../public/assets/womens cloths/item1/2.jpg';
+import three from '../../public/assets/womens cloths/item1/3.jpg';
 
 export const womensCartList = [{
   itemId: 'item1',
-  images: [one,],
+  images: [one,two,three],
   name: 'Womens oversized shirt dress',
   availability: 'in-stock',
   price: 2500.00,

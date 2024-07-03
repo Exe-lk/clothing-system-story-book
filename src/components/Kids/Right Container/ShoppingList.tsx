@@ -1,9 +1,9 @@
-import one from '../../../../public/assets/kids/1.jpg';
-import two from '../../../../public/assets/kids/2.jpg';
-import three from '../../../../public/assets/kids/3.jpg';
-import four from '../../../../public/assets/kids/4.jpg';
-import five from '../../../../public/assets/kids/5.jpg';
-import eight from '../../../../public/assets/kids/8.jpg';
+import one from '../../../../public/assets/kids cloths/item1/1.jpg';
+import two from '../../../../public/assets/kids cloths/2.jpg';
+import three from '../../../../public/assets/kids cloths/3.jpg';
+import four from '../../../../public/assets/kids cloths/4.jpg';
+import five from '../../../../public/assets/kids cloths/5.jpg';
+import eight from '../../../../public/assets/kids cloths/8.jpg';
 
 export const shoppingList:any = [
   {'id':'item1' ,'name': one, 'favourite': false, 'des':'Shirt', 'price':'Rs 1700.00'},

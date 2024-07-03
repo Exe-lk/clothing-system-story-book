@@ -16,28 +16,60 @@ import { useTheme } from '@/components/ThemeContext';
 const page = () => {
   const {theme} = useTheme();
   return (
-    <div className={`${styles.kidsContainer} ${theme==='dark'?styles.darkKidsContainer:''}`}>
-      <div className={styles.aside}>
-        <SideBar/>
-      </div>
-      <div className={styles.wrapper}>
+    // <div className={`${styles.kidsContainer} ${theme==='dark'?styles.darkKidsContainer:''}`}>
+    //   <div className={styles.aside}>
+    //     <SideBar/>
+    //   </div>
+    //   <div className={styles.wrapper}>
+    //     <Header />
+    //     <NavBar />
+    //     <Path prevPath={'home'} currentPath={">kid's"}/>
+    //     <div className={styles.content}>
+    //       <div className={styles.left}>
+    //         <Heading />
+    //         <Kids />
+    //         <Sizes />
+    //         <Colors />
+    //         <Price />
+    //       </div>
+    //       <div className={styles.right}>
+    //         <ShoppingItems />
+    //       </div>
+    //     </div>
+    //   </div>
+    //   </div>
+
+    <div className={`${styles.mensContainer} ${theme==='dark'?styles.darkMensContainer:''} container-fluid h-100`}>
+      <div className='row m-2 p-2 justify-content-between' style={{height:'110px'}}>
         <Header />
+      </div>
+
+      <div className='row m-2 ' style={{height:'70px'}}>
         <NavBar />
-        <Path prevPath={'home'} currentPath={">kid's"}/>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <Heading />
-            <Kids />
-            <Sizes />
-            <Colors />
-            <Price />
-          </div>
-          <div className={styles.right}>
-            <ShoppingItems />
-          </div>
+      </div>
+
+      <div className='row m-2 ' style={{height:'70px'}}>
+        <nav aria-label="breadcrumb" className=' my-auto'>
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item"><a href="#" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>Home</a></li>
+            <li className="breadcrumb-item active" aria-current="page">Kid's</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div className='row m-2 p-2 justify-content-between h-100 d-flex '>
+        <div className="col-3 d-flex flex-column justify-content-evenly" style={{background: 'rgba(249, 249, 249, 1)'}}>
+          <Heading />
+          <Kids />
+          <Sizes />
+          <Colors />
+          <Price />
+        </div>
+        <div className="card col-8 border-0">
+          <ShoppingItems />
         </div>
       </div>
-      </div>
+    </div>
   )
 }
 

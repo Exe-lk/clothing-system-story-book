@@ -1,131 +1,230 @@
 @import '../../app/globals';
 
-.sideBar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 72px;
-  background: #FFF;
-  height: 100vh;
-  z-index: 1000;
+// .sideBar{
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 72px;
+//   background: #FFF;
+//   height: 100vh;
+//   z-index: 1000;
 
-  .sideBarInner{
-    .sideBarHeader{
-      display: flex;
-      display: grid;
-      place-items: center;
-      height: 72px;
+//   .sideBarInner{
+//     .sideBarHeader{
+//       display: flex;
+//       display: grid;
+//       place-items: center;
+//       height: 72px;
 
-      .headerButton{
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        border: 0;
-        padding: 0;
-        background: transparent;
-        color: #000;
+//       .headerButton{
+//         width: 50px;
+//         height: 50px;
+//         cursor: pointer;
+//         border: 0;
+//         padding: 0;
+//         background: transparent;
+//         color: #000;
 
-        .headerLogo{
-          width: 50px;
-          height: 50px;
-        }
-      }
-      .headerButton:hover{
-        transform: scale(1.1);
-        transition: .4s ease-in-out;;
-      }
-    }
-    .sideBarMenu{
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      overflow: hidden;
-      justify-content: center;
-      align-items: center;
+//         .headerLogo{
+//           width: 50px;
+//           height: 50px;
+//         }
+//       }
+//       .headerButton:hover{
+//         transform: scale(1.1);
+//         transition: .4s ease-in-out;;
+//       }
+//     }
+//     .sideBarMenu{
+//       display: flex;
+//       flex-direction: column;
+//       height: 100vh;
+//       overflow: hidden;
+//       justify-content: center;
+//       align-items: center;
 
-      .sideBarLink{
-        overflow: hidden;
-        transition:  .4s ease-in-out;
-        padding: 50px 0;
-        margin: 5px;
-        background: transparent;
-        color: #000;
-        border: none;
-        cursor: pointer;
-        text-decoration: none;
+//       .sideBarLink{
+//         overflow: hidden;
+//         transition:  .4s ease-in-out;
+//         padding: 50px 0;
+//         margin: 5px;
+//         background: transparent;
+//         color: #000;
+//         border: none;
+//         cursor: pointer;
+//         text-decoration: none;
 
-        .sideBarLogo{
-          width: 50px;
-          height: 50px;
-        }
-        span{
-          display: none;
-        }
-      }  
-      .sideBarLink:hover{
-        transform: scale(1.1);
-      }
-    }
-  }
-  .open{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.75);
-    transition:  .4s ease-in-out;
-    .sideBarHeader{
-      display: grid;
-      place-items: start;
+//         .sideBarLogo{
+//           width: 50px;
+//           height: 50px;
+//         }
+//         span{
+//           display: none;
+//         }
+//       }  
+//       .sideBarLink:hover{
+//         transform: scale(1.1);
+//       }
+//     }
+//   }
+//   .open{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 300px;
+//     background: rgba(255, 255, 255, 0.75);
+//     transition:  .4s ease-in-out;
+//     .sideBarHeader{
+//       display: grid;
+//       place-items: start;
       
-      .headerButton{
-        text-align: start;
-        padding: 10px 0 10px 5px;
-        margin: 10px;
-      }
-    }
-    .sideBarMenu{
-      transition:  .4s ease-in-out;
-      .sideBarLink{
-        color: #000;
-        text-align: center;
-        padding: 50px 0;
-        margin: 10px;
-        display: flex;
-        align-items: center;       
+//       .headerButton{
+//         text-align: start;
+//         padding: 10px 0 10px 5px;
+//         margin: 10px;
+//       }
+//     }
+//     .sideBarMenu{
+//       transition:  .4s ease-in-out;
+//       .sideBarLink{
+//         color: #000;
+//         text-align: center;
+//         padding: 50px 0;
+//         margin: 10px;
+//         display: flex;
+//         align-items: center;       
 
-        span{
-          @include my-font;
-          display: block;
-          font: {
-            size: 30px;
-            weight: 500;
-          }
-          padding-left: 20px;
-        }
-      }
-    }
-  }
+//         span{
+//           @include my-font;
+//           display: block;
+//           font: {
+//             size: 30px;
+//             weight: 500;
+//           }
+//           padding-left: 20px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .darkSideBar{
+//   background: rgba(0, 0, 0, 0.88);
+
+//   .sideBarInner{
+//     .sideBarHeader{
+
+//       .headerButton{
+//         color: #FFF;
+//       }
+//     }
+//     .sideBarMenu{
+//       .sideBarLink{
+//         text-decoration: none;
+//         color: #FFF;
+//       }
+//     }
+//   }
+//   .open{
+//     background: rgba(0, 0, 0, 0.8);;
+//   }
+// }
+
+
+.sideNav::-webkit-scrollbar {
+  display: none; 
 }
 
-.darkSideBar{
-  background: rgba(0, 0, 0, 0.88);
+.list::-webkit-scrollbar {
+  display: none; 
+}
 
-  .sideBarInner{
-    .sideBarHeader{
+.sideNav:hover {
+  width: 200px;
+  background-color: #05050b99;
+  backdrop-filter: blur(.3rem);
+}
 
-      .headerButton{
-        color: #FFF;
-      }
-    }
-    .sideBarMenu{
-      .sideBarLink{
-        text-decoration: none;
-        color: #FFF;
-      }
-    }
-  }
-  .open{
-    background: rgba(0, 0, 0, 0.8);;
-  }
+.sideNav:hover a span{
+  margin-left: auto;
+}
+
+.sideNav:hover a span p{
+  display: flex !important;
+}
+
+.sideNav .list>li{
+  width: 100%;
+  margin: auto;
+}
+
+// .sideNav .list{
+//   overflow-y: scroll !important;
+// }
+
+.sideNav:hover .list li{
+  // background-color: #232328;
+  opacity: 1;
+  padding: 0 !important;
+  // margin: 0 !important;
+}
+
+.sideNav .list li:not(:nth-child(4)):hover{
+  background-color: #232328;
+}
+
+// .sideNav:hover .list li:nth-child(4) div {
+//   transition: all 1s ease-in-out;
+// }
+
+.sideNav .list li:nth-child(4) li:hover{
+  background-color: #232328;
+}
+
+.sideNav .list li:nth-child(4) div ul .item:hover{
+  background-color: #232328;
+  width: 100%;
+}
+
+// .sideNav .list li:nth-child(4) .dropDown{
+//   display: flex !important;
+// }
+
+.sideNav:hover .list li .menuDetails{
+  display: block !important;
+}
+  
+.shortmenu {
+  float: right;
+  display: block;
+  opacity: 1;
+  place-items: center;
+}
+
+// .sideNav:hover li a .shortmenu{
+//   opacity: 0
+// }
+
+.sideNav{
+  background: black;
+  // opacity: .5;
+  box-shadow: 2px 1px 2px rgba(0,0,0,.1);
+  position:fixed;
+  top:0;
+  flex-direction: column!important;
+  // // // left:-140px;
+  width: 70px;
+  // overflow-y:auto;
+  left:0;
+  overflow-x:hidden;
+  padding-bottom:40px;
+  transition: width .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  z-index: 10000;
+
+  
+}
+
+.animation{
+  background-color: red;
 }

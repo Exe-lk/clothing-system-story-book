@@ -1,9 +1,9 @@
-import one from '../../../../public/assets/women/1.jpg'; 
-import two from '../../../../public/assets/women/2.jpg'; 
-import three from '../../../../public/assets/women/3.jpg'; 
-import four from '../../../../public/assets/women/4.jpg'; 
-import five from '../../../../public/assets/women/5.jpg'; 
-import six from '../../../../public/assets/women/6.jpg'; 
+import one from '../../../../public/assets/womens cloths/item1/1.jpg'; 
+import two from '../../../../public/assets/womens cloths/2.jpg'; 
+import three from '../../../../public/assets/womens cloths/3.jpg'; 
+import four from '../../../../public/assets/womens cloths/4.jpg'; 
+import five from '../../../../public/assets/womens cloths/5.jpg'; 
+import six from '../../../../public/assets/womens cloths/6.jpg'; 
 
 
 export const shoppingList:any = [

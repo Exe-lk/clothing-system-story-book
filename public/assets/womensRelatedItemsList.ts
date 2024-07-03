@@ -1,8 +1,8 @@
-import two from './women/2.jpg'
-import three from './women/3.jpg'
-import four from './women/4.jpg'
-import five from './women/5.jpg'
-import six from './women/6.jpg'
+import two from './womens cloths/2.jpg'
+import three from './womens cloths/3.jpg'
+import four from './womens cloths/4.jpg'
+import five from './womens cloths/5.jpg'
+import six from './womens cloths/6.jpg'
 
 
 export const womensRelatedItemsList:any = [

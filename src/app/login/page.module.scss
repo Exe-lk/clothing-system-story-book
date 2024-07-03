@@ -1,0 +1,234 @@
+// .wrapper{
+//   position: relative;
+//   width: 420px;
+//   height: 420px;
+//   background: black;
+//   border: 2px solid rgba(255, 255, 255, .2);
+//   backdrop-filter: blur(30px);
+//   border-radius: 10px;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+//   color: #fff;
+//   display: flex;
+//   align-items: center;
+//   overflow: hidden;
+//   transition: height .2s ease;
+
+//   .form{
+//     width: 100%;
+//     padding: 40px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     form {
+//         h1{
+//         font-size: 36px;
+//         text-align: center;
+//         }
+//       .inputBox{
+//         position: relative;
+//         width: 100%;
+//         height: 50px;
+//         margin: 30px 0;
+
+//         input{
+//           width: 100%;
+//           height: 100%;
+//           background: transparent;
+//           border: 2px solid rgba(255, 255, 255, 0.1);
+//           border-radius: 40px;
+//           margin: none;
+//           font-size: 16px;
+//           color: #fff;
+//           padding: 20px 45px 20px 20px ;
+//         }
+//         input::placeholder{
+//           color: #fff;
+//         }
+//         .icon{
+//           position: absolute;
+//           right: 20px;
+//           top: 50%;
+//           translate: 0 -50%;
+//           font-size: 16px;
+//         }
+//       }
+//       .rememberForgot{
+//         display: flex;
+//         justify-content: space-between;
+//         font-size: 14px;
+//         margin: -15px 0 15px;
+
+//         label{
+//           input{
+//             accent-color: #fff;
+//             margin-right: 4px;
+//           }
+//         }
+//         a{
+//           color: #fff;
+//           text-decoration: none;
+//         }
+//       }
+//       button{
+//         width: 100%;
+//         height: 45px;
+//         background: #ed36d2;
+//         border: none;
+//         outline: none;
+//         border-radius: 40px;
+//         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//         cursor: pointer;
+//         font-size: 16px;
+//         color: #333;
+//         font-weight: 750;  
+//       }
+//       button:disabled,
+//       button[disabled] {
+//         border: 1px solid #999999;
+//         background-color: #cccccc;
+//         color: #666666;
+//         cursor: not-allowed;
+//       }
+//       .registerLink{
+//         font-size: 14.5px;
+//         text-align: center;
+//         margin: 20px 0 15px;
+
+//         p{
+//           a{
+//               color: #fff;
+//               text-decoration: none;
+//               font-weight: 600;
+//               margin-left: 5px;
+            
+//           }
+//         }
+//       }
+
+//     }
+//   }
+//   .login{
+//     transition: translate .18s ease ;
+//     translate: 0;
+//   }
+//   .register{
+//     position: absolute;
+//     transition: none;
+//     translate: 400px;
+//   }
+// }
+
+// .wrapper.active{
+//   height: 520px;
+
+//   .login{
+//     transition: none;
+//     translate: -400px;
+//   }
+
+//   .register{
+//     transition: translate .18s ease ;
+//     translate: 0;
+//   }
+// }
+
+
+.wrapper{
+  position: relative;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: height .2s ease;
+
+  .login{
+    transition: translate .18s ease ;
+    translate: 0;
+
+    .right{
+      div{
+        .heading{
+          text-transform: uppercase;
+          font-size: 30px;
+          font-weight: 100;
+          margin-block-start: 0;
+          margin-block-end: 0;
+
+          span{
+            font-weight: 900;
+            letter-spacing: -2px;
+            font-size: 35px;
+            margin-left: -7px;
+          }
+        }
+      }
+    }
+  }
+  .register{
+    position: absolute;
+    transition: none;
+    translate: 1500px;
+
+    .right{
+      div{
+        .heading{
+          text-transform: uppercase;
+          font-size: 30px;
+          font-weight: 100;
+          margin-block-start: 0;
+          margin-block-end: 0;
+
+          span{
+            font-weight: 900;
+            letter-spacing: -2px;
+            font-size: 35px;
+            margin-left: -7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active{
+  // height: 520px;
+
+  
+  .login{
+    transition: none;
+    translate: -1400px;
+  }
+
+  .register{
+    transition: translate .18s ease;
+    translate: 0;
+  }
+
+}
+
+
+
+
+
+
+
+// .wrapper .form form .rememberForgot 
+// .FieldError {
+//   position: absolute;
+//   bottom: -24px;
+//   color: red;
+//   font-size: 12px;
+//   margin: 8px 0;
+// }
+
+
+// .wrapper .form form .rememberForgot a:hover,
+// .wrapper .form form .registerLink p a:hover{
+//   text-decoration: underline;
+// }
+
+
+

@@ -1,8 +1,11 @@
-import one from '../assets/newArrivals/5.svg';
+import one from '../assets/mens cloths/item1/1.jpg';
+import two from '../assets/mens cloths/item1/2.jpg';
+import three from '../assets/mens cloths/item1/3.jpg';
+import four from '../assets/mens cloths/item1/4.jpg';
 
 export const mensCartList = [{
   itemId: 'item1',
-  images: [one,],
+  images: [one,two,three,four],
   name: 'Jobbs over-sized t-shirt',
   availability: 'in-stock',
   price: 1700.00,

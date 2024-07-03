@@ -1,8 +1,10 @@
-import one from '../assets/kids/1.jpg';
+import one from '../assets/kids cloths/item1/1.jpg';
+import two from '../assets/kids cloths/item1/2.jpg';
+import three from '../assets/kids cloths/item1/3.jpg';
 
 export const kidsCartList = [{
   itemId: 'item1',
-  images: [one,],
+  images: [one,two,three],
   name: 'Shirt',
   availability: 'in-stock',
   price: 1700.00,

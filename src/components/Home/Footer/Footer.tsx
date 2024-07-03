@@ -19,60 +19,113 @@ import { useTheme } from '../../ThemeContext';
 const Footer = () => {
   const {theme} = useTheme();
   return (
-    <div className={`${styles.footer} ${theme==='dark' ? styles.darkFooter : ''}`}>
-      <div className={styles.top}>
-        <div className={styles.left}>
-          <div className={styles.socialize}>
-            <p>socialize</p>
-            <div className={styles.icons1}>
-              {/* <Image src={facebook} alt='facebook' />
-              <Image src={tiktok} alt='tiktok' />
-              <Image src={instagram} alt='instagram' /> */}
-              <FaFacebookF/>
-              <FaTiktok/>
-              <AiFillInstagram/>
-            </div>
-          </div>
-          <div className={styles.sendMail}>
-            <p>SEND AN EMAIL OR CALL</p>
-            <div className={styles.icons2}>
-              {/* <Image src={mailOrCall} alt='mailOrCall' /> */}
-              <IoMailOpen/>
-              <IoMdCall/>
-            </div>
-          </div>
-          <div className={styles.dropBy}>
-            <p>drop by</p>
-            <p>LORUM IPSUM, LORUM,<br/> Sri Lanka, 10100</p>
-          </div>
-        </div>
-        <div className={styles.middle}>
-          {/* <Image src={mainHeading} alt='mainHeading' width={250} className={styles.icon1}/> */}
-          <p>fashion<span><b>nova</b></span></p>
-          {/* <Image src={footerSubHeading} alt='footerSubHeading'width={210} className={styles.icon2}/> */}
-          <p>smiles.. colors.. memories..</p>
-        </div>
-        <div className={styles.right}>
-            <p>navigate</p> 
-            <div className={styles.content}>
-              <div className={styles.left}>
-                <a href="#">Home</a>
-                <a href="#">woman</a>
-                <a href="#">men</a>
-              </div>
-              <div className={styles.right}>
-                <a href="#">kids</a>
-                <a href="#">about us</a>
-                <a href="#">contact us</a>
-              </div>
-            </div>
+    // <div className={`${styles.footer} ${theme==='dark' ? styles.darkFooter : ''}`}>
+    //   <div className={styles.top}>
+    //     <div className={styles.left}>
+    //       <div className={styles.socialize}>
+    //         <p>socialize</p>
+    //         <div className={styles.icons1}>
+    //           {/* <Image src={facebook} alt='facebook' />
+    //           <Image src={tiktok} alt='tiktok' />
+    //           <Image src={instagram} alt='instagram' /> */}
+    //           <FaFacebookF/>
+    //           <FaTiktok/>
+    //           <AiFillInstagram/>
+    //         </div>
+    //       </div>
+    //       <div className={styles.sendMail}>
+    //         <p>SEND AN EMAIL OR CALL</p>
+    //         <div className={styles.icons2}>
+    //           {/* <Image src={mailOrCall} alt='mailOrCall' /> */}
+    //           <IoMailOpen/>
+    //           <IoMdCall/>
+    //         </div>
+    //       </div>
+    //       <div className={styles.dropBy}>
+    //         <p>drop by</p>
+    //         <p>LORUM IPSUM, LORUM,<br/> Sri Lanka, 10100</p>
+    //       </div>
+    //     </div>
+    //     <div className={styles.middle}>
+    //       {/* <Image src={mainHeading} alt='mainHeading' width={250} className={styles.icon1}/> */}
+    //       <p>fashion<span><b>nova</b></span></p>
+    //       {/* <Image src={footerSubHeading} alt='footerSubHeading'width={210} className={styles.icon2}/> */}
+    //       <p>smiles.. colors.. memories..</p>
+    //     </div>
+    //     <div className={styles.right}>
+    //         <p>navigate</p> 
+    //         <div className={styles.content}>
+    //           <div className={styles.left}>
+    //             <a href="#">Home</a>
+    //             <a href="#">woman</a>
+    //             <a href="#">men</a>
+    //           </div>
+    //           <div className={styles.right}>
+    //             <a href="#">kids</a>
+    //             <a href="#">about us</a>
+    //             <a href="#">contact us</a>
+    //           </div>
+    //         </div>
 
+    //     </div>
+    //   </div>
+    //   <div className={styles.bottom}>
+    //     <p>© Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK </p>
+    //   </div>
+    // </div>
+
+    <>
+      <div className='col m-1 p-1 d-flex flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
+        <div className="row ing m-1 p-1 w-100 h-100 d-flex align-items-center justify-content-around">
+
+          <div className='col-4 m-1 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center'>
+            <div className='row  m-1 py-2 w-50' style={{borderBottom:'1px solid rgba(0, 0, 0, 0.15)'}}>
+              <p className='py-2'>socialize</p>
+              <div className='d-flex align-items-center justify-content-evenly pb-2'>
+                <FaFacebookF />
+                <FaTiktok/>
+                <AiFillInstagram/>
+              </div>
+            </div>
+            <div className='row  m-1 py-2 w-50' style={{borderBottom:'1px solid rgba(0, 0, 0, 0.15)'}}>
+              <p className='py-2'>SEND AN EMAIL OR CALL</p>
+              <div className='d-flex align-items-center justify-content-evenly pb-2'>
+                <IoMailOpen/>
+                <IoMdCall/>
+              </div>
+            </div>
+            <div className='row  m-1 py-2 d-flex flex-column align-items-center justify-content-center w-50'>
+              <p className='py-2'>drop by</p>
+              <p className='pb-2'>LORUM IPSUM, LORUM,<br/> Sri Lanka, 10100</p>
+            </div>
+          </div>
+          <div className='col-3  m-1 p-1 text-center' style={{borderLeft:'1px solid rgba(0, 0, 0, 0.15)'}}>
+            <p className='h1 text-uppercase'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
+            <p className='text-capitalize'>smiles.. colors.. memories..</p>
+          </div>
+          <div className='col-4 m-1 p-1 text-center text-uppercase px-5' style={{borderLeft:'1px solid rgba(0, 0, 0, 0.15)'}}>
+              <p>navigate</p> 
+              <div className='text-decoration-none d-flex align-items-center justify-content-between'>
+                <div className='d-flex flex-column align-items-center justify-content-between'>
+                  <a href="#" className='btn'>Home</a>
+                  <a href="#" className='btn'>woman</a>
+                  <a href="#" className='btn'>men</a>
+                </div>
+                <div className='d-flex flex-column align-items-center justify-content-between'>
+                  <a href="#" className='btn'>kids</a>
+                  <a href="#" className='btn'>about us</a>
+                  <a href="#" className='btn'>contact us</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div className="row  m-1 p-1 w-100">
+          <div className='text-center pt-3' style={{borderTop:'1px solid rgba(0, 0, 0, 0.15)'}}>
+            <p className='m-auto'>© Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK </p>
+          </div>
         </div>
       </div>
-      <div className={styles.bottom}>
-        <p>© Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK </p>
-      </div>
-    </div>
+    </>
   )
 }
 
