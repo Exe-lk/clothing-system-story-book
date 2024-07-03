@@ -4,7 +4,6 @@ import React from 'react';
 import aboutus from '../../../public/assets/about us/aboutus.svg';
 import ourmission from '../../../public/assets/about us/ourmission.svg';
 import emp from '../../../public/assets/about us/emp.png';
-import emp1 from '../../../public/forMens.svg';
 import styles from './page.module.scss';
 import Footer from '@/components/Home/Footer/Footer';
 
