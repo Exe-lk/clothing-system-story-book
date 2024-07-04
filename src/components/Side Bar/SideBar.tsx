@@ -66,7 +66,7 @@ const SideBar = () => {
       {/* <div className="container">
           <div className="row flex-nowrap">
               <div className="col-auto col-md-3 col-xl-2 px-sm-2 bg-dark"> */}
-                  <div className={`${styles.sideNav} h-100 d-none d-sm-flex flex-column justify-content-evenly align-items-center overflow-y-scroll`} >
+                  <div className={`${styles.sideNav} h-100 d-none d-sm-none d-md-none d-lg-flex flex-column justify-content-evenly align-items-center overflow-y-scroll`} >
                     <a href="/" className="d-flex align-items-center pb-3  text-white text-decoration-none  " style={{height:'110px'}}>
                         <span className="fs-5">
                           <p className="h1 text-uppercase d-none " >f<span style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>n</b></span></p>

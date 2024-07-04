@@ -8,14 +8,14 @@ import Link from 'next/link'
 const NavBar = () => {
   const {theme} = useTheme();
   return (
-    <nav className= {`${styles.navBar} ${theme==='dark' ? styles.darkNavBar : ''} navbar navbar-expand-sm bg-white`}>
-      <div className="container-fluid bg-white ">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav className= 'navbar navbar-expand-lg'>
+
+        <button className="navbar-toggler m-md-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style={{color:'#AB5D02'}}>
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-center " id="navbarNavDropdown" style={{fontSize:'18px'}}>
+        <div className="collapse navbar-collapse justify-content-center " id="navbarNavDropdown" >
           
-          <ul className="navbar-nav text-capitalize">
+          <ul className="navbar-nav text-capitalize fs-xxl-5">
             
             <li className="nav-item mx-4">
               <Link className="nav-link active" aria-current="page" href="/">home</Link>
@@ -38,7 +38,6 @@ const NavBar = () => {
             
           </ul>
         </div>
-      </div>
     </nav>
   )
 }

@@ -6,7 +6,26 @@
   justify-content: space-between;
 } */
 
-@media only screen and (min-width : 1200px) {
-  .container { max-width: 1450px; }
-}
+@media only screen and (min-width : 1400px) {
+  .container-xxl { max-width: 1450px; };
+};
 
+@media only screen and (min-width : 1280px) {
+  .container-xl { max-width: 1400px; };
+};
+
+@media only screen and (min-width : 1280px) {
+  .container-lg { max-width: 1400px; };
+};
+
+/* @media only screen and (min-width : 992px) {
+  .container-xl { max-width: 1000px; };
+}; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+};

@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <ThemeContext.Provider value={{theme, toggleTheme:()=>setTheme(theme === 'light'?'dark':'light')}}>
       <html lang="en">
-        <body className={`${inter.className} container-fluid d-flex justify-content-end mx-0 px-0 overflow-x-hidden`}>
+        <body className='container-fluid d-flex justify-content-end mx-0 px-0 overflow-x-hidden'>
           <SideBar />
           {/* <div className="border border-black container p-0 m-0 h-100 bg-info w-auto position-sticky top-0 left-0">
             bye
@@ -40,7 +40,7 @@ export default function RootLayout({
           {/* <div className="border border-black container p-0 m-0 h-100 bg-danger min-vw-100 d-flex">
             hello
           </div> */}
-          <main className=' container p-0 m-0 d-flex align-items-center justify-content-center vh-100'>
+          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 d-flex align-items-center justify-content-center vh-100 vw-100'>
             {children}
           </main>
    

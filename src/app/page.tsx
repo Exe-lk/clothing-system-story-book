@@ -41,11 +41,11 @@ export default function Home() {
       <div className='mx-0 h-100'>
         {/* <SideBar/> */}
 
-        <div className='row m-2 p-xxl-2 p-0 justify-content-between w-100 bg-danger' >
+        <div className='row m-2 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-between justify-content-md-between justify-content-xxl-between justify-content-xl-between p-0  w-100' >
           <Header />
         </div>
 
-        <div className='row m-2 ' style={{height:'70px'}}>
+        <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' style={{borderBottom:'3px solid #00000029;'}}>
           <NavBar />
         </div>
 

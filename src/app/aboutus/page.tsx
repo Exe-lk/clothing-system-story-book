@@ -15,7 +15,7 @@ const page = () => {
         <Header />
       </div>
 
-      <div className='row m-2 '>
+      <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none'>
         <NavBar />
       </div>
 

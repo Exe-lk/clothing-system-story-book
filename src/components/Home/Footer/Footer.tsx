@@ -75,7 +75,7 @@ const Footer = () => {
     // </div>
 
     <>
-      <div className='col m-1 p-1 d-flex flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
+      <div className='col m-1 p-1 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row ing m-1 p-1 w-100 h-100 d-flex align-items-center justify-content-around">
 
           <div className='col-4 m-1 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center'>
@@ -123,6 +123,53 @@ const Footer = () => {
           <div className='text-center pt-3' style={{borderTop:'1px solid rgba(0, 0, 0, 0.15)'}}>
             <p className='m-auto'>© Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK </p>
           </div>
+        </div>
+      </div>
+      
+      <div className='col m-1 p-1 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none' style={{background:'rgba(171, 93, 2, 0.06)'}}>
+        <div className="row mx-0 bg-danger">
+          <div className="col-12 bg-secondary d-flex flex-column text-uppercase">
+            <p className='text-center fw-bold'>navigate</p> 
+            <a href="#" className='btn'>Home</a>
+            <a href="#" className='btn'>woman</a>
+            <a href="#" className='btn'>men</a>
+            <a href="#" className='btn'>kids</a>
+            <a href="#" className='btn'>about us</a>
+            <a href="#" className='btn'>contact us</a>
+          </div>
+        </div>
+        <div className="row mx-0 bg-danger">
+          <div className="col-6 bg-warning ">
+            <div className='row  mx-0 ' >
+              <p className='py-2 text-uppercase text-center'>socialize</p>
+              <div className='d-flex align-items-center justify-content-evenly'>
+                <FaFacebookF />
+                <FaTiktok/>
+                <AiFillInstagram/>
+              </div>
+            </div>
+            <div className='row w-100  mx-1 mt-3 d-flex flex-column align-items-center justify-content-center text-uppercase text-center'>
+              <p className=''>drop by</p>
+              <p className=''>LORUM IPSUM, LORUM,<br/> Sri Lanka, 10100</p>
+            </div>
+          </div>
+          <div className="col-6 bg-warning ">
+            <div className='row mx-0 text-uppercase text-center' >
+              <p className='py-2'>SEND AN EMAIL OR CALL</p>
+              <div className='d-flex align-items-center justify-content-evenly'>
+                <IoMailOpen/>
+                <IoMdCall/>
+              </div>
+            </div>
+            {/* style={{borderLeft:'1px solid rgba(0, 0, 0, 0.15)'}} */}
+            <div className='row w-100 mx-1 mt-3 d-flex flex-column align-items-center justify-content-center text-uppercase text-center' >
+              <p className='h1 text-uppercase fs-2 py-2'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
+              <p className='text-capitalize'>smiles.. colors.. memories..</p>
+            </div>
+          </div>
+        </div>
+        <div className="row  mx-0  w-100 bg-danger fs-7 text-center d-flex justify-content-center align-items-center" style={{borderTop:'1px solid rgba(0, 0, 0, 0.15)'}}>
+          © Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK
         </div>
       </div>
     </>
