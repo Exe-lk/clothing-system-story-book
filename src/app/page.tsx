@@ -62,7 +62,7 @@ export default function Home() {
           <NewArrivals />
         </div>
 
-        <div className='row mx-2 my-3' style={{height:'600px'}}>
+        <div className='row my-3' >
           <Discounts />
         </div>
 
