@@ -11,7 +11,7 @@ export const newArrivalsList:any = [
   {'id': one, 'favourite': true, 'des':'Womens graphic printed t-shirt', 'price':'Rs 1700.00'},
   {'id': two, 'favourite': false, 'des':'Givo long sleeve dress', 'price':'Rs 2700.00' },
   {'id': three, 'favourite': false, 'des':'Women jeans', 'price':'Rs 3700.00'},
-  {'id': four, 'favourite': true, 'des':'Givo long sleeve dress', 'price':'Rs 2500.00 Rs 1700.00'},
+  {'id': four, 'favourite': true, 'des':'Givo long sleeve dress', 'price':'Rs 2500.00 '},
   {'id': five, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
   {'id': six, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
   {'id': seven, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},

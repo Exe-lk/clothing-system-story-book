@@ -49,16 +49,16 @@ export default function Home() {
           <NavBar />
         </div>
 
-        <div className="row m-2 position-relative">
+        <div className="row m-0 position-relative">
             <Banner />
         </div>
       
 
-        <div className='row m-2 p-2'>
+        <div className='row my-xxl-5 my-3 mx-0 p-0'>
           <ShopByCategories />
         </div>
 
-        <div className='card position-relative row bg-white m-2 p-2 border-0' style={{height:'1300px'}}>
+        <div className='row my-3 d-flex align-items-center justify-content-center justify-content-sm-center justify-content-md-around'>
           <NewArrivals />
         </div>
 

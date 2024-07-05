@@ -1,14 +1,39 @@
 @import '../../../app/globals';
 
-.newArrivals{
-  div{
-    .notFav,
-    .fav{
-      // position: absolute !important;
-      // top: 0 !important; 
-      // right: 0 !important;
-      // transform: translate(-50%, -50%) !important;
+.imageContainer{
+  .heart{
+    top: 3% !important;
+    right: 5% !important;
+
+  }
+}
+
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .imageContainer{
+    height: 300px;
+    .image{
+      width: 100% !important;
+      height: 247px;
     }
   }
 }
 
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .imageContainer{
+    height: 300px;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+  .imageContainer{
+    height: 350px !important;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+  }
+}

@@ -39,10 +39,10 @@ const Banner = () => {
       <div className='col-12 px-0 h-100 w-100 z-1 position-absolute top-0 left-0 p-xxl-5 p-xl-4 p-lg-3 p-md-3 p-sm-3 px-3 mx-xxl-5 mx-xl-3 mx-lg-3 mx-md-3 mx-sm-1 my-1 my-lg-5'>
 
         <p className=' text-capitalize fw-bold mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-2 mt-5 fs-xxl-1 fs-xl-1 fs-lg-1 fs-md-3 fs-sm-4 fs-6' style={{color:'#AB5D02'}}>explore our most recent <br/> assortment</p>
-        <p className='mb-5 fw-normal fs-xxl-1 fs-xl-2 fs-lg-3 fs-md-4 fs-sm-6 fs-7'>Our curated collection blends comfort with style, ensuring <br/>you make a statement effortlessly</p>
+        <p className='mb-5 fw-normal fs-xxl-1 fs-xl-2 fs-lg-3 fs-md-4 fs-sm-7 fs-8'>Our curated collection blends comfort with style, ensuring <br/>you make a statement effortlessly</p>
       </div>
       <div className='col-12 h-100 px-0 z-0'>
-        <Image src={banner} alt="banner" className='img-fluid p-2 object-fit-cover' style={{backgroundSize:'cover'}}/>
+        <Image src={banner} alt="banner" className='img-fluid object-fit-cover' style={{backgroundSize:'cover'}}/>
       </div>
     </>
   )
