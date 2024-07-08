@@ -40,9 +40,6 @@ const KidsPage = () => {
     //   </div>
 
     <div className={`${styles.mensContainer} ${theme==='dark'?styles.darkMensContainer:''} container-fluid h-100`}>
-      <div className='row m-2 p-2 justify-content-between' style={{height:'110px'}}>
-        <Header />
-      </div>
 
       <div className='row m-2 ' style={{height:'70px'}}>
         <NavBar />

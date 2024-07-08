@@ -171,11 +171,7 @@ const MensItem = () => {
           item.itemId==searchParams.get('id') && item.name==searchParams.get('name')? (
 
             <div className={`${styles.itemContainer} ${theme==='dark'?styles.darkItemContainer:''} container-fluid h-100`} key={key}>
-              
-              <div className='row m-2 p-2 justify-content-between w-100' style={{height:'110px'}}>
-                <Header />
-              </div>
-
+            
               <div className='row m-2 ' style={{height:'70px'}}>
                 <NavBar />
               </div>

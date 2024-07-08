@@ -6,6 +6,10 @@
   justify-content: space-between;
 } */
 
+:root {
+  --animation-curve: cubic-bezier(1, 0, 0, 1);
+}
+
 body{
   overflow-x: clip;
 }

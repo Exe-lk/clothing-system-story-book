@@ -11,9 +11,6 @@ import  styles from './page.module.scss';
 const page = () => {
   return (
     <div className={`${styles.mainContainer} container-fluid h-100  w-100 m-0 p-0`}>
-      <div className="row w-100 p-1 mx-0">
-        <Header />
-      </div>
       <div className="row  w-100 p-1 mx-0">
         <NavBar />
       </div>

@@ -41,9 +41,9 @@ export default function Home() {
       <div className='mx-0 h-100'>
         {/* <SideBar/> */}
 
-        <div className='row m-2 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-between justify-content-md-between justify-content-xxl-between justify-content-xl-between p-0  w-100' >
+        {/* <div className='row bg-white m-0 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-between justify-content-md-between justify-content-xxl-between justify-content-xl-between p-0  w-100 position-fixed top-0' style={{zIndex:1000}}>
           <Header />
-        </div>
+        </div> */}
 
         <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' style={{borderBottom:'3px solid #00000029;'}}>
           <NavBar />

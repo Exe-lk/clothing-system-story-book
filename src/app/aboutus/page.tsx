@@ -10,10 +10,6 @@ import Footer from '@/components/Home/Footer/Footer';
 const page = () => {
   return (
     <div className={`${styles.mainContainer} container-fluid h-100 w-100 m-0 p-0`} >
-      
-      <div className='row m-2 p-2 justify-content-between' >
-        <Header />
-      </div>
 
       <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none'>
         <NavBar />

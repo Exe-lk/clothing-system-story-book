@@ -14,6 +14,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import SideBar from '@/components/Side Bar/SideBar';
 import './global.css';
 import { useEffect } from "react";
+import Header from "@/components/Home/Header/Header";
 // import styles from '../components/Side Bar/SideBar.module.scss';
 const metadata: Metadata = {
   title: "Create Next App",
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <ThemeContext.Provider value={{theme, toggleTheme:()=>setTheme(theme === 'light'?'dark':'light')}}>
       <html lang="en">
+      
         <body className='container-fluid d-flex justify-content-end mx-0 px-0 overflow-x-hidden'>
           <SideBar />
           {/* <div className="border border-black container p-0 m-0 h-100 bg-info w-auto position-sticky top-0 left-0">
@@ -40,8 +42,13 @@ export default function RootLayout({
           {/* <div className="border border-black container p-0 m-0 h-100 bg-danger min-vw-100 d-flex">
             hello
           </div> */}
-          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 d-flex align-items-center justify-content-center vh-100 vw-100'>
-            {children}
+          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 overflow-y-scroll'>
+            <header className=' ms-0 ps-0 row bg-white m-0 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-between justify-content-md-between justify-content-xxl-between justify-content-xl-between p-0 w-100 position-fixed top-0  bg-white w-100' style={{zIndex:1000,height:'65px'}}>
+              <Header />
+            </header>
+            <div style={{paddingTop:'65px'}}>
+              {children}
+            </div>
           </main>
    
         </body>
