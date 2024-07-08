@@ -28,11 +28,10 @@ const InstaLove = () => {
     //   </div>
     // </div>
     <>
-      <div className='col-12 bg-white mb-1 text-center d-flex flex-column align-items-center justify-content-center' style={{height:'115px'}}>
-        <p className='h1 text-uppercase'>instalove</p>
-        <p className='h5 fw-normal text-capitalize mb-4'><em>@fashionnova</em> </p>
-      </div>
-      <div className='col-12 mx-auto d-flex align-items-center justify-content-center ' style={{width:'100%',height:'300px',background:'#F5F5F5'}}>
+      <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>instalove</h1>
+      <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'><em>@fashionnova</em> </p>
+
+      <div className='col-12 mx-auto d-xxl-flex d-xl-flex d-lg-flex d-none align-items-center justify-content-center ' style={{width:'100%',height:'300px',background:'#F5F5F5'}}>
           {
             InstaLoversList.map((item:any,key:any)=>{
               return(

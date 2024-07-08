@@ -66,7 +66,7 @@ export default function Home() {
           <Discounts />
         </div>
 
-        <div className='row m-2 p-1' style={{height:'500px'}}>
+        <div className='row my-3'>
           <InstaLove />
         </div>
 
