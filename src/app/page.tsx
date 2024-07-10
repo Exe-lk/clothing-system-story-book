@@ -58,7 +58,7 @@ export default function Home() {
           <ShopByCategories />
         </div>
 
-        <div className='row my-3 d-flex align-items-center justify-content-center justify-content-sm-center justify-content-md-around'>
+        <div className='row my-3 d-flex align-items-center justify-content-center justify-content-sm-center justify-content-md-around h-100'>
           <NewArrivals />
         </div>
 

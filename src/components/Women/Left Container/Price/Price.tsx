@@ -3,13 +3,8 @@ import React from 'react';
 
 const Price = () => {
   return (
-    // <div className={styles.price}>
-    //   <p className={styles.priceTitle}>price</p>
-    //   <input type="range" className={styles.range}/>
-    //   <p className={styles.priceFilter}>rs : <span><input type="text" name="" id="" /> - <input type="text" name="" id="" /></span></p>
-    // </div>
 
-    <div className='row text-capitalize p-1 m-1 bg-info'>
+    <div className='row text-capitalize p-1 m-1 '>
       <div className="col-12">
         <p className='text-capitalize fs-xxl-5 fs-xl-6 fs-lg-6 fw-bold'>price</p>
         <div className='px-4 py-1'>

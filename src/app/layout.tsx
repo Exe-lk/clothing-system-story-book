@@ -38,12 +38,6 @@ export default function RootLayout({
           <aside className="d-xxl-block d-xl-block d-lg-block d-none" style={{width:'70px'}}>
             <SideBar />
           </aside>
-          {/* <div className="border border-black container p-0 m-0 h-100 bg-info w-auto position-sticky top-0 left-0">
-            bye
-          </div> */}
-          {/* <div className="border border-black container p-0 m-0 h-100 bg-danger min-vw-100 d-flex">
-            hello
-          </div> */}
             <header className='container-fluid ms-0 ps-0 row bg-white m-0 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-around justify-content-md-between justify-content-xxl-around justify-content-xl-around p-0 w-100 position-fixed top-0 bg-white w-100' style={{zIndex:1000,height:'65px'}}>
               <Header />
             </header>

@@ -13,22 +13,6 @@ import { BiHeartCircle } from "react-icons/bi";
 const ShoppingItems = () => {
   const {theme} = useTheme();
   return (
-    // <div className={`${styles.shoppingItems} ${theme==='dark'?styles.darkShoppingItems:''}`}>
-    //   {
-    //       shoppingList.map((item:any, key:any)=>{
-    //         return(
-    //           <div className={styles.item}>
-    //             <Link href={{pathname: "/women/#", query: {id: item.id, name: item.des}}}  className={styles.link}>
-    //               <Image src={item.name} alt='item' className={styles.image}/>
-    //               {!item.favourite?(<Image src={notFav} alt='notFav' className={styles.notFav} />):(<FaHeart className={styles.fav}/>)}        
-    //               <p>{item.des}</p>
-    //               <p>{item.price}</p>
-    //             </Link>
-    //           </div>
-    //         )
-    //       })
-    //     }
-    // </div>
 
     <div className="row mx-0 ">
         {

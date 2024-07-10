@@ -46,7 +46,7 @@ const NewArrivals = () => {
                   <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
                     <Image src={item.id} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0`}/>
                     {!item.favourite?(<i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>):(<i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>)}  
-                    <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-3`} style={{background:'rgba(171, 93, 2, 0.66)'}}>
+                    <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2`} style={{background:'rgba(171, 93, 2, 0.66)'}}>
                       <i className="bi bi-cart3 w-auto ps-0 pe-2 fs-xxl-6"></i>
                       <p className='w-auto p-0 m-0 text-capitalize fs-xxl-6'>add to cart</p>
                     </div>      
