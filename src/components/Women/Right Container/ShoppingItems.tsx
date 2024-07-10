@@ -19,7 +19,7 @@ const ShoppingItems = () => {
           shoppingList.map((item:any, key:any)=>{
             return(
               
-                <div className={`${styles.imageContainer} col-4 position-relative d-flex flex-column align-items-center text-capitalize my-md-3 my-sm-2 my-2`} key={key}>
+                <div className={`${styles.imageContainer} col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 position-relative d-flex flex-column align-items-center text-capitalize my-md-3 my-sm-2 my-2`} key={key}>
                   <Link href={{pathname: "/women/#", query: {id: item.id, name: item.des}}} className='text-decoration-none text-black'>
                     <Image src={item.name} alt='item' className='img-fluid'/>
                     {!item.favourite?(<i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0`}></i>):(<i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0`}></i>)}    

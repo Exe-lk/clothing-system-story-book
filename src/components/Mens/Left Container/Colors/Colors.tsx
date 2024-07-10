@@ -7,7 +7,7 @@ import { useTheme } from '@/components/ThemeContext';
 const Colors = () => {
   const {theme} = useTheme();
   return (
-    <div className='row text-capitalize p-1 m-1 '>
+    <div className='row text-capitalize p-1 mx-1 my-3 '>
       <div className="col-12">
         <p className='fs-xxl-5 fs-xl-6 fs-lg-6 fw-bold'>colors</p>
         <div className='d-grid px-4 py-1' style={{gridTemplateColumns: 'auto auto auto auto'}}>

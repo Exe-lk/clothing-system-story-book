@@ -44,7 +44,7 @@ const WomenPage = () => {
           <Price />
         </div>
 
-        <div className="col-3 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column justify-content-evenly bg-warning" style={{background: 'rgba(249, 249, 249, 1)'}}>
+        <div className="col-3 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column justify-content-evenly h-100" style={{background: 'rgba(249, 249, 249, 1)'}}>
           <Heading />
           <Women />
           <Sizes />

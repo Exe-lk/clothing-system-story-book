@@ -4,7 +4,7 @@ import React from 'react';
 const Price = () => {
   return (
 
-    <div className='row text-capitalize p-1 m-1 '>
+    <div className='row text-capitalize p-1 mx-1 my-3 '>
       <div className="col-12">
         <p className='text-capitalize fs-xxl-5 fs-xl-6 fs-lg-6 fw-bold'>price</p>
         <div className='px-4 py-1'>
