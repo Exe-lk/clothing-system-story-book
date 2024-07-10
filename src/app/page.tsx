@@ -45,7 +45,7 @@ export default function Home() {
           <Header />
         </div> */}
 
-        <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' style={{borderBottom:'3px solid #00000029;'}}>
+        <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' >
           <NavBar />
         </div>
 
@@ -70,10 +70,10 @@ export default function Home() {
           <InstaLove />
         </div>
 
-        <div className='row m-2 p-2 justify-content-between' style={{height:'200px'}}>
+        <div className='row my-5 ' style={{background:'#BFBFBF'}}>
           <Subscribe />
         </div>
-        <div className='row m-2' style={{height:'500px'}}>
+        <div className='row m-2'>
           <Footer />
         </div> 
       </div>

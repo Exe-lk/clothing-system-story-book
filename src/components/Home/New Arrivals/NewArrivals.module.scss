@@ -1,25 +1,42 @@
-@import '../../../app/globals';
-
-.imageContainer{
-  .heart{
-    top: 3% !important;
-    right: 5% !important;
-
+.itemContainer{
+  .imageContainer{
+    .heart{
+      top: 3% !important;
+      right: 6% !important;
+    }
+    .addToCart{
+      z-index: 2 !important;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  .itemDes{
+    height: 100px !important;
+    z-index: 99 !important;
   }
 }
 
+.imageContainer:hover .addToCart{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 0.5s ease-in-out;
+}
+
 @media screen and (min-width : 0) and (max-width: 575px) {
-  .imageContainer{
+  .itemContainer{
     height: 300px;
     .image{
       width: 100% !important;
       height: 247px;
     }
+    .itemDes{
+      height: 70px !important;
+    }
   }
 }
 
 @media screen and (min-width : 576px) and (max-width: 767px) {
-  .imageContainer{
+  .itemContainer{
     height: 300px;
     .image{
       width: 100% !important;
@@ -29,11 +46,14 @@
 }
 
 @media screen and (min-width : 768px) and (max-width: 991px) {
-  .imageContainer{
+  .itemContainer{
     height: 350px !important;
     .image{
       width: 100% !important;
       height: 247px;
+    }
+    .itemDes{
+      height: 80px !important;
     }
   }
 }

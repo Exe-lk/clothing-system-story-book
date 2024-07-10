@@ -26,7 +26,7 @@ const Header = () => {
   const { theme } = useTheme();
   return (
     <>
-    <div className='col-3 d-xxl-block d-xl-block d-lg-block d-none rounded rounded-pill px-1' style={{border:'1px solid black'}}>
+    <div className={`${styles.search} col-3 d-xxl-block d-xl-block d-lg-block d-none rounded rounded-pill px-1 mb-1 ms-xxl-4 ms-xl-5 ms-lg-5`} style={{border:'1px solid black'}}>
       <div className="row mx-0 d-flex align-items-center justify-between my-0 py-0">
         <div className="col-9 my-0 py-0">
           <input className="border-0" type="search" placeholder="Search Products..." />
@@ -42,10 +42,10 @@ const Header = () => {
     <div className='col-2 d-xxl-none d-xl-none d-lg-none d-block col-sm-2 col-md-2 m-xxl-auto m-auto p-0 text-center'>
       <NavBar />
     </div>
-    <div className={`${styles.header} col-6 col-sm-6 col-md-6 col-xxl-5 col-xl-5 col-lg-5 d-flex align-items-center justify-content-center text-center`}>
+    <div className={`${styles.header} col-6 col-sm-6 col-md-6 col-xxl-4 col-xl-4 col-lg-3 d-flex align-items-center justify-content-center text-center`}>
       <p className="h1 text-uppercase fs-1 p-o m-0" >fashion<span ><b>nova</b></span></p>
     </div>
-    <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-3 col-3 d-flex align-items-center justify-content-center justify-content-sm-center justify-content-md-center '>
+    <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center justify-content-xxl-end justify-content-xl-end justify-content-sm-center justify-content-md-center '>
       {/* <CiHeart className="pe-2" style={{fontSize:'30px'}}/> */}
       {/* <IoCartOutline className="mx-3 "/> */}
 

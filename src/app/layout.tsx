@@ -34,18 +34,20 @@ export default function RootLayout({
     <ThemeContext.Provider value={{theme, toggleTheme:()=>setTheme(theme === 'light'?'dark':'light')}}>
       <html lang="en">
       
-        <body className='container-fluid d-flex justify-content-end mx-0 px-0 overflow-x-hidden'>
-          <SideBar />
+        <body className='container-fluid d-flex justify-content-center m-0 p-0 overflow-x-hidden'>
+          <aside className="d-xxl-block d-xl-block d-lg-block d-none" style={{width:'70px'}}>
+            <SideBar />
+          </aside>
           {/* <div className="border border-black container p-0 m-0 h-100 bg-info w-auto position-sticky top-0 left-0">
             bye
           </div> */}
           {/* <div className="border border-black container p-0 m-0 h-100 bg-danger min-vw-100 d-flex">
             hello
           </div> */}
-          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 overflow-y-scroll'>
-            <header className=' ms-0 ps-0 row bg-white m-0 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-between justify-content-md-between justify-content-xxl-between justify-content-xl-between p-0 w-100 position-fixed top-0  bg-white w-100' style={{zIndex:1000,height:'65px'}}>
+            <header className='container-fluid ms-0 ps-0 row bg-white m-0 p-xxl-2 d-flex align-items-center justify-content-sm-center justify-content-center justify-content-lg-around justify-content-md-between justify-content-xxl-around justify-content-xl-around p-0 w-100 position-fixed top-0 bg-white w-100' style={{zIndex:1000,height:'65px'}}>
               <Header />
             </header>
+          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 overflow-y-scroll'>
             <div style={{paddingTop:'65px'}}>
               {children}
             </div>

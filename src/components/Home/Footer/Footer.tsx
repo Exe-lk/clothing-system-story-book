@@ -78,8 +78,8 @@ const Footer = () => {
       <div className='col m-1 p-1 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row ing m-1 p-1 w-100 h-100 d-flex align-items-center justify-content-around">
 
-          <div className='col-4 m-1 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center'>
-            <div className='row  m-1 py-2 w-50' style={{borderBottom:'1px solid rgba(0, 0, 0, 0.15)'}}>
+          <div className='col-4 m-1 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center' style={{borderRight:'1px solid #BFBFBF'}}>
+            <div className='row  m-1 py-2 w-50' >
               <p className='py-2'>socialize</p>
               <div className='d-flex align-items-center justify-content-evenly pb-2'>
                 <FaFacebookF />
@@ -87,7 +87,7 @@ const Footer = () => {
                 <AiFillInstagram/>
               </div>
             </div>
-            <div className='row  m-1 py-2 w-50' style={{borderBottom:'1px solid rgba(0, 0, 0, 0.15)'}}>
+            <div className='row  m-1 py-2 w-50' style={{borderBottom:'1px solid #BFBFBF', borderTop:'1px solid #BFBFBF'}}>
               <p className='py-2'>SEND AN EMAIL OR CALL</p>
               <div className='d-flex align-items-center justify-content-evenly pb-2'>
                 <IoMailOpen/>
@@ -99,11 +99,11 @@ const Footer = () => {
               <p className='pb-2'>LORUM IPSUM, LORUM,<br/> Sri Lanka, 10100</p>
             </div>
           </div>
-          <div className='col-3  m-1 p-1 text-center' style={{borderLeft:'1px solid rgba(0, 0, 0, 0.15)'}}>
+          <div className='col-3  m-1 p-1 text-center' >
             <p className='h1 text-uppercase'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
             <p className='text-capitalize'>smiles.. colors.. memories..</p>
           </div>
-          <div className='col-4 m-1 p-1 text-center text-uppercase px-5' style={{borderLeft:'1px solid rgba(0, 0, 0, 0.15)'}}>
+          <div className='col-4 m-1 p-1 text-center text-uppercase px-5 h-100 d-flex flex-column justify-content-center' style={{borderLeft:'1px solid #BFBFBF'}}>
               <p>navigate</p> 
               <div className='text-decoration-none d-flex align-items-center justify-content-between'>
                 <div className='d-flex flex-column align-items-center justify-content-between'>
@@ -168,7 +168,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="row  mx-0  w-100 bg-danger fs-7 text-center d-flex justify-content-center align-items-center" style={{borderTop:'1px solid rgba(0, 0, 0, 0.15)'}}>
+        <div className="row  mx-0  w-100 bg-danger fs-7 text-center d-flex justify-content-center align-items-center" style={{borderTop:'1px solid #BFBFBF'}}>
           © Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK
         </div>
       </div>

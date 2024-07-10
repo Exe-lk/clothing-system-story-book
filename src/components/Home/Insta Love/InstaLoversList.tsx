@@ -1,8 +1,8 @@
-import one from '../../../../public/assets/instaLovers/1.svg'; 
-import two from '../../../../public/assets/instaLovers/2.svg'; 
-import three from '../../../../public/assets/instaLovers/3.svg'; 
-import four from '../../../../public/assets/instaLovers/4.svg'; 
-import five from '../../../../public/assets/instaLovers/5.svg'; 
+import one from '../../../../public/assets/instaLovers/1.jpg'; 
+import two from '../../../../public/assets/instaLovers/2.jpg'; 
+import three from '../../../../public/assets/instaLovers/3.jpg'; 
+import four from '../../../../public/assets/instaLovers/4.jpg'; 
+import five from '../../../../public/assets/instaLovers/5.jpg'; 
 
 const InstaLoversList:any = [
   {'id': one},
