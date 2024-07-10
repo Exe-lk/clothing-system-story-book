@@ -1,62 +1,7 @@
-@import '../../../app/globals';
+.imageContainer{
+  .heart{
+    top: 3% !important;
+    right: 10% !important;
 
-.shoppingItems{
-  height: 1000px;
-  margin: {
-    left: 24px;
-    right: 50px;
-  };
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: 330px 330px 330px ;
-
-  .item{
-    padding: 15px 0 25px 0;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-
-    .link{
-      text-decoration: none;
-      color: #000;
-
-      .fav,
-      .notFav{
-        position: absolute;
-        top: 32px;
-        right: 67px;
-      }
-  
-      .fav{
-        color: #000;
-        background: #FFF;
-        padding: 7px;
-        border-radius: 100%;
-      }
-  
-      p{
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-bottom: 10px;
-        text-align: start;
-      }
-    }
   }
-}
-
-.newArrivals{
-  .content{
-    .item{
-      p:nth-child(2){
-        font-weight: bold; 
-      }
-    }
-  }
-}
-
-// for dark theme
-
-.darkShoppingItems{
-  background: #000;
 }
