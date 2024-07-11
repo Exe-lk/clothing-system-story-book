@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
       
       {/* sidebar for md|sm|xs views */}
-      <div className='col-12 bg-black d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none' style={{background:'rgba(171, 93, 2, 0.06)'}}>
+      <div className='col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row mx-0 ">
           <div className="col-12 d-flex flex-column text-uppercase">
             <p className='text-center fw-bold fs-6 fs-sm-5 fs-md-4'>navigate</p> 

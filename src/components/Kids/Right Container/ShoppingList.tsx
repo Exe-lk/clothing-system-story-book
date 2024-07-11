@@ -1,4 +1,4 @@
-import one from '../../../../public/assets/kids cloths/1.jpg';
+import one from '../../../../public/assets/kids cloths/item1/1.jpg';
 import two from '../../../../public/assets/kids cloths/2.jpg';
 import three from '../../../../public/assets/kids cloths/3.jpg';
 import four from '../../../../public/assets/kids cloths/4.jpg';

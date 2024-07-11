@@ -1,15 +1,15 @@
-import five from '../../public/assets/newArrivals/5.svg';
-import six from '../../public/assets/newArrivals/6.svg'; 
-import seven from '../../public/assets/newArrivals/7.svg'; 
-import eight from '../../public/assets/newArrivals/8.svg'; 
+import three from '../../public/assets/mens cloths/mens relateds/3.jpg';
+import four from '../../public/assets/mens cloths/mens relateds/4.jpg';
+import five from '../../public/assets/mens cloths/mens relateds/5.jpg';
+import six from '../../public/assets/mens cloths/mens relateds/6.jpg'; 
+import seven from '../../public/assets/mens cloths/mens relateds/7.jpg'; 
+import eight from '../../public/assets/mens cloths/mens relateds/8.jpg'; 
 
 export const mensRelatedItemsList:any = [
-  {'id': five, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': six, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': seven, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': eight, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': five, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': six, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': seven, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
-  {'id': eight, 'favourite': false, 'des':'Jobbs over-sized t-shirt', 'price':'Rs 1700.00'},
+  {'id':'item3' ,'name': three, 'favourite': false, 'des':'THE AGNAR NEHRU COAT', 'price':'Rs 1700.00'},
+  {'id':'item4' ,'name': four, 'favourite': false, 'des':'THE KAIVALYA NEHRU JACKET', 'price':'Rs 1700.00'},
+  {'id':'item5' ,'name': five, 'favourite': false, 'des':'THE ASMAANI NEHRU JACKET', 'price':'Rs 1700.00'},
+  {'id':'item6' ,'name': six, 'favourite': false, 'des':'THE SUFIYANA KURTA', 'price':'Rs 1700.00'},
+  {'id':'item7' ,'name': seven, 'favourite': true, 'des':'THE ARNIT KURTA', 'price':'Rs 1700.00'},
+  {'id':'item8' ,'name': eight, 'favourite': false, 'des':'THE LEANDER SAFARI', 'price':'Rs 1700.00'}
 ]

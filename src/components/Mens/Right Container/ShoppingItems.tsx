@@ -7,8 +7,6 @@ import { shoppingList } from './ShoppingList';
 import React from 'react';
 import { useTheme } from '@/components/ThemeContext';
 import Link from 'next/link';
-import { IoHeartCircleSharp } from "react-icons/io5";
-import { BiHeartCircle } from "react-icons/bi";
 import { useRouter } from 'next/navigation';
 
 const ShoppingItems = () => {
