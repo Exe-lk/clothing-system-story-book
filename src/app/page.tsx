@@ -22,22 +22,7 @@ import { useTheme } from '../components/ThemeContext';
 export default function Home() {
   const {theme} = useTheme();
   return (
-      // <div className={`${styles.home} ${theme==='dark' ? styles.darkHome : ''}`}>
-      //   <div className={styles.aside}>
-      //     <SideBar/>
-      //   </div>
-      //   <div className={styles.wrapper}>
-      //     <Header/>
-      //     <NavBar/>
-      //     <Banner/>
-      //     <ShopByCategories/>
-      //     <NewArrivals/>
-      //     <Discounts/>
-      //     <InstaLove/>
-      //     <Subscribe/>
-      //     <Footer/>
-      //   </div>
-      // </div>
+
       <div className='mx-0 h-100'>
         {/* <SideBar/> */}
 
