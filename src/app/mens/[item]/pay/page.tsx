@@ -13,16 +13,17 @@ import cartItem3 from '../../../../../public/assets/kids cloths/2.jpg'
 
 const MensItemPay = () => {
   return (
-    <div className='container-fluname '>
-      <div className="row mx-0 p-1 ">
-        <div className="col-5  p-1 ms-5">
+    <div className='container-fluid '>
+      <div className="row mx-0 p-1 d-xxl-block d-xl-block d-lg-block d-none">
+        <div className="col-5 p-1 ms-5" style={{color:'rgba(171, 93, 2, 1)'}}>
           <MainHeading />
         </div>
       </div>
-      <div className="row d-sm-block d-block d-xxl-flex d-xl-flex d-lg-flex d-md-flex mx-0 info p-1 h-100 d-flex justify-content-evenly">
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12  p-1 " style={{border:'2px solid rgba(0, 0, 0, 0.1)'}}>
+      
+      <div className="row d-sm-block d-block d-xxl-flex d-xl-flex d-lg-flex d-md-block mx-0 info p-1 h-100 d-flex justify-content-evenly">
+        <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12  p-1 " style={{border:'2px solid rgba(0, 0, 0, 0.1)'}}>
           <form className="row  mx-0 p-2">
-            <h5 className='text-capitalize p-0'>delivery details</h5>
+            <h5 className='text-capitalize p-0 d-block w-auto m-0 fs-xxl-4 fs-xl-4 fs-lg-4 fs-md-4 fs-sm-5 fs-5 fw-bold' >delivery details</h5><h5 className='text-uppercase fs-5 fs-sm-5 fs-md-5 p-0 d-md-block d-sm-block d-block d-xxl-none d-xl-none d-lg-none w-auto ms-auto me-0' style={{color:'rgba(171, 93, 2, 1)'}}>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></h5>
             <hr />
             <div className='d-flex align-items-center justify-content-between mt-2 mb-3'>
               <div className='col-5'>
@@ -57,14 +58,14 @@ const MensItemPay = () => {
             
           </form>
           <div className="row mx-0 p-2 my-2 ">
-            <h5 className='text-capitalize p-0'>Payment Method</h5>
-            <p className='p-0 fs-6'>All transactions are secure and encrypted.</p>
+            <h5 className='text-capitalize p-0 fs-xxl-4 fs-xl-4 fs-lg-4 fs-md-4 fs-sm-5 fs-5 fw-bold'>Payment Method</h5>
+            <p className='p-0 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-'>All transactions are secure and encrypted.</p>
 
             <form className="col d-flex flex-column align-items-start justify-content-between rounded-1" style={{background:'rgba(246, 246, 246, 9)'}}>
               <div className=' d-flex flex-column align-items-start justify-content-between w-100 border-bottom border-2 py-3'>
                 <div className='d-flex align-items-center justify-content-between'>
                   <input type="radio" id='radioCC' name="payment" className='me-3'/>
-                  <label htmlFor='radioCC' className='fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-5 fs-sm-6 fs-xs-6'>Credit Card <p className='p-0 m-0 fs-6 form-label'>We accept all major credit cards.</p></label>
+                  <label htmlFor='radioCC' className='fs-5'>Credit Card <p className='p-0 m-0 fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6 form-label'>We accept all major credit cards.</p></label>
                 </div>
                 
                 <div className='row ps-4 mt-2 d-flex align-items-center justify-content-center'>
@@ -92,20 +93,22 @@ const MensItemPay = () => {
 
               <div className=' d-flex align-items-center justify-content-start w-100 border-bottom border-2 py-3'>
                 <input id='radioCash' type="radio" name="payment" className='me-3' />
-                <label htmlFor='radioCash' className='fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-5 fs-sm-6 fs-xs-6'>Cash on delivery <p className='p-0 m-0 fs-6'>Pay with cash upon delivery.</p></label>
+                <label htmlFor='radioCash' className='fs-5'>Cash on delivery <p className='p-0 m-0 fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6'>Pay with cash upon delivery.</p></label>
               </div>
 
               <div className=' d-flex align-items-center justify-content-between py-3'>
                 <input id='radioPayPal' type="radio" name="payment" className='me-3'/>
-                <label htmlFor='radioPayPal' className='fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-5 fs-sm-6 fs-xs-6'>Paypal</label>
+                <label htmlFor='radioPayPal' className='fs-5'>Paypal</label>
               </div>
               
             </form>
           </div>
-          <button className='btn rounded-1 text-uppercase d-block me-0 ms-auto text-white fs-7' style={{background:'rgba(171, 93, 2, 1)'}}>pay now</button>
+          <div className="row mx-0 d-grid">
+            <button className='btn  rounded-1 text-uppercase  me-0 ms-auto text-white fw-bold fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-6 fs-xxl-6' style={{background:'rgba(171, 93, 2, 1)'}}>pay now</button>
+          </div>
         </div>
-        <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 p-3 fs-7" style={{border:'2px solid rgba(0, 0, 0, 0.1)'}}>
-          <h5 className='text-capitalize p-0'>order summery</h5>
+        <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 p-3 fs-7" style={{border:'2px solid rgba(0, 0, 0, 0.1)'}}>
+          <h5 className='text-capitalize p-0 fs-xxl-4 fs-xl-4 fs-lg-4 fs-md-4 fs-sm-5 fs-5 fw-bold'>order summery</h5>
 
           <div className="row  d-flex justify-content-evenly my-3">
             <div className="col-3 ">
@@ -159,18 +162,45 @@ const MensItemPay = () => {
           </div>
 
           <div className="row info d-flex align-items-center justify-content-between ">
-            <div className="col-5 ">
-              <h6 className='fw-bold'>Subtotal <span style={{color:'rgba(128, 125, 126, 1)'}}>( 3 items )</span> </h6>
-              <h6 className='fw-bold'>Savings </h6>
-              <h6 className='py-1 fw-bold'>Shipping </h6>
-              <h6 className='py-2 fw-bold'>Total </h6>
+            <div className="col-12">
+
+              <div className="row mx-0">
+                <div className="col-7">
+                  <h6 className='fw-bold ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>Subtotal <span style={{color:'rgba(128, 125, 126, 1)'}}>( 3 items )</span> </h6>
+                </div>
+                <div className="col-5 col-md-3 ms-md-3">
+                  <h6 className='fw-bold ps-md-5  m-auto text-center fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5' >8000.00</h6>
+                </div>
+              </div>
+
+              <div className="row mx-0">
+                <div className="col-7">
+                  <h6 className='fw-bold ps-md-5 ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>Savings </h6>
+                </div>
+                <div className="col-5 col-md-3 ms-md-3 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5">
+                  <h6 className='fw-bold ps-md-5 m-auto text-center'>1000.00</h6>
+                </div>
+              </div>
+
+              <div className="row mx-0">
+                <div className="col-7">
+                  <h6 className='py-1 fw-bold ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>Shipping </h6>
+                </div>
+                <div className="col-5 col-md-3 ms-md-3 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5">
+                  <h6 className='py-1 fw-bold ps-md-5 m-auto text-center'>450.00</h6>
+                </div>
+              </div>
+
+              <div className="row mx-0">
+                <div className="col-7">
+                  <h6 className='py-2 fw-bold ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5' style={{color:'rgba(171, 93, 2, 1)'}}>Total </h6>
+                </div>
+                <div className="col-5 col-md-3 ms-md-3 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5">
+                  <h6 className='py-2 fw-bold ps-md-5 m-auto text-center' style={{color:'rgba(171, 93, 2, 1)'}}>6750.00</h6>
+                </div>
+              </div>
+
             </div>
-            <div className="col-4  d-flex flex-column align-items-center">
-              <h6 className='fw-bold'>8000.00</h6>
-              <h6 className='fw-bold'>1000.00</h6>
-              <h6 className='py-1 fw-bold'>450.00</h6>
-              <h6 className='py-2 fw-bold'>6750.00</h6>
-            </div> 
           </div>
         </div>
       </div>
