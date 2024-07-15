@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import styles from './page.module.scss';
-import React, {use, useState} from 'react';
+import React, {useState} from 'react';
 import Header from '@/components/Home/Header/Header';
 import NavBar from '@/components/Home/NavBar/NavBar';
 import Path from '@/components/Mens/Page Path/Path';

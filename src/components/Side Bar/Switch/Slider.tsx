@@ -10,11 +10,11 @@ const Slider = () => {
 
   return (
     <>
-    <label className={styles.switch}>
+    {/* <label className={styles.switch}>
       <input type="checkbox" />
       <span className={`${styles.slider} ${styles.round}`}></span>
     </label>
-    <span className='ms-4'>Documentation</span>
+    <span className='ms-4'>Documentation</span> */}
     </>
   )
 }

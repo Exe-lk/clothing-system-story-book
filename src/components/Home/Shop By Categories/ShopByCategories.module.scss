@@ -1,324 +1,3 @@
-// @import '../../../app/globals';
-// @mixin category-heading{
-//   text-align: start;
-//   @include my-font;
-//   padding-left: 30px;
-//   font: {
-//     size: 25px;
-//     weight: 600;
-//   }
-// }
-// @mixin category-list{
-//   list-style: none;
-//   @include my-font;
-//   padding-left: 30px;
-//   text-transform: capitalize;
-//   li{
-//     padding: 5px 0;
-//   }
-// }
-// @mixin category-show-more{
-//   color: #AB5D02;
-//   font-weight: 600;
-//   position: absolute;
-//   left: 30px;
-//   padding: 0 !important;
-//   margin: 0;
-//   @include my-button;
-//   background-color: transparent;
-//   border: none;
-//   .rightArrow2{
-//     cursor: pointer;
-//     font-weight: 600;
-//     padding-left: 5px;
-//   } 
-// }
-
-// .shopByCategories{
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .shopByCategories{
-//   h1{
-//     @include my-font;
-//     @include sub-headings;
-//   }
-//   p{
-//     @include my-font;
-//     @include sub-paras;
-//   }
-//   .content{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100%;
-//     height: 500px;
-
-//     .left{
-//       width: 100%;
-//       height: 500px;
-//       position: relative;
-//       background-color: rgba(249, 244, 240, 1);
-//       margin: {
-//         right: 10px;
-//         left: 70px;
-//       }  
-//       border-radius: 10px;
-//       border-bottom-right-radius: 0;
-
-//       .heading{
-//         @include category-heading;
-//         padding-bottom: 8px;
-//       }
-
-//       ul{
-//         @include category-list;
-//       }
-      
-//       .showMore{
-//         @include category-show-more;
-//         bottom: 30px;
-//       }
-
-//       .icon1{
-//         position: absolute;
-//         bottom: 0;
-//         right: -60px;
-//         width: 450px;
-//         height: 400px;
-//       }
-
-//     }
-
-//     .right{
-//       display: flex;
-//       height: 500px;
-//       width: 100%;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       margin: {
-//         left: 10px;
-//         right: 50px;
-//       }
-      
-
-//       .top{
-//         width: 100%;
-//         height: 50%;
-//         background-color: rgba(249, 244, 240, 1);
-//         margin-bottom: 10px;
-//         border-radius: 10px;
-//         position: relative;
-
-//         .heading{
-//           @include category-heading;
-//           padding-bottom: 0;
-//           margin-block-end: 0;
-//         }
-
-//         ul{
-//           @include category-list;
-//         }
-
-//         .showMore{
-//           @include category-show-more;
-//           bottom: 15px;
-//         }
-
-//         .icon2{
-//           position: absolute;
-//           bottom: 0;
-//           right: -120px;
-//           width: 10x;
-//           height: 400px;
-//         }
-//       }
-
-//       .bottom{
-//         width: 100%;
-//         height: 50%;
-//         background-color: rgba(249, 244, 240, 1);
-//         margin-top: 10px;
-//         border-radius: 10px;
-//         position: relative;
-
-//         .heading{
-//           @include category-heading;
-//           padding-bottom: 0;
-//           margin-block-end: 0;
-//         }
-//         ul{
-//           @include category-list;
-//         }
-//         .showMore{
-//           @include category-show-more;
-//           bottom: 15px;
-//         }
-//         .icon3{
-//           position: absolute;
-//           bottom: -11px;
-//           right: -200px;
-//           width: 510px;
-//           height: 220px;
-//         }
-//       }
-//     }
-//   }
-
-// }
-
-// // for dark theme
-
-// .darkShopByCategories{
-//   display: flex;
-//   flex-direction: column;
-//   background: #000;
-// }
-
-// .darkShopByCategories{
-//   h1{
-//     @include my-font;
-//     @include sub-headings;
-//     color: #FFF;
-//     background: #000;
-//   }
-//   p{
-//     @include my-font;
-//     @include sub-paras;
-//     color: #FFF;
-//     background: #000;
-//   }
-//   .content{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100%;
-//     height: 500px;
-
-//     .left{
-//       width: 100%;
-//       height: 500px;
-//       position: relative;
-//       background-color: rgba(249, 244, 240, 1);
-//       margin: {
-//         right: 10px;
-//         left: 70px;
-//       }  
-//       border-radius: 10px;
-//       border-bottom-right-radius: 0;
-//       background: #000;
-
-//       .heading{
-//         @include category-heading;
-//         padding-bottom: 8px;
-//         color: #FFF;
-//       }
-
-//       ul{
-//         @include category-list;
-//         color: #FFF;
-//       }
-      
-//       .showMore{
-//         @include category-show-more;
-//         bottom: 30px;
-//       }
-
-//       .icon1{
-//         position: absolute;
-//         bottom: 0;
-//         right: -60px;
-//         width: 450px;
-//         height: 400px;
-//       }
-
-//     }
-
-//     .right{
-//       display: flex;
-//       height: 500px;
-//       width: 100%;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       margin: {
-//         left: 10px;
-//         right: 50px;
-//       }
-      
-
-//       .top{
-//         width: 100%;
-//         height: 50%;
-//         background-color: rgba(249, 244, 240, 1);
-//         margin-bottom: 10px;
-//         border-radius: 10px;
-//         position: relative;
-//         background: #000;
-
-//         .heading{
-//           @include category-heading;
-//           padding-bottom: 0;
-//           margin-block-end: 0;
-//           color: #FFF;
-//         }
-
-//         ul{
-//           @include category-list;
-//           color: #FFF;
-//         }
-
-//         .showMore{
-//           @include category-show-more;
-//           bottom: 15px;
-//         }
-
-//         .icon2{
-//           position: absolute;
-//           bottom: 0;
-//           right: -120px;
-//           width: 10x;
-//           height: 400px;
-//         }
-//       }
-
-//       .bottom{
-//         width: 100%;
-//         height: 50%;
-//         background-color: rgba(249, 244, 240, 1);
-//         margin-top: 10px;
-//         border-radius: 10px;
-//         position: relative;
-//         background: #000;
-
-//         .heading{
-//           @include category-heading;
-//           padding-bottom: 0;
-//           margin-block-end: 0;
-//           color: #FFF;
-//         }
-//         ul{
-//           @include category-list;
-//           color: #FFF;
-//         }
-//         .showMore{
-//           @include category-show-more;
-//           bottom: 15px;
-//         }
-//         .icon3{
-//           position: absolute;
-//           bottom: -11px;
-//           right: -200px;
-//           width: 510px;
-//           height: 220px;
-//         }
-//       }
-//     }
-//   }
-
-// }
-
-
 @media screen and (min-width : 0) and (max-width: 575px) {
   .image1{
     img{
@@ -382,4 +61,391 @@
   }
 }
 
+@media screen and (min-width : 991px) and (max-width: 1200px) {
+  .flipCardContainer{
+    width: 95%;
+    height: 380px;
+  }
 
+  .figcaption {
+    display: block;
+    width: auto;
+    margin-top: 12%;
+    padding: 8px 22px;
+    transform: translate(-50%, -50%) rotate(-17deg);
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-align: right;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    color: var(--white-1);
+  }
+
+  .cardFront .imgBg::before {
+    content: "";
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-17deg);
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+    transition: .1s;
+  }
+}
+
+@media screen and (min-width : 1201px) and (max-width: 1400px) {
+
+  .flipCardContainer{
+    width: 95%;
+    height: 500px;
+  }
+
+  .figcaption {
+    display: block;
+    width: auto;
+    margin-top: 12%;
+    padding: 8px 22px;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-align: right;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    color: var(--white-1);
+  }
+
+  .cardFront .imgBg::before {
+    content: "";
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+    transition: .1s;
+  }
+}
+
+@media screen and (min-width : 1400px) and (max-width: 1600px) {
+  .flipCardContainer{
+    width: 95%;
+    height: 550px;
+  }
+
+  .figcaption {
+    display: block;
+    width: auto;
+    margin-top: 12%;
+    padding: 8px 22px;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-align: right;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    color: var(--white-1);
+  }
+
+  .cardFront .imgBg::before {
+    content: "";
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+    transition: .1s;
+  }
+}
+
+.flipCardContainer {
+  --hue: 150;
+  --primary: hsl(var(--hue), 50%, 50%);
+  --white-1: hsl(0, 0%, 90%);
+  --white-2: hsl(0, 0%, 80%);
+  --dark: hsl(var(--hue), 25%, 10%);
+  --grey: hsl(0, 0%, 50%);
+  perspective: 1000px;
+}
+
+/* .flipCard */
+.flipCard {
+  width: inherit;
+  height: inherit;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
+}
+
+/* hover and focus-within states */
+.flipCardContainer:hover .flipCard,
+.flipCardContainer:focus-within .flipCard {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.cardFront,
+.cardBack {
+  width: 100%;
+  height: 100%;
+  background: var(--dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .cardFront */
+.cardFront {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* .cardBack */
+.cardBack {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* .figure */
+.figure {
+  z-index: -1;
+}
+
+/* .figure, .imgBg */
+.figure,
+.imgBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* .imgBg */
+.imgBg {
+  background: hsla(var(--hue), 25%, 10%, .5);
+}
+
+.cardFront .imgBg {
+  clip-path: polygon(0 60%, 100% 40%, 100% 60%, 0 80%);
+  border-top: 1px solid #FFF;
+  
+}
+
+
+
+.cardBack .imgBg {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+}
+
+/* hover state */
+.flipCardContainer:hover .cardFront .imgBg::before {
+  width: 6px;
+  border-left-color: var(--primary);
+  border-right-color: var(--primary);
+}
+
+.cardBack{
+
+  ul {
+  
+    list-style: none;
+    color: var(--white-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* li */
+  li {
+    width: 100%;
+    margin-top: 12px;
+    padding-bottom: 12px;;
+    text-align: center;
+    position: relative;
+  }
+  li:nth-child(2n) {
+    color: var(--white-2);
+  }
+  
+  li:not(:last-child)::after {
+    content: "";
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 1px;
+  
+    background: currentColor;
+    opacity: .2;
+  }
+}
+
+
+.cardBack{
+  
+  .button {
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--white-1);
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    border: 1px solid var(--grey);
+    border-radius: 1000px;
+    background: transparent;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .button:hover,
+  .button:focus {
+    // color: var(--primary);
+    background: #AB5D02;
+  }
+  
+  .button:active {
+    transform: translate(2px);
+  }
+}
+
+/* .designContainer */
+.designContainer {
+  --tr: 90;
+  --op: .5;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+
+/* .design */
+.design {
+  display: block;
+
+  background: var(--grey);
+  position: absolute;
+
+  opacity: var(--op);
+  transition: .3s;
+}
+
+.design1,
+.design2,
+.design3,
+.design4 {
+  width: 1px;
+  height: 100%;
+}
+
+.design1,
+.design2 {
+  top: 0;
+  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%))
+}
+
+.design1 {
+  left: 20%;
+}
+
+.design2 {
+  left: 80%;
+}
+
+.design3,
+.design4 {
+  bottom: 0;
+  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design3 {
+  left: 24%;
+}
+
+.design4 {
+  left: 76%;
+}
+
+.design5,
+.design6,
+.design7,
+.design8 {
+  width: 100%;
+  height: 1px;
+}
+
+.design5,
+.design6 {
+  left: 0;
+  transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+}
+
+.design5 {
+  top: 41%;
+}
+
+.design6 {
+  top: 59%;
+}
+
+.design7,
+.design8 {
+  right: 0;
+  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design7 {
+  top: 44%;
+}
+
+.design8 {
+  top: 56%;
+}
+
+/* states */
+.button:hover+.designContainer,
+.button:active+.designContainer,
+.button:focus+.designContainer {
+  --tr: 20;
+  --op: .7;
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 16px;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}

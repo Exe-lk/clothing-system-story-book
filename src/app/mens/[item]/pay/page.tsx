@@ -10,10 +10,16 @@ import paypass from '../../../../../public/paypass.svg';
 import cartItem1 from '../../../../../public/assets/mens cloths/item1/1.jpg'
 import cartItem2 from '../../../../../public/assets/womens cloths/2.jpg'
 import cartItem3 from '../../../../../public/assets/kids cloths/2.jpg'
+import NavBar from '@/components/Home/NavBar/NavBar';
 
 const MensItemPay = () => {
   return (
     <div className='container-fluid '>
+
+      <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' >
+        <NavBar />
+      </div>
+
       <div className="row mx-0 p-1 d-xxl-block d-xl-block d-lg-block d-none">
         <div className="col-5 p-1 ms-5" style={{color:'rgba(171, 93, 2, 1)'}}>
           <MainHeading />
@@ -177,8 +183,8 @@ const MensItemPay = () => {
                 <div className="col-7">
                   <h6 className='fw-bold ps-md-5 ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>Savings </h6>
                 </div>
-                <div className="col-5 col-md-3 ms-md-3 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5">
-                  <h6 className='fw-bold ps-md-5 m-auto text-center'>1000.00</h6>
+                <div className="col-5 col-md-3 ms-md-3 ">
+                  <h6 className='fw-bold ps-md-5 m-auto text-center fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>1000.00</h6>
                 </div>
               </div>
 
@@ -186,8 +192,8 @@ const MensItemPay = () => {
                 <div className="col-7">
                   <h6 className='py-1 fw-bold ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>Shipping </h6>
                 </div>
-                <div className="col-5 col-md-3 ms-md-3 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5">
-                  <h6 className='py-1 fw-bold ps-md-5 m-auto text-center'>450.00</h6>
+                <div className="col-5 col-md-3 ms-md-3 ">
+                  <h6 className='py-1 fw-bold ps-md-5 m-auto text-center fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5'>450.00</h6>
                 </div>
               </div>
 
@@ -195,8 +201,8 @@ const MensItemPay = () => {
                 <div className="col-7">
                   <h6 className='py-2 fw-bold ps-md-5 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5' style={{color:'rgba(171, 93, 2, 1)'}}>Total </h6>
                 </div>
-                <div className="col-5 col-md-3 ms-md-3 fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5">
-                  <h6 className='py-2 fw-bold ps-md-5 m-auto text-center' style={{color:'rgba(171, 93, 2, 1)'}}>6750.00</h6>
+                <div className="col-5 col-md-3 ms-md-3 ">
+                  <h6 className='py-2 fw-bold ps-md-5 m-auto text-center fs-6 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-5 fs-xxl-5' style={{color:'rgba(171, 93, 2, 1)'}}>6750.00</h6>
                 </div>
               </div>
 
@@ -204,7 +210,7 @@ const MensItemPay = () => {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row mx-0 my-3">
         <Footer />
       </div>
     </div>

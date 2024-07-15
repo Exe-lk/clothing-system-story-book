@@ -55,15 +55,14 @@ const NavBar = () => {
           <div className='offcanvas-body d-xxl-none d-xl-none d-lg-none d-flex flex-column'>
             <div className='row mx-0 fs-5'>
               {/* Slider for documentation */}
-              <label className={`${styles.switch} col-3 ms-3`}>
-                <input type="checkbox" onClick={()=>{
+              <div className="form-check form-switch fs-md-3 fs-sm-4 fs-4 d-flex align-items-center justify-content-center my-2 col-12  mx-4">
+                <input className={`${styles.switch} form-check-input me-4`} type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={()=>{
                   setSliderOn(!sliderOn)
                 }} />
-                <span className={`${styles.slider} ${styles.round}`}></span>
-              </label>
-              <span className='ms-4 col-4'>Documentation</span>
-            </div>
-            
+                <label className="form-check-label fs-md-3 fs-sm-4 fs-4" htmlFor="flexSwitchCheckDefault">Documentation</label>
+              </div>
+            </div> 
+          
             <div className="row mx-0 mt-4 ">
               {sliderOn===true?(<Documentation />):(<MainMenu />)}
             </div>

@@ -1,94 +1,41 @@
-.left{
-  .heading{
-    h3::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(138, 51, 253, 1);
-      height: 100%;
-      width: 7px;
-      border-radius: 10px;
-    }
-  }
-  .menu{
-    ul{
-      li:nth-child(2){
-        background-color: rgba(246, 246, 246, 8);
-      }
-      li:nth-child(2)::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(60, 66, 66, 1);
-        height: 100%;
-        width: 3px;
-        border-radius: 10px;
-      }
-    }
-  }
-}
 
-@media screen and (max-width : 576px) {
-  .left{
-    .menu{
-      ul{
-        li:nth-child(2){
-          background-color: rgba(246, 246, 246, 8);
-        }
-        li:nth-child(2)::before{
-          content: '';
-          position: absolute;
-          top: 0;
-          background-color: rgba(60, 66, 66, 1);
-          height: 4px;
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-    }
-  }
-  .right{
-    .items{
-      ul{
-        li{
-          .priceAndBtn{
-            div{
-              .btnContainer{
-                .btn1{
-                  font-size: 10px !important ;
-                }
-                .btn2{
-                  font-size: 12px !important ;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width : 768px) {
-  .left{
-    .menu{
-      ul{
-        li:nth-child(2){
-          background-color: rgba(246, 246, 246, 8);
-        }
-        li:nth-child(2)::before{
-          content: '';
-          position: absolute;
-          top: 0;
-          background-color: rgba(60, 66, 66, 1);
-          height: 4px;
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-    }
-  }
-}
-
+// @media screen and (min-width : 0px) and (max-width : 992px) {
+//   .left{
+//     .menu{
+//       ul{
+//         li:nth-child(2){
+//           background-color: rgba(246, 246, 246, 8);
+//         }
+//         li:nth-child(2)::before{
+//           content: '';
+//           position: absolute;
+//           top: 0;
+//           background-color: rgba(60, 66, 66, 1);
+//           height: 4px;
+//           width: 100%;
+//           border-radius: 10px;
+//         }
+//       }
+//     }
+//   }
+//   .right{
+//     .items{
+//       ul{
+//         li{
+//           .priceAndBtn{
+//             div{
+//               .btnContainer{
+//                 .btn1{
+//                   // font-size: 10px !important ;
+//                 }
+//                 .btn2{
+//                   // font-size: 12px !important ;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
