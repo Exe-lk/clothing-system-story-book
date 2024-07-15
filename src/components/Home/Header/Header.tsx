@@ -54,7 +54,7 @@ const Header = () => {
 
       <button className="btn ms-xxl-4 ms-xl-3 ms-lg-1 py-lg-2 py-xl-2 px-3 text-white d-xxl-flex d-xl-flex d-lg-flex d-md-none d-none align-items-center text-uppercase rounded rounded-pill " style={{backgroundColor: '#AB5D02',boxShadow: '0 1px 0 rgba(0, 0, 0, 0.11)'}}>
         new arrivals
-        <MdOutlineArrowOutward className='ms-1 fs-6'/>
+        <MdOutlineArrowOutward className='ms-1 fs-6 '/>
       </button>
     </div>
     </>
