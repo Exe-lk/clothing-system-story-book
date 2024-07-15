@@ -13,15 +13,15 @@ const LeftMenu = () => {
           <div className={`${styles.menu} row mx-0`}>
             <ul className='list-group flex-row flex-xxl-column flex-xl-column flex-lg-column flex-md-row flex-sm-row justify-content-sm-center justify-content-center p-0 rounded-0'>
 
-            <Link className='text-decoration-none mx-md-3 mx-sm-2 mx-1' href='myaccount/myorders'>
+            <Link className='text-decoration-none mx-md-3 mx-sm-2 mx-1' href='myorders'>
                 <li className='list-group-item btn col-md-3 col-sm-3 col-3 col-xxl-12 col-xl-12 col-lg-12 border-0 my-2  text-sm-center text-center text-xxl-start text-xl-start text-lg-start text-md-center fs-7 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 w-100' style={{color:'rgba(128, 125, 126, 1)'}} ><i className="bi bi-bag-check d-block d-xxl-inline d-xl-inline d-lg-inline d-md-block d-sm-block  pe-xxl-3 pe-xl-3 pe-lg-3 pe-md-3 pe-sm-3 pe-0 "></i>My orders</li>
               </Link>
               
-              <Link className='text-decoration-none mx-md-3 mx-sm-2 mx-1' href='myaccount/wishlist'>
+              <Link className='text-decoration-none mx-md-3 mx-sm-2 mx-1' href='wishlist'>
                 <li className='list-group-item btn col-md-3 col-sm-3 col-3 col-xxl-12 col-xl-12 col-lg-12 border-0 my-2  text-sm-center text-center text-xxl-start text-xl-start text-lg-start text-md-center fs-7 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 w-100' style={{color:'rgba(128, 125, 126, 1)'}} ><i className="bi bi-heart pe-xxl-3 pe-xl-3 pe-lg-3 pe-md-3 pe-sm-3 pe-0 d-block d-xxl-inline d-xl-inline d-lg-inline d-md-block d-sm-block"></i>Wishlist</li>
               </Link>
               
-              <Link className='text-decoration-none mx-md-3 mx-sm-2 mx-1' href='myaccount/myinfo'>
+              <Link className='text-decoration-none mx-md-3 mx-sm-2 mx-1' href='myinfo'>
                 <li className='list-group-item btn col-md-3 col-sm-3 col-3 col-xxl-12 col-xl-12 col-lg-12 border-0 my-2  text-sm-center text-center text-xxl-start text-xl-start text-lg-start text-md-center fs-7 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 w-100' style={{color:'rgba(128, 125, 126, 1)'}} ><i className="bi bi-person pe-xxl-3 pe-xl-3 pe-lg-3 pe-md-3 pe-sm-3 pe-0 d-block d-xxl-inline d-xl-inline d-lg-inline d-md-block d-sm-block"></i>My info</li>
               </Link>
             
@@ -36,7 +36,7 @@ const LeftMenu = () => {
                   }).then((result) => {
                     if (result.isConfirmed) {
                       Swal.fire({
-                        text: "sign out successfully..",
+                        text: "Signed out successfully..",
                       });
                     }
                   });
