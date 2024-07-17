@@ -1,0 +1,1 @@
+export const registeredUsers:any = [{'userId':'001', 'name':'Isuru Achintha', 'email':'isuru@gmail.com', 'pw':'123456'}]

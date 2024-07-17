@@ -1,451 +1,451 @@
-@media screen and (min-width : 0) and (max-width: 575px) {
-  .image1{
-    img{
-      width: 98% !important;
-      height: 200px !important;
-    }
-  }
-  .image2{
-    img{
-      width: 98% !important;
-      height: 200px !important;
-    }
-  }
-  .image3{
-    img{
-      width: 98% !important;
-      height: 200px !important;
-    }
-  }
-}
+// @media screen and (min-width : 0) and (max-width: 575px) {
+//   .image1{
+//     img{
+//       width: 98% !important;
+//       height: 200px !important;
+//     }
+//   }
+//   .image2{
+//     img{
+//       width: 98% !important;
+//       height: 200px !important;
+//     }
+//   }
+//   .image3{
+//     img{
+//       width: 98% !important;
+//       height: 200px !important;
+//     }
+//   }
+// }
 
-@media screen and (min-width : 576px) and (max-width: 767px) {
-  .image1{
-    img{
-      width: 98% !important;
-      height: 250px !important;
-    }
-  }
-  .image2{
-    img{
-      width: 98% !important;
-      height: 250px !important;
-    }
-  }
-  .image3{
-    img{
-      width: 98% !important;
-      height: 250px !important;
-    }
-  }
-}
+// @media screen and (min-width : 576px) and (max-width: 767px) {
+//   .image1{
+//     img{
+//       width: 98% !important;
+//       height: 250px !important;
+//     }
+//   }
+//   .image2{
+//     img{
+//       width: 98% !important;
+//       height: 250px !important;
+//     }
+//   }
+//   .image3{
+//     img{
+//       width: 98% !important;
+//       height: 250px !important;
+//     }
+//   }
+// }
 
-@media screen and (min-width : 768px) and (max-width: 991px) {
-  .image1{
-    img{
-      width: 98% !important;
-      height: 350px !important;
-    }
-  }
-  .image2{
-    img{
-      width: 98% !important;
-      height: 350px !important;
-    }
-  }
-  .image3{
-    img{
-      width: 98% !important;
-      height: 350px !important;
-    }
-  }
-}
+// @media screen and (min-width : 768px) and (max-width: 991px) {
+//   .image1{
+//     img{
+//       width: 98% !important;
+//       height: 350px !important;
+//     }
+//   }
+//   .image2{
+//     img{
+//       width: 98% !important;
+//       height: 350px !important;
+//     }
+//   }
+//   .image3{
+//     img{
+//       width: 98% !important;
+//       height: 350px !important;
+//     }
+//   }
+// }
 
-@media screen and (min-width : 991px) and (max-width: 1200px) {
-  .flipCardContainer{
-    width: 95%;
-    height: 380px;
-  }
+// @media screen and (min-width : 991px) and (max-width: 1200px) {
+//   .flipCardContainer{
+//     width: 95%;
+//     height: 380px;
+//   }
 
-  .figcaption {
-    display: block;
-    width: auto;
-    margin-top: 12%;
-    padding: 8px 22px;
-    transform: translate(-50%, -50%) rotate(-17deg);
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 2px;
-    word-spacing: 6px;
-    text-align: right;
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    color: var(--white-1);
-  }
+//   .figcaption {
+//     display: block;
+//     width: auto;
+//     margin-top: 12%;
+//     padding: 8px 22px;
+//     transform: translate(-50%, -50%) rotate(-17deg);
+//     font-weight: bold;
+//     line-height: 1.6;
+//     letter-spacing: 2px;
+//     word-spacing: 6px;
+//     text-align: right;
+//     position: absolute;
+//     top: 54%;
+//     left: 50%;
+//     color: var(--white-1);
+//   }
 
-  .cardFront .imgBg::before {
-    content: "";
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-17deg);
-    width: 100%;
-    height: 1px;
-    border: 1px solid white;
-    transition: .1s;
-  }
-}
+//   .cardFront .imgBg::before {
+//     content: "";
+//     position: absolute;
+//     top: 54%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(-17deg);
+//     width: 100%;
+//     height: 1px;
+//     border: 1px solid white;
+//     transition: .1s;
+//   }
+// }
 
-@media screen and (min-width : 1201px) and (max-width: 1400px) {
+// @media screen and (min-width : 1201px) and (max-width: 1400px) {
 
-  .flipCardContainer{
-    width: 95%;
-    height: 500px;
-  }
+//   .flipCardContainer{
+//     width: 95%;
+//     height: 500px;
+//   }
 
-  .figcaption {
-    display: block;
-    width: auto;
-    margin-top: 12%;
-    padding: 8px 22px;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 2px;
-    word-spacing: 6px;
-    text-align: right;
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    color: var(--white-1);
-  }
+//   .figcaption {
+//     display: block;
+//     width: auto;
+//     margin-top: 12%;
+//     padding: 8px 22px;
+//     transform: translate(-50%, -50%) rotate(-15deg);
+//     font-weight: bold;
+//     line-height: 1.6;
+//     letter-spacing: 2px;
+//     word-spacing: 6px;
+//     text-align: right;
+//     position: absolute;
+//     top: 54%;
+//     left: 50%;
+//     color: var(--white-1);
+//   }
 
-  .cardFront .imgBg::before {
-    content: "";
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    width: 100%;
-    height: 1px;
-    border: 1px solid white;
-    transition: .1s;
-  }
-}
+//   .cardFront .imgBg::before {
+//     content: "";
+//     position: absolute;
+//     top: 54%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(-15deg);
+//     width: 100%;
+//     height: 1px;
+//     border: 1px solid white;
+//     transition: .1s;
+//   }
+// }
 
-@media screen and (min-width : 1400px) and (max-width: 1600px) {
-  .flipCardContainer{
-    width: 95%;
-    height: 550px;
-  }
+// @media screen and (min-width : 1400px) and (max-width: 1600px) {
+//   .flipCardContainer{
+//     width: 95%;
+//     height: 550px;
+//   }
 
-  .figcaption {
-    display: block;
-    width: auto;
-    margin-top: 12%;
-    padding: 8px 22px;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 2px;
-    word-spacing: 6px;
-    text-align: right;
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    color: var(--white-1);
-  }
+//   .figcaption {
+//     display: block;
+//     width: auto;
+//     margin-top: 12%;
+//     padding: 8px 22px;
+//     transform: translate(-50%, -50%) rotate(-15deg);
+//     font-weight: bold;
+//     line-height: 1.6;
+//     letter-spacing: 2px;
+//     word-spacing: 6px;
+//     text-align: right;
+//     position: absolute;
+//     top: 54%;
+//     left: 50%;
+//     color: var(--white-1);
+//   }
 
-  .cardFront .imgBg::before {
-    content: "";
-    position: absolute;
-    top: 54%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-15deg);
-    width: 100%;
-    height: 1px;
-    border: 1px solid white;
-    transition: .1s;
-  }
-}
+//   .cardFront .imgBg::before {
+//     content: "";
+//     position: absolute;
+//     top: 54%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(-15deg);
+//     width: 100%;
+//     height: 1px;
+//     border: 1px solid white;
+//     transition: .1s;
+//   }
+// }
 
-.flipCardContainer {
-  --hue: 150;
-  --primary: hsl(var(--hue), 50%, 50%);
-  --white-1: hsl(0, 0%, 90%);
-  --white-2: hsl(0, 0%, 80%);
-  --dark: hsl(var(--hue), 25%, 10%);
-  --grey: hsl(0, 0%, 50%);
-  perspective: 1000px;
-}
+// .flipCardContainer {
+//   --hue: 150;
+//   --primary: hsl(var(--hue), 50%, 50%);
+//   --white-1: hsl(0, 0%, 90%);
+//   --white-2: hsl(0, 0%, 80%);
+//   --dark: hsl(var(--hue), 25%, 10%);
+//   --grey: hsl(0, 0%, 50%);
+//   perspective: 1000px;
+// }
 
-/* .flipCard */
-.flipCard {
-  width: inherit;
-  height: inherit;
+// /* .flipCard */
+// .flipCard {
+//   width: inherit;
+//   height: inherit;
 
-  position: relative;
-  transform-style: preserve-3d;
-  transition: .6s .1s;
-}
+//   position: relative;
+//   transform-style: preserve-3d;
+//   transition: .6s .1s;
+// }
 
-/* hover and focus-within states */
-.flipCardContainer:hover .flipCard,
-.flipCardContainer:focus-within .flipCard {
-  transform: rotateY(180deg);
-}
+// /* hover and focus-within states */
+// .flipCardContainer:hover .flipCard,
+// .flipCardContainer:focus-within .flipCard {
+//   transform: rotateY(180deg);
+// }
 
-/* .card-... */
-.cardFront,
-.cardBack {
-  width: 100%;
-  height: 100%;
-  background: var(--dark);
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// /* .card-... */
+// .cardFront,
+// .cardBack {
+//   width: 100%;
+//   height: 100%;
+//   background: var(--dark);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   overflow: hidden;
+//   backface-visibility: hidden;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-/* .cardFront */
-.cardFront {
-  transform: rotateY(0deg);
-  z-index: 2;
-}
+// /* .cardFront */
+// .cardFront {
+//   transform: rotateY(0deg);
+//   z-index: 2;
+// }
 
-/* .cardBack */
-.cardBack {
-  transform: rotateY(180deg);
-  z-index: 1;
-}
+// /* .cardBack */
+// .cardBack {
+//   transform: rotateY(180deg);
+//   z-index: 1;
+// }
 
-/* .figure */
-.figure {
-  z-index: -1;
-}
+// /* .figure */
+// .figure {
+//   z-index: -1;
+// }
 
-/* .figure, .imgBg */
-.figure,
-.imgBg {
-  position: absolute;
-  top: 0;
-  left: 0;
+// /* .figure, .imgBg */
+// .figure,
+// .imgBg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
 
-  width: 100%;
-  height: 100%;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
+//   width: 100%;
+//   height: 100%;
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
 
-/* .imgBg */
-.imgBg {
-  background: hsla(var(--hue), 25%, 10%, .5);
-}
+// /* .imgBg */
+// .imgBg {
+//   background: hsla(var(--hue), 25%, 10%, .5);
+// }
 
-.cardFront .imgBg {
-  clip-path: polygon(0 60%, 100% 40%, 100% 60%, 0 80%);
-  border-top: 1px solid #FFF;
+// .cardFront .imgBg {
+//   clip-path: polygon(0 60%, 100% 40%, 100% 60%, 0 80%);
+//   border-top: 1px solid #FFF;
   
-}
+// }
 
 
 
-.cardBack .imgBg {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
-}
+// .cardBack .imgBg {
+//   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+// }
 
-/* hover state */
-.flipCardContainer:hover .cardFront .imgBg::before {
-  width: 6px;
-  border-left-color: var(--primary);
-  border-right-color: var(--primary);
-}
+// /* hover state */
+// .flipCardContainer:hover .cardFront .imgBg::before {
+//   width: 6px;
+//   border-left-color: var(--primary);
+//   border-right-color: var(--primary);
+// }
 
-.cardBack{
+// .cardBack{
 
-  ul {
+//   ul {
   
-    list-style: none;
-    color: var(--white-1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+//     list-style: none;
+//     color: var(--white-1);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
   
-  /* li */
-  li {
-    width: 100%;
-    margin-top: 12px;
-    padding-bottom: 12px;;
-    text-align: center;
-    position: relative;
-  }
-  li:nth-child(2n) {
-    color: var(--white-2);
-  }
+//   /* li */
+//   li {
+//     width: 100%;
+//     margin-top: 12px;
+//     padding-bottom: 12px;;
+//     text-align: center;
+//     position: relative;
+//   }
+//   li:nth-child(2n) {
+//     color: var(--white-2);
+//   }
   
-  li:not(:last-child)::after {
-    content: "";
+//   li:not(:last-child)::after {
+//     content: "";
   
-    position: absolute;
-    bottom: 0;
-    left: 0;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
   
-    width: 100%;
-    height: 1px;
+//     width: 100%;
+//     height: 1px;
   
-    background: currentColor;
-    opacity: .2;
-  }
-}
+//     background: currentColor;
+//     opacity: .2;
+//   }
+// }
 
 
-.cardBack{
+// .cardBack{
   
-  .button {
-    font-family: inherit;
-    font-weight: bold;
-    color: var(--white-1);
-    letter-spacing: 2px;
-    padding: 9px 20px;
-    border: 1px solid var(--grey);
-    border-radius: 1000px;
-    background: transparent;
-    transition: .3s;
-    cursor: pointer;
-  }
+//   .button {
+//     font-family: inherit;
+//     font-weight: bold;
+//     color: var(--white-1);
+//     letter-spacing: 2px;
+//     padding: 9px 20px;
+//     border: 1px solid var(--grey);
+//     border-radius: 1000px;
+//     background: transparent;
+//     transition: .3s;
+//     cursor: pointer;
+//   }
   
-  .button:hover,
-  .button:focus {
-    // color: var(--primary);
-    background: #AB5D02;
-  }
+//   .button:hover,
+//   .button:focus {
+//     // color: var(--primary);
+//     background: #AB5D02;
+//   }
   
-  .button:active {
-    transform: translate(2px);
-  }
-}
+//   .button:active {
+//     transform: translate(2px);
+//   }
+// }
 
-/* .designContainer */
-.designContainer {
-  --tr: 90;
-  --op: .5;
+// /* .designContainer */
+// .designContainer {
+//   --tr: 90;
+//   --op: .5;
 
-  width: 100%;
-  height: 100%;
+//   width: 100%;
+//   height: 100%;
 
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
+//   background: transparent;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
 
-  pointer-events: none;
-}
+//   pointer-events: none;
+// }
 
-/* .design */
-.design {
-  display: block;
+// /* .design */
+// .design {
+//   display: block;
 
-  background: var(--grey);
-  position: absolute;
+//   background: var(--grey);
+//   position: absolute;
 
-  opacity: var(--op);
-  transition: .3s;
-}
+//   opacity: var(--op);
+//   transition: .3s;
+// }
 
-.design1,
-.design2,
-.design3,
-.design4 {
-  width: 1px;
-  height: 100%;
-}
+// .design1,
+// .design2,
+// .design3,
+// .design4 {
+//   width: 1px;
+//   height: 100%;
+// }
 
-.design1,
-.design2 {
-  top: 0;
-  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%))
-}
+// .design1,
+// .design2 {
+//   top: 0;
+//   transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%))
+// }
 
-.design1 {
-  left: 20%;
-}
+// .design1 {
+//   left: 20%;
+// }
 
-.design2 {
-  left: 80%;
-}
+// .design2 {
+//   left: 80%;
+// }
 
-.design3,
-.design4 {
-  bottom: 0;
-  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
-}
+// .design3,
+// .design4 {
+//   bottom: 0;
+//   transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+// }
 
-.design3 {
-  left: 24%;
-}
+// .design3 {
+//   left: 24%;
+// }
 
-.design4 {
-  left: 76%;
-}
+// .design4 {
+//   left: 76%;
+// }
 
-.design5,
-.design6,
-.design7,
-.design8 {
-  width: 100%;
-  height: 1px;
-}
+// .design5,
+// .design6,
+// .design7,
+// .design8 {
+//   width: 100%;
+//   height: 1px;
+// }
 
-.design5,
-.design6 {
-  left: 0;
-  transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
-}
+// .design5,
+// .design6 {
+//   left: 0;
+//   transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+// }
 
-.design5 {
-  top: 41%;
-}
+// .design5 {
+//   top: 41%;
+// }
 
-.design6 {
-  top: 59%;
-}
+// .design6 {
+//   top: 59%;
+// }
 
-.design7,
-.design8 {
-  right: 0;
-  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
-}
+// .design7,
+// .design8 {
+//   right: 0;
+//   transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+// }
 
-.design7 {
-  top: 44%;
-}
+// .design7 {
+//   top: 44%;
+// }
 
-.design8 {
-  top: 56%;
-}
+// .design8 {
+//   top: 56%;
+// }
 
-/* states */
-.button:hover+.designContainer,
-.button:active+.designContainer,
-.button:focus+.designContainer {
-  --tr: 20;
-  --op: .7;
-}
+// /* states */
+// .button:hover+.designContainer,
+// .button:active+.designContainer,
+// .button:focus+.designContainer {
+//   --tr: 20;
+//   --op: .7;
+// }
 
-.abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 16px;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-}
+// .abs-site-link {
+//   position: fixed;
+//   bottom: 20px;
+//   left: 20px;
+//   color: hsla(0, 0%, 100%, .6);
+//   font-size: 16px;
+//   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+// }

@@ -2,14 +2,15 @@
 
 import styles from './page.module.scss';
 import React, {useState} from 'react';
-import {FaUser, FaLock, FaEnvelope} from 'react-icons/fa';
 // import valiconm 'validator';
 import login from '../../../public/assets/loginRegister/login1.svg'
 import register from '../../../public/assets/loginRegister/register.png'
-import MainHeading from '@/components/Home/Header/Heading/MainHeading';
+import { registeredUsers } from '@/dummy data/registeredUsers';
+import { useLogin } from '@/components/LoginContext';
+import { useRouter } from 'next/navigation';
 
 const LoginPage = () => {
-
+  const {isLogIn, setIsLogIn} = useLogin();
   const PasswordErrorMessage = () => { 
     return ( 
       <p className={styles.FieldError}>Password should have at least 8 characters</p> 
@@ -31,13 +32,22 @@ const LoginPage = () => {
   //   ); 
   // }; 
 
+  
   const clearForm = () => { 
     setName(""); 
-    setEmail({ 
+    setLoginEmail({ 
       value: "", 
       isTouched: false, 
     }); 
-    setPassword({ 
+    setRegEmail({ 
+      value: "", 
+      isTouched: false, 
+    }); 
+    setLoginPassword({ 
+      value: "", 
+      isTouched: false, 
+    }); 
+    setRegPassword({ 
       value: "", 
       isTouched: false, 
     }); 
@@ -51,14 +61,29 @@ const LoginPage = () => {
     e.preventDefault(); 
     clearForm(); 
   }; 
+  const logInSubmit = () =>{
+    registeredUsers.map((user:any)=>{
+      return(
+        loginEmail.value===user.email && loginPassword.value===user.pw ? setIsLogIn(true) : alert('login failed...')
+      )
+    })
+  }
 
   const [action, setAction] = useState('');
   const [name, setName] = useState(""); 
-  const [email, setEmail] = useState({ 
+  const [regEmail, setRegEmail] = useState({ 
     value: "", 
     isTouched: false, 
   }); 
-  const [password, setPassword] = useState({ 
+  const [loginEmail, setLoginEmail] = useState({ 
+    value: "", 
+    isTouched: false, 
+  }); 
+  const [regPassword, setRegPassword] = useState({ 
+    value: "", 
+    isTouched: false, 
+  }); 
+  const [loginPassword, setLoginPassword] = useState({ 
     value: "", 
     isTouched: false, 
   }); 
@@ -67,6 +92,12 @@ const LoginPage = () => {
     isTouched: false, 
   }); 
 
+  // const registerSubmit = (e:any)=>{
+  //   window.localStorage.setItem('registeredUsers', name)
+  //   console.log('data added')
+  // }
+  
+
   const RegisterLink = ()=>{
     setAction('active')
   }
@@ -74,7 +105,7 @@ const LoginPage = () => {
   const LoginLink = ()=>{
     setAction('')
   }
-
+  const router = useRouter()
   return (
     // <div className={`${styles.wrapper}${action}`}>
     //   <div className={[`${styles.form}`, `${styles.login}`].join(' ')}>
@@ -189,84 +220,98 @@ const LoginPage = () => {
     // </div>
 
     <div className={`${styles.wrapper} ${action==='active' ? styles.active : ''} container my-auto d-flex align-items-center justify-content-center vw-100 vh-100`} >
-      <div className={`${styles.login} row mx-0 p-2 h-auto text-center`} style={{background:'rgba(249, 249, 249, 1)'}}>
-        <div className="col-6 overflow-hidden">
-          <img src={login.src} alt="login" className='img-fluid object-fit-cover' style={{height:'300px',width:'600px'}}/>
-        </div>
-        <div className={`${styles.right} col-6`}>
-          <div className='row mx-0 text-center'>
-            <p className={`${styles.heading}`}>fashion<span><b>nova</b></span></p>
-            <p className='text-uppercase fs-6'>login to your account</p>
-          </div>
-          <form action="" className='my-1'>
-            <label htmlFor="email" className='form-label my-1'>Email address</label>
-            <input type="text" id='email' value={email.value} placeholder='Example@gmail.com' onChange={(e)=>{
-              setEmail({...email, value:e.target.value})
-            }} onBlur={()=>{
-              setEmail({...email, isTouched:true})
-            }} className='form-control my-1'/>
-            <label htmlFor="password" className='form-label my-1'>password</label>
-            <input type="password" id='password' value={email.value} onChange={(e)=>{
-              setEmail({...password, value:e.target.value})
-            }} onBlur={()=>{
-              setEmail({...password, isTouched:true})
-            }} className='form-control my-1'/>
-          </form>
-          <div className='row mx-0 text-end my-2'>
-             <a href="#" className='text-decoration-none text-black'>Forgot password</a>
-          </div>
- 
-          <button className='btn my-2 d-block mx-auto text-white fs-7 px-5 fw-bold' style={{background:'rgba(180, 110, 28, 1)'}}>LOGIN</button>
 
-          <p>Don’t have an account? <a href="#" className='text-decoration-none' style={{color:'rgba(180, 110, 28, 1)'}} onClick={RegisterLink}>signup here</a></p>
-        </div>
-        <p className='fs-7'>© Copyright 2024 FN. All Rights Reserved | EXE.LK</p>
-      </div>
-      <div className={`${styles.register} row mx-0 p-2  h-auto text-center`} style={{background:'rgba(249, 249, 249, 1)'}}>
-        <div className="col-6 overflow-hidden">
-          <img src={register.src} alt="register" className='img-fluid object-fit-cover' style={{height:'500px',width:'600px'}}/>
-        </div>
-        <div className={`${styles.right} col-6 `}>
-          <div className='row mx-0 text-center'>
-            <p className={`${styles.heading}`}>fashion<span><b>nova</b></span></p>
-            <p className='text-uppercase fs-6'>register to your account</p>
-          </div>
-          <form action="" className='my-1'>
+      {
+        registeredUsers.map((user:any)=>{
+          return(
+            <>
 
-            <label htmlFor="name" className='form-label my-1'>Name</label>
-            <input type="text" id='name' value={name} placeholder='Jhon Walker' onChange={(e)=>{
-              setName(e.target.value)
-            }} className='form-control my-1'/>
+              <div className={`${styles.login} row mx-0 p-2 h-auto text-center`} style={{background:'rgba(249, 249, 249, 1)'}} key={user.userId}>
+                <div className="col-6 overflow-hidden">
+                  <img src={login.src} alt="login" className='img-fluid object-fit-cover' style={{height:'300px',width:'600px'}}/>
+                </div>
+                <div className={`${styles.right} col-6`}>
+                  <div className='row mx-0 text-center'>
+                    <p className={`${styles.heading}`}>fashion<span><b>nova</b></span></p>
+                    <p className='text-uppercase fs-6'>login to your account</p>
+                  </div>
+                  <form action="" className='my-1'>
+                    <label htmlFor="email" className='form-label my-1'>Email address</label>
+                    <input type="text" id='email' value={loginEmail.value} placeholder='Example@gmail.com' onChange={(e)=>{
+                      setLoginEmail({...loginEmail, value:e.target.value})
+                    }} onBlur={()=>{
+                      setLoginEmail({...loginEmail, isTouched:true})
+                    }} className='form-control my-1'/>
+                    <label htmlFor="password" className='form-label my-1'>password</label>
+                    <input type="password" id='password' value={loginPassword.value} onChange={(e)=>{
+                      setLoginPassword({...loginPassword, value:e.target.value})
+                    }} onBlur={()=>{
+                      setLoginPassword({...loginPassword, isTouched:true})
+                    }} className='form-control my-1'/>
+                    <div className='row mx-0 text-end my-2'>
+                      <a href="#" className='text-decoration-none text-black'>Forgot password</a>
+                    </div>
+          
+                    <button className='btn my-2 d-block mx-auto text-white fs-7 px-5 fw-bold' style={{background:'rgba(180, 110, 28, 1)'}}onClick={logInSubmit}>LOGIN</button>
+                  </form>
 
-            <label htmlFor="email" className='form-label my-1'>Email</label>
-            <input type="text" id='email' placeholder='Example@gmail.com' value={email.value} onChange={(e)=>{
-              setEmail({...email, value:e.target.value})
-            }} onBlur={()=>{
-              setEmail({...email, isTouched:true})
-            }} className='form-control my-1'/>
+                  <p>Don’t have an account? <a href="#" className='text-decoration-none' style={{color:'rgba(180, 110, 28, 1)'}} onClick={RegisterLink}>signup here</a></p>
+                  
+                </div>
+                <p className='fs-7'>© Copyright 2024 FN. All Rights Reserved | EXE.LK</p>
+              </div>
+              <div className={`${styles.register} row mx-0 p-2  h-auto text-center`} style={{background:'rgba(249, 249, 249, 1)'}}>
+                <div className="col-6 overflow-hidden">
+                  <img src={register.src} alt="register" className='img-fluid object-fit-cover' style={{height:'500px',width:'600px'}}/>
+                </div>
+                <div className={`${styles.right} col-6 `}>
+                  <div className='row mx-0 text-center'>
+                    <p className={`${styles.heading}`}>fashion<span><b>nova</b></span></p>
+                    <p className='text-uppercase fs-6'>register to your account</p>
+                  </div>
+                  <form  className='my-1'>
 
-            <label htmlFor="password" className='form-label my-1'>password</label>
-            <input type="password" id='password' value={email.value} onChange={(e)=>{
-              setPassword({...password, value:e.target.value})
-            }} onBlur={()=>{
-              setPassword({...password, isTouched:true})
-            }} className='form-control my-1'/>
+                    <label htmlFor="name" className='form-label my-1'>Name</label>
+                    <input type="text" id='name' value={name} placeholder='Jhon Walker' onChange={(e)=>{
+                      setName(e.target.value)
+                    }} className='form-control my-1'/>
 
-            <label htmlFor="password" className='form-label my-1'>Confirm Password</label>
-            <input type="password" id='password' value={conPassword.value} onChange={(e)=>{
-              setConPassword({...conPassword, value:e.target.value})
-            }} onBlur={()=>{
-              setConPassword({...conPassword, isTouched:true})
-            }} className='form-control my-1'/>
+                    <label htmlFor="email" className='form-label my-1'>Email</label>
+                    <input type="text" id='email' placeholder='Example@gmail.com' value={regEmail.value} onChange={(e)=>{
+                      setRegEmail({...regEmail, value:e.target.value})
+                    }} onBlur={()=>{
+                      setRegEmail({...regEmail, isTouched:true})
+                    }} className='form-control my-1'/>
 
-          </form>
- 
-          <button className='btn my-2 d-block mx-auto text-white fs-7 px-5 fw-bold' style={{background:'rgba(180, 110, 28, 1)'}}>REGISTER</button>
+                    <label htmlFor="password" className='form-label my-1'>password</label>
+                    <input type="password" id='password' value={regPassword.value} onChange={(e)=>{
+                      setRegPassword({...regPassword, value:e.target.value})
+                    }} onBlur={()=>{
+                      setRegPassword({...regPassword, isTouched:true})
+                    }} className='form-control my-1'/>
 
-          <p>Already have an account? <a href="#" className='text-decoration-none' style={{color:'rgba(180, 110, 28, 1)'}} onClick={LoginLink}>login</a></p>
-        </div>
-        <p className='fs-7'>© Copyright 2024 FN. All Rights Reserved | EXE.LK</p>
-      </div>
+                    <label htmlFor="password" className='form-label my-1'>Confirm Password</label>
+                    <input type="password" id='password' value={conPassword.value} onChange={(e)=>{
+                      setConPassword({...conPassword, value:e.target.value})
+                    }} onBlur={()=>{
+                      setConPassword({...conPassword, isTouched:true})
+                    }} className='form-control my-1'/>
+          
+                    <button className='btn my-2 d-block mx-auto text-white fs-7 px-5 fw-bold' style={{background:'rgba(180, 110, 28, 1)'}}>REGISTER</button>
+
+                  </form>
+
+                  <p>Already have an account? <a href="#" className='text-decoration-none' style={{color:'rgba(180, 110, 28, 1)'}} onClick={LoginLink}>login</a></p>
+                </div>
+                <p className='fs-7'>© Copyright 2024 FN. All Rights Reserved | EXE.LK</p>
+              </div>
+
+            </>
+          )
+        })
+      }
+      
+
     </div>
   )
 }

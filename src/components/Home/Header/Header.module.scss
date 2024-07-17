@@ -14,6 +14,23 @@
   input:focus{
     outline: none !important;
   }
+
+  .searchArea{
+    .searchRes{
+      border: 2px solid black !important;
+
+
+      .SearchImageCont{
+        background-color: red !important;
+        width: 10px !important;
+        height: 10px !important;
+        img{
+          width: 10px !important;
+          height: 10px !important;
+        }
+      }
+    }
+  }
 }
 .header{
   p{

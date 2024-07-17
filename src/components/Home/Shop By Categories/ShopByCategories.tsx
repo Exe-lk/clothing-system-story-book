@@ -18,35 +18,35 @@ const ShopByCategories = () => {
     <>
 
       {/* common header for both pc and mobile views */}
-      {/* <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>shop by categories </h1>
-      <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> */}
+      <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>shop by categories </h1>
+      <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
       {/* pc view for SHOP BY CATEGORIES (for lg,xl,xxl sizes) */}
-      {/* <div className="col-6 p-1 d-xxl-block d-xl-block d-lg-block d-none" >
+      <div className="col-6 p-1 d-xxl-block d-xl-block d-lg-block d-none" style={{background: 'linear-gradient(234.97deg, #EFEEF0 39.11%, #FFF7F0 98.42%'}}>
         <p className='h3 text-capitalize text-center '>for women’s</p>
-        <div className="row h-100 mx-0 d-flex align-items-start my-4">
+        <div className="row mx-0 d-flex align-items-start my-4">
 
             <div className="col-6">
               <ul className='list-unstyled ps-3 text-capitalize' >
-                <li className='my-5 mx-3'>dresses</li>
-                <li className='my-5 mx-3'>sarees</li>
-                <li className='my-5 mx-3'>t-shirts and blouses</li>
-                <li className='my-5 mx-3'>jackets & coats</li>
-                <li className='my-5 mx-3'>jeans</li>
-                <li className='my-5 mx-3'>knit</li>
+                <li className='my-3 mx-3'>dresses</li>
+                <li className='my-3 mx-3'>sarees</li>
+                <li className='my-3 mx-3'>t-shirts and blouses</li>
+                <li className='my-3 mx-3'>jackets & coats</li>
+                <li className='my-3 mx-3'>jeans</li>
+                <li className='my-3 mx-3'>knit</li>
               </ul>
               <button className='btn text-uppercase ps-3 mx-3 text-start' style={{color:'#AB5D02'}}>
                 show more
                 <i className="bi bi-arrow-right ps-1" ></i>
               </button>
             </div>
-            <div className="col my-auto">
+            <div className="col-6">
               <img src={forWomens.src} alt="forWomens" className='img-fluid '/>
             </div>
         </div>
       </div>
       <div className="col-6 d-xxl-block d-xl-block d-lg-block d-none p-1 my-auto" >
-        <div className="row mx-0 h-50 d-flex align-items-center" >
+        <div className="row mx-0 h-50 d-flex align-items-center" style={{background: 'linear-gradient(234.97deg, #EFEEF0 39.11%, #FFF7F0 98.42%'}}>
           <p className='h3 text-capitalize text-center my-4'>for men’s</p>
           <div className="col-6">
             <ul className='list-unstyled ps-3 text-capitalize'>
@@ -64,7 +64,7 @@ const ShopByCategories = () => {
             <img src={forMens.src} alt="forMens" className='img-fluid'/>
           </div>
         </div>
-        <div className="row mx-0 h-50 d-flex align-items-center" >
+        <div className="row mx-0 h-50 d-flex align-items-center" style={{background: 'linear-gradient(234.97deg, #EFEEF0 39.11%, #FFF7F0 98.42%'}}>
           <p className='h3 text-capitalize text-center my-4'>for kid’s</p>
           <div className="col-6">
             <ul className='list-unstyled ps-3 text-capitalize'>
@@ -82,7 +82,7 @@ const ShopByCategories = () => {
             <img src={forKids.src} alt="forKids" className='img-fluid'/>
           </div>
         </div>
-      </div> */}
+      </div> 
       
       {/* mobile view for SHOP BY CATEGORIES (for xs,sm,md sizes) */}
       {/* <div className={`${styles.image1} col-4 h-100 p-0 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none d-xxl-none align-items-center justify-content-center position-relative`}>
@@ -126,14 +126,14 @@ const ShopByCategories = () => {
                 <li className={`${styles.button}`}>knit</li>
               </ul>
         </div>
-      </div> */}
+      </div>
 
       {/* common header for both pc and mobile views */}
-      <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>shop by categories </h1>
-      <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      {/* <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>shop by categories </h1>
+      <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> */}
 
-      {/* pc view for SHOP BY CATEGORIES (for lg,xl,xxl sizes) */}
-      <div className="col-4 p-1 d-xxl-block d-xl-block d-lg-block d-none" >
+      {/* pc view for SHOP BY CATEGORIES (for lg,xl,xxl sizes)(card slider) */}
+      {/* <div className="col-4 p-1 d-xxl-block d-xl-block d-lg-block d-none" >
         <div className={`row mx-0 ${styles.flipCardContainer} `}>
           <div className={`${styles.flipCard}`}>
 
@@ -257,7 +257,7 @@ const ShopByCategories = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* mobile view for SHOP BY CATEGORIES (for xs,sm,md sizes) */}
       <div className={`${styles.image1} col-4 h-100 p-0 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none d-xxl-none align-items-center justify-content-center position-relative`}>
