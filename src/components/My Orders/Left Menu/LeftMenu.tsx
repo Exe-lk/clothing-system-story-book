@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 
 const LeftMenu = () => {
   return (
-    <div className={`${styles.left} col-xxl-2 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  m-xxl-1 m-xl-1 m-lg-1 m-md-0 m-sm-0 m-0 p-xxl-1 p-xl-1 p-lg-1 p-md-0 p-sm-0 p-0 `}>
+        <div className={`${styles.left} col-xxl-2 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  m-xxl-1 m-xl-1 m-lg-1 m-md-0 m-sm-0 m-0 p-xxl-1 p-xl-1 p-lg-1 p-md-0 p-sm-0 p-0 `}>
           <div className={`${styles.heading} row d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-none  mx-0 position-relative`}>
             <h3 className='position-relative'>Hello Jhanvi</h3>
             <p>Welcome to your Account</p>

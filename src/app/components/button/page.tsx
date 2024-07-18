@@ -12,90 +12,163 @@ import BColor from '@/components/Button Component/BColor';
 import { RiShadowLine } from "react-icons/ri";
 import Shadow from '@/components/Button Component/Shadow';
 import { useTheme } from '@/components/ThemeContext';
+import NavBar from '@/components/Home/NavBar/NavBar';
 
 const page = () => {
   return (
-    <div className=''>
-      <div className={styles.aside}>
-        <SideBar />
+    <div className='container-fluid h-100' style={{background:'#F9F6EE'}}>
+
+      <div className='row my-3 d-xxl-block d-xl-block d-lg-block d-none '>
+        <NavBar />
       </div>
-      <div className={styles.buttonWrapper}>
-        <div className={styles.buttonCode}>
-          <code>
-            <p className={styles.line1}>{`<Button \n`}</p>
 
-            <p className={styles.property}> {`label= ` } 
-              <span className={styles.punc}>{`{`}</span> 
-                <span className={styles.value}>{`String`}</span> 
-              <span className={styles.punc}>{`}`}</span>
-            </p>
+      <div className='row my-3 ms-4'>
+        <h3 className='fw-bold fs-4 fs-smx-xxl-2 mx-xl-2 mx-lg-2 mx-1 my-xxl-2 my-1 p-1  fs-md-3 fs-lg-3 fs-xl-3 fs-xxl-3'> <i className="bi bi-file-earmark-code"></i> <span>General Usage</span> </h3>
+      </div>
 
-            <p className={styles.property}> {`rounded= `} 
-              <span className={styles.punc}>{`{`}</span> 
-                <span className={styles.value}>{`String`}</span> 
-              <span className={styles.punc}>{`}`}</span> 
-              <span className={styles.comment}>{` // "default" || "top"|| "bottom"|| "rounded10"|| "rounded50"|| "circle"`}</span>{`\n`}   
-            </p>
+      <div className='row my-3' >
+        <div className={`${styles.buttonWrapper} col-xxl-8 col-11 m-auto`} style={{background:'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)'}}>
+          <div className={`${styles.buttonCode} row mx-0`}>
 
-            <p className={styles.property}> {`size= `} 
-              <span className={styles.punc}>{`{`}</span> 
-                <span className={styles.value}>{`String`}</span> 
-              <span className={styles.punc}>{`}`}</span> 
-              <span className={styles.comment}>{` // "sm" || "md" || "lg"`}</span>{`\n`}  
-            </p>
+            <code className='fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6'>
+              <p className={`${styles.line1}`}>{`<Button \n`}</p>
 
-            <p className={styles.property}> {`shadow=` } 
-              <span className={styles.punc}>{`{`}</span>  
-                <span className={styles.value}>{`String`}</span> 
-              <span className={styles.punc}>{`}`}</span> 
-              <span className={styles.comment}>{` // "none" || "small"|| "medium"|| "large""`}</span>{`\n`}
-            </p>
+              <p className={`${styles.property}`}> {`className= ` } 
+                <span className={`${styles.punc}`}>{`{`}</span> 
+                  <span className={`${styles.value}`}>{`String`}</span> 
+                <span className={`${styles.punc}`}>{`}`}</span>
+              </p>
 
-            <p className={styles.property}> {`backgroundColor= ` } 
-              <span className={styles.punc}>{`{`}</span> 
-                <span className={styles.value}>{`String`}</span> 
-              <span className={styles.punc}>{`}`}</span> {`\n`} 
-            </p>
+              <p className={`${styles.property}`}> {`label= ` } 
+                <span className={`${styles.punc}`}>{`{`}</span> 
+                  <span className={`${styles.value}`}>{`String`}</span> 
+                <span className={`${styles.punc}`}>{`}`}</span>
+              </p>
 
-            <p className={styles.property}>
-              <span className={styles.punc}>{`{`}</span> 
-                {`...props`}
-              <span className={styles.punc}>{`}`}</span> {`\n`} 
-            </p>
+              <p className={`${styles.property}`}> {`rounded= `} 
+                <span className={`${styles.punc}`}>{`{`}</span> 
+                  <span className={`${styles.value}`}>{`String`}</span> 
+                <span className={`${styles.punc}`}>{`}`}</span> 
+                <span className={`${styles.comment}`}>{` // "default" || "top"|| "bottom"|| "rounded10"|| "rounded50"|| "pill"`}</span>{`\n`}   
+              </p>
 
-            <p className={styles.line7}>{`/> \n`}</p>
-          </code>
-        </div>
-        <div className={styles.buttonDes}>
-          <div className={`${styles.rounded} ${styles.property}`}>
-            <div className={styles.heading}>
-              <MdOutlineRoundedCorner className={styles.headingIcon}/>
-              <p><b>rounded</b> <br/> Button</p>
-            </div>
-            <Rounded />
-          </div>
-          <div className={`${styles.size} ${styles.property}`}>
-          <div className={styles.heading}>
-              <SlSizeFullscreen className={styles.headingIcon}/>
-              <p><b>size</b> <br/> Button</p>
-            </div>
-            <Size />
-          </div>
-          <div className={`${styles.color} ${styles.property}`}>
-          <div className={styles.heading}>
-              <RiShadowLine className={styles.headingIcon}/>
-              <p><b>shadow</b> <br/> Button</p>
-            </div>
-            <Shadow />
-          </div>
-          <div className={`${styles.bColor} ${styles.property}`}>
-          <div className={styles.heading}>
-              <IoIosColorFill className={styles.headingIcon}/>
-              <p><b>background color</b> <br/> Button</p>
-            </div>
-            <BColor />
+              <p className={`${styles.property}`}> {`size= `} 
+                <span className={`${styles.punc}`}>{`{`}</span> 
+                  <span className={`${styles.value}`}>{`String`}</span> 
+                <span className={`${styles.punc}`}>{`}`}</span> 
+                <span className={`${styles.comment}`}>{` // "sm" || "md" || "lg"`}</span>{`\n`}  
+              </p>
+
+              <p className={`${styles.property}`}> {`shadow=` } 
+                <span className={`${styles.punc}`}>{`{`}</span>  
+                  <span className={`${styles.value}`}>{`String`}</span> 
+                <span className={`${styles.punc}`}>{`}`}</span> 
+                <span className={`${styles.comment}`}>{` // "none" || "small"|| "medium"|| "large""`}</span>{`\n`}
+              </p>
+
+              <p className={`${styles.property}`}> {`backgroundColor= ` } 
+                <span className={`${styles.punc}`}>{`{`}</span> 
+                  <span className={`${styles.value}`}>{`String`}</span> 
+                <span className={`${styles.punc}`}>{`}`}</span> {`\n`} 
+              </p>
+
+              <p className={`${styles.property}`}>
+                <span className={`${styles.punc}`}>{`{`}</span> 
+                  {`...props`}
+                <span className={`${styles.punc}`}>{`}`}</span> {`\n`} 
+              </p>
+
+              <p className={styles.line7}>{`/Button> \n`}</p>
+            </code>
           </div>
         </div>
+      </div>
+
+      <div className='row my-5 d-flex align-items-start justify-content-center' >
+          
+        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+          <div className="row mx-0">
+            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
+              <MdOutlineRoundedCorner className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1'/>
+            </div>
+            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+              <p className='p-0 m-0'>rounded</p>
+              <p className='p-0 m-0'>Button</p>
+            </div>
+            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            </div>
+          </div>
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{background:'#AB5D02'}}>default</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-top fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{background:'#AB5D02'}}>top</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-bottom fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{background:'#AB5D02'}}>bottom</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{background:'#AB5D02'}}>rounded10</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-5 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{background:'#AB5D02'}}>rounded50</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-pill fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{background:'#AB5D02'}}>pill</button>
+          </div>
+        </div>
+        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+          <div className="row mx-0">
+            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
+              <SlSizeFullscreen className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            </div>
+            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+              <p className='p-0 m-0'>size</p>
+              <p className='p-0 m-0'>Button</p>
+            </div>
+            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            </div>
+          </div>
+          <div className="row mx-0 d-flex align-items-center justify-content-center ">
+            <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>sm</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>md</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>lg</button>
+          </div>
+        </div>
+        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
+          <div className="row mx-0">
+            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
+              <IoIosColorFill className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            </div>
+            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+              <p className='p-0 m-0'>bg-color</p>
+              <p className='p-0 m-0'>Button</p>
+            </div>
+            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            </div>
+          </div>
+          <div className="row mx-0 d-flex align-items-center justify-content-center ">
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-danger  ' >danger</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-warning' >warning</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-primary' >primary</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-secondary' >secondary</button>
+            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-black' >black</button>
+          </div>
+        </div>
+        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+          <div className="row mx-0">
+            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
+              <RiShadowLine className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            </div>
+            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+              <p className='p-0 m-0'>shadow</p>
+              <p className='p-0 m-0'>Button</p>
+            </div>
+            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            </div>
+          </div>
+          <div className="row mx-0 d-flex align-items-center justify-content-center ">
+            <button className=' shadow-none btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>none</button>
+            <button className=' shadow-sm btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>small</button>
+            <button className=' shadow btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>medium</button>
+            <button className=' shadow-lg btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white' style={{background:'#AB5D02'}}>large</button>
+          </div>
+        </div>
+       
       </div>
     </div>
   )

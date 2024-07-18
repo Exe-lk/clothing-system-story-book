@@ -4,6 +4,7 @@ import styles from './ShopByCategories.module.scss';
 import img from 'next/image';
 import forWomens from '../../../../public/forWomens.svg';
 import forMens from '../../../../public/forMens.svg';
+import bruno from '../../../../public/bruno.png';
 import rightArrow2 from '../../../../public/rightArrow2.svg';
 import forKids from '../../../../public/forKids.svg';
 import React from 'react';
@@ -48,30 +49,33 @@ const ShopByCategories = () => {
       <div className="col-6 d-xxl-block d-xl-block d-lg-block d-none p-1 my-auto" >
         <div className="row mx-0 h-50 d-flex align-items-center" style={{background: 'linear-gradient(234.97deg, #EFEEF0 39.11%, #FFF7F0 98.42%'}}>
           <p className='h3 text-capitalize text-center my-4'>for men’s</p>
-          <div className="col-6">
-            <ul className='list-unstyled ps-3 text-capitalize'>
-              <li className='my-5 mx-3'>t-shirts & shirts</li>
-              <li className='my-5 mx-3'>jeans</li>
-              <li className='my-5 mx-3'>jacket & coats</li>
-              <li className='my-5 mx-3'>shorts</li>
-            </ul>
-            <button className='btn text-uppercase ps-3 mx-3 text-start' style={{color:'#AB5D02'}}>
-              show more
-              <i className="bi bi-arrow-right ps-1" ></i>
-            </button>
+          <div className="row mx-0 d-flex align-items-start my-4">
+            <div className="col-6 h-100">
+              <ul className='list-unstyled ps-3 text-capitalize'>
+                <li className='my-3 mx-3'>t-shirts & shirts</li>
+                <li className='my-3 mx-3'>jeans</li>
+                <li className='my-3 mx-3'>jacket & coats</li>
+                <li className='my-3 mx-3'>shorts</li>
+              </ul>
+              <button className='btn text-uppercase ps-3 mx-3 text-start' style={{color:'#AB5D02'}}>
+                show more
+                <i className="bi bi-arrow-right ps-1" ></i>
+              </button>
+            </div>
+            <div className="col-6 d-flex align-items-start mb-5">
+              <img src={bruno.src} alt='forMen' className='img-fluid h-25'/>
+            </div>
           </div>
-          <div className="col-6">
-            <img src={forMens.src} alt="forMens" className='img-fluid'/>
-          </div>
+          
         </div>
         <div className="row mx-0 h-50 d-flex align-items-center" style={{background: 'linear-gradient(234.97deg, #EFEEF0 39.11%, #FFF7F0 98.42%'}}>
           <p className='h3 text-capitalize text-center my-4'>for kid’s</p>
           <div className="col-6">
             <ul className='list-unstyled ps-3 text-capitalize'>
-              <li className='my-5 mx-3'>t-shirts & shirts</li>
-              <li className='my-5 mx-3'>jeans</li>
-              <li className='my-5 mx-3'>jacket & coats</li>
-              <li className='my-5 mx-3'>shorts</li>
+              <li className='my-3 mx-3'>t-shirts & shirts</li>
+              <li className='my-3 mx-3'>jeans</li>
+              <li className='my-3 mx-3'>jacket & coats</li>
+              <li className='my-3 mx-3'>shorts</li>
             </ul>
             <button className='btn text-uppercase ps-3 mx-3 text-start' style={{color:'#AB5D02'}}>
               show more

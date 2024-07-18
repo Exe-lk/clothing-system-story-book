@@ -127,9 +127,9 @@ const SideBar = () => {
 
                           <div className={`${active===true?'show':'collapse'}`} id="home-collapse">
                             <ul className={`${styles.menuDetails} btn-toggle-nav list-unstyled fw-normal pb-1 small text-white d-none ms-4`} >
-                              <Link href='#' className={`${styles.item} btn text-start w-100`}>Component 1</Link>
-                              <Link href='#' className={`${styles.item} btn text-start w-100`}>Component 2</Link>
-                              <Link href='#' className={`${styles.item} btn text-start w-100`}>Component 3</Link>
+                              <Link href='/components/button' className={`${styles.item} btn text-start w-100 text-white`}>Button</Link>
+                              <Link href='/components/searchbar' className={`${styles.item} btn text-start w-100 text-white`}>Search Bar</Link>
+                              <Link href='#' className={`${styles.item} btn text-start w-100 text-white`}>Component 3</Link>
                             </ul>
 
                           </div>
