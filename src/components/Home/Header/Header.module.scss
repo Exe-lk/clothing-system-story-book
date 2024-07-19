@@ -15,20 +15,14 @@
     outline: none !important;
   }
 
-  .searchArea{
-    .searchRes{
-      border: 2px solid black !important;
 
-
-      .SearchImageCont{
-        background-color: red !important;
-        width: 10px !important;
-        height: 10px !important;
-        img{
-          width: 10px !important;
-          height: 10px !important;
-        }
-      }
+  .searchRes{
+    border-bottom: 4px solid #AB5D02 !important;
+    border-right: 4px solid #AB5D02 !important;
+    border-left: 4px solid #AB5D02 !important;
+    ul:hover{
+      background-color: #AB5D0275 !important;
+      color: #AB5D02 !important;
     }
   }
 }

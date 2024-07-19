@@ -18,47 +18,47 @@ const NavBar = () => {
   const [sliderOn, setSliderOn] = useState(false);
   const [activeSearch, setActiveSearch] = useState(false);
 
-  useEffect(() => {
-    document.getElementById('searchBar').addEventListener('keyup', e=>{
-      const element = e.currentTarget as HTMLInputElement
-      const searchData = element.value.toLowerCase();
-      const filterData = categories.filter((item:any)=>{
-        return(
-          item.des.toLowerCase().includes(searchData)
-        )
-      })
-      displayItem(filterData)
-    })
-    window.addEventListener('mouseup',function(e){
-      var searchBar = document.getElementById('searchRes');
-      if(!(event.target as HTMLElement).closest('#searchRes')){
-        searchBar.style.display = 'none';
-      }
-    }); 
+  // useEffect(() => {
+  //   document.getElementById('searchBar').addEventListener('keyup', e=>{
+  //     const element = e.currentTarget as HTMLInputElement
+  //     const searchData = element.value.toLowerCase();
+  //     const filterData = categories.filter((item:any)=>{
+  //       return(
+  //         item.des.toLowerCase().includes(searchData)
+  //       )
+  //     })
+  //     displayItem(filterData)
+  //   })
+  //   window.addEventListener('mouseup',function(e){
+  //     var searchBar = document.getElementById('searchRes');
+  //     if(!(event.target as HTMLElement).closest('#searchRes')){
+  //       searchBar.style.display = 'none';
+  //     }
+  //   }); 
     
-    const displayItem = ((items:any)=>{
-      document.getElementById('searchRes').innerHTML = items.map((item:any)=>{
-        console.log(item)
-        return(
-            `<div className="bg-white">
-              <div className={${styles.SearchImageCont} col-3 my-0 py-0 bg-white}>
+  //   const displayItem = ((items:any)=>{
+  //     document.getElementById('searchRes').innerHTML = items.map((item:any)=>{
+  //       console.log(item)
+  //       return(
+  //           `<div className="bg-white">
+  //             <div className={${styles.SearchImageCont} col-3 my-0 py-0 bg-white}>
                 
-              </div>
-              <div className="col-3 my-0 py-0">
-                <p>${item.des}</p>
-              </div>
-              <div className="col-3 my-0 py-0">
-                <p>${item.price}</p>
-              </div>
-            </div>`
-            // <img src=${item.name.src} alt="item" className='img-fluid'/>
-        )
-      })
-    })
-  // {document.getElementById('searchBar').closest('searchBar')?''}
+  //             </div>
+  //             <div className="col-3 my-0 py-0">
+  //               <p>${item.des}</p>
+  //             </div>
+  //             <div className="col-3 my-0 py-0">
+  //               <p>${item.price}</p>
+  //             </div>
+  //           </div>`
+  //           // <img src=${item.name.src} alt="item" className='img-fluid'/>
+  //       )
+  //     })
+  //   })
+  // // {document.getElementById('searchBar').closest('searchBar')?''}
 
-    displayItem(categories)
-  }, [activeSearch]);
+  //   displayItem(categories)
+  // }, [activeSearch]);
   return (
     <nav className={`${styles.navBar} navbar navbar-expand-lg`} aria-label='Offcanvas navbar large'>
 
