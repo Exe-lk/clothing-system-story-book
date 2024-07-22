@@ -8,8 +8,8 @@ import visa from '../../../../../public/visa.svg';
 import paypal from '../../../../../public/paypal.svg';
 import paypass from '../../../../../public/paypass.svg';
 import cartItem1 from '../../../../../public/assets/mens cloths/item1/1.jpg'
-import cartItem2 from '../../../../../public/assets/womens cloths/2.jpg'
-import cartItem3 from '../../../../../public/assets/kids cloths/2.jpg'
+import cartItem2 from '../../../../../public/assets/womens cloths/item2/1.jpg'
+import cartItem3 from '../../../../../public/assets/kids cloths/item2/1.jpg'
 import NavBar from '@/components/Home/NavBar/NavBar';
 
 const MensItemPay = () => {

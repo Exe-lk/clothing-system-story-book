@@ -1,11 +1,11 @@
 import one from '../../../../public/assets/mens cloths/item1/1.jpg';
-import two from '../../../../public/assets/mens cloths/2.jpg';
-import three from '../../../../public/assets/mens cloths/3.jpg';
-import four from '../../../../public/assets/mens cloths/4.jpg';
-import five from '../../../../public/assets/mens cloths/5.jpg';
-import six from '../../../../public/assets/mens cloths/6.jpg';
-import seven from '../../../../public/assets/mens cloths/7.jpg';
-import eight from '../../../../public/assets/mens cloths/8.jpg';
+import two from '../../../../public/assets/mens cloths/item2/1.jpg';
+import three from '../../../../public/assets/mens cloths/item3/1.jpg';
+import four from '../../../../public/assets/mens cloths/item4/1.jpg';
+import five from '../../../../public/assets/mens cloths/item5/1.jpg';
+import six from '../../../../public/assets/mens cloths/item6/1.jpg';
+import seven from '../../../../public/assets/mens cloths/item7/1.jpg';
+import eight from '../../../../public/assets/mens cloths/item8/1.jpg';
 
 
 export const shoppingList:any = [

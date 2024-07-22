@@ -71,10 +71,10 @@ const Header = () => {
           </div>
         </div> 
 
-        <div className={`${styles.searchRes} row mx-0 mt-2 bg-white rounded-1 flex-column`} id='searchRes'>
+        <div className={`${styles.searchRes} row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll`} id='searchRes'>
           <div className="col-12 ">
             {filteredItems.length>0 ? filteredItems.map((item:any) => (
-              <Link href='#' className='text-decoration-none' key={item.id}>
+              <Link href='#' className='text-decoration-none ' key={item.id}>
                 <ul className='row mx-0 btn d-flex align-items-center mt-1 justify-content-center list-unstyled fw-bold ' >
                   <li className='col-3 '>
                     <img src={item.name.src} alt="item" className='img-fluid h-100' style={{width:'50px',height:'70px'}}/>

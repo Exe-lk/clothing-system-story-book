@@ -56,16 +56,16 @@ const KidsItem = () => {
               <div className='row my-2 d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row justify-content-md-between ' >
 
                 {/* carsoul */}
-                <div id="womenItems" className={`${styles.mensItemCarsoul} carousel slide col-xxl-4 col-xl-4 col-lg-4 col-md-8 col-sm-8 col-10 h-100 m-md-auto m-auto m-sm-auto m-lg-0`} data-bs-ride="carousel">
+                <div id="kidsItems" className={`${styles.mensItemCarsoul} carousel slide col-xxl-4 col-xl-4 col-lg-4 col-md-8 col-sm-8 col-10 h-100 m-md-auto m-auto m-sm-auto m-lg-0`} data-bs-ride="carousel">
 
                   <div className={`${styles.carsoulIndi} carousel-indicators`} style={{marginBottom:'-20px'}}>
-                    <button type="button" data-bs-target="#womenItems" data-bs-slide-to="0" className="active w-25">
+                    <button type="button" data-bs-target="#kidsItems" data-bs-slide-to="0" className="active w-25">
                       <img src={item.images[0].src} alt='item' className="img-fluid d-block w-100" />
                     </button>
-                    <button type="button" data-bs-target="#womenItems" data-bs-slide-to="1" className=' w-25'>
+                    <button type="button" data-bs-target="#kidsItems" data-bs-slide-to="1" className=' w-25'>
                       <img src={item.images[1].src} alt='item' className="img-fluid d-block w-100" />
                     </button>
-                    <button type="button" data-bs-target="#womenItems" data-bs-slide-to="2" className=' w-25'>
+                    <button type="button" data-bs-target="#kidsItems" data-bs-slide-to="2" className=' w-25'>
                       <img src={item.images[2].src} alt='item' className="img-fluid d-block w-100" />
                     </button>
                   </div>

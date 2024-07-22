@@ -21,7 +21,7 @@ const ShoppingItems = () => {
               
               <div className={`${styles.itemContainer} col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 position-relative d-flex flex-column align-items-center text-capitalize my-md-3 my-sm-2 my-2`} key={key}>
               <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
-                <Link href={{pathname: "/mens/#", query: {id: item.id, name: item.des}}} className='text-decoration-none text-black p-0'>
+                <Link href={{pathname: "/women/#", query: {id: item.id, name: item.des}}} className='text-decoration-none text-black p-0'>
                   <Image src={item.name} alt='item' className='img-fluid object-fit-cover m-0 p-0'/>
                   {!item.favourite?(<i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0`}></i>):(<i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0`}></i>)} 
                 <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} >
