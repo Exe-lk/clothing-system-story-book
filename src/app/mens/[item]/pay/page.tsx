@@ -22,7 +22,7 @@ const MensItemPay = () => {
 
       <div className="row mx-0 p-1 d-xxl-block d-xl-block d-lg-block d-none">
         <div className="col-5 p-1 ms-5" style={{color:'rgba(171, 93, 2, 1)'}}>
-          <MainHeading />
+          <MainHeading/>
         </div>
       </div>
       
