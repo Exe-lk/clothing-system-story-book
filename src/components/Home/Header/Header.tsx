@@ -16,13 +16,13 @@ import NavBar from '../NavBar/NavBar';
 import styles from './Header.module.scss';
 import { productList } from '@/dummy data/products';
 
-const users = [
-  {id:1 , favourite: false, des:'THE KAIVALYA NEHRU JACKET', price:'Rs 1700.00'},
-  {id:2 , favourite: false, des:'THE ASMAANI NEHRU JACKET', price:'Rs 1700.00'},
-  {id:3 , favourite: false, des:'LILY SQUARE NECK TIERED PRINTED DRESS', price:'Rs 1700.00'},
-  {id:4 , favourite: false, des:'BOY SCHOOL UNIFORM SHORT – ELASTICATED', price:'Rs 1700.00'},
-  {id:5 , favourite: false, des:'GIRL’S FLOWER PRINTED DRESS', price:'Rs 1700.00'},
-]
+// const users = [
+//   {id:1 , favourite: false, des:'THE KAIVALYA NEHRU JACKET', price:'Rs 1700.00'},
+//   {id:2 , favourite: false, des:'THE ASMAANI NEHRU JACKET', price:'Rs 1700.00'},
+//   {id:3 , favourite: false, des:'LILY SQUARE NECK TIERED PRINTED DRESS', price:'Rs 1700.00'},
+//   {id:4 , favourite: false, des:'BOY SCHOOL UNIFORM SHORT – ELASTICATED', price:'Rs 1700.00'},
+//   {id:5 , favourite: false, des:'GIRL’S FLOWER PRINTED DRESS', price:'Rs 1700.00'},
+// ]
 
 const Header = () => {
   const { theme } = useTheme();
@@ -71,10 +71,10 @@ const Header = () => {
           </div>
         </div> 
 
-        <div className={`${styles.searchRes} row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll`} id='searchRes'>
+        <div className={`${styles.searchRes} row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll position-fixed bg-white w-25`} style={{top:'65px',zIndex:10000}} id='searchRes'>
           <div className="col-12 ">
             {filteredItems.length>0 ? filteredItems.map((item:any) => (
-              <Link href='#' className='text-decoration-none ' key={item.id}>
+              <Link href={{pathname: `/${item.section}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none ' key={item.key}>
                 <ul className='row mx-0 btn d-flex align-items-center mt-1 justify-content-center list-unstyled fw-bold ' >
                   <li className='col-3 '>
                     <img src={item.name.src} alt="item" className='img-fluid h-100' style={{width:'50px',height:'70px'}}/>

@@ -193,6 +193,12 @@
 .sideNav:hover .list li .menuDetails{
   display: block !important;
 }
+
+.sideNav:hover .list .compoMenu{
+  i{
+    padding-left: 10px !important;
+  }
+}
   
 .shortmenu {
   float: right;

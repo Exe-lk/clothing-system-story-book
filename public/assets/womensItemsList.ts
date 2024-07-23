@@ -31,7 +31,7 @@ import it6five from '../../public/assets/womens cloths/item6/5.jpg';
 
 export const womensCartList = [
   {
-  itemId: 'item1',
+  itemId: 1,
   images: [it1one,it1two,it1three,it1four],
   name: 'V NECK BLACK CROP TOP',
   availability: 'in-stock',
@@ -42,7 +42,7 @@ export const womensCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item2',
+  itemId: 2,
   images: [it2one,it2two,it2three,it2four],
   name: 'KATELYN TRAPPY DRESS',
   availability: 'in-stock',
@@ -53,7 +53,7 @@ export const womensCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item3',
+  itemId: 3,
   images: [it3one,it3two,it3three,it3four],
   name: 'FRONT V NECK SLEEVELESS DRESS',
   availability: 'in-stock',
@@ -64,7 +64,7 @@ export const womensCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item4',
+  itemId: 4,
   images: [it4one,it4two,it4three,it4four],
   name: 'SELAH PUFF SLEEVE LONG SHIRT',
   availability: 'in-stock',
@@ -75,7 +75,7 @@ export const womensCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item5',
+  itemId: 5,
   images: [it5one,it5two,it5three,it5four],
   name: 'AURORA CROP T SHIRT',
   availability: 'in-stock',
@@ -86,7 +86,7 @@ export const womensCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item6',
+  itemId: 6,
   images: [it6one,it6two,it6three,it6four,it6five],
   name: 'THEO ASH SHORT',
   availability: 'in-stock',

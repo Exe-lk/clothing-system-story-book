@@ -40,7 +40,7 @@ import it8four from '../assets/mens cloths/item8/4.jpg';
 
 export const mensCartList = [
   {
-  itemId: 'item1',
+  itemId: 1,
   images: [it1one,it1two,it1three,it1four],
   name: 'THE JAHAAN NEHRU JACKET',
   availability: 'in-stock',
@@ -51,7 +51,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item2',
+  itemId: 2,
   images: [it2one,it2two,it2three,it2four],
   name: 'THE JAHAAN NEHRU JACKET',
   availability: 'in-stock',
@@ -62,7 +62,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item3',
+  itemId: 3,
   images: [it3one,it3two,it3three,it3four],
   name: 'THE AGNAR NEHRU COAT',
   availability: 'in-stock',
@@ -73,7 +73,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item4',
+  itemId: 4,
   images: [it4one,it4two,it4three,it4four],
   name: 'THE KAIVALYA NEHRU JACKET',
   availability: 'in-stock',
@@ -84,7 +84,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item5',
+  itemId: 5,
   images: [it5one,it5two,it5three,it5four],
   name: 'THE ASMAANI NEHRU JACKET',
   availability: 'in-stock',
@@ -95,7 +95,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item6',
+  itemId: 6,
   images: [it6one,it6two,it6three,it6four],
   name: 'THE SUFIYANA KURTA',
   availability: 'in-stock',
@@ -106,7 +106,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item7',
+  itemId: 7,
   images: [it7one,it7two,it7three,it7four],
   name: 'THE ARNIT KURTA',
   availability: 'in-stock',
@@ -117,7 +117,7 @@ export const mensCartList = [
   materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
 },
   {
-  itemId: 'item8',
+  itemId: 8,
   images: [it8one,it8two,it8three,it8four],
   name: 'THE LEANDER SAFARI',
   availability: 'in-stock',

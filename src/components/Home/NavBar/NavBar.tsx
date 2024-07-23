@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './NavBar.module.scss';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTheme } from '../../ThemeContext';
 import Link from 'next/link'
 import Documentation from './Doc/Documentation';
@@ -59,8 +59,23 @@ const NavBar = () => {
 
   //   displayItem(categories)
   // }, [activeSearch]);
+  const ref = useRef<HTMLUListElement>();
+  useEffect(()=>{
+    const allLink = ref.current.querySelectorAll('li');
+    function changeMenuActive(this:any){{
+      allLink.forEach(n=>{
+        n.classList.remove(`${styles.active}`)
+      })
+      this.classList.add(`${styles.active}`)
+    }}
+
+    allLink.forEach(e=>{
+      e.addEventListener('click', changeMenuActive)
+    })
+  },
+  [])
   return (
-    <nav className={`${styles.navBar} navbar navbar-expand-lg`} aria-label='Offcanvas navbar large'>
+    <nav className={`${styles.navBarContainer} navbar navbar-expand-lg`} aria-label='Offcanvas navbar large bg-white'>
 
         <button className="navbar-toggler m-md-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style={{color:'#AB5D02'}} onClick={()=>{
           setActive(!active)
@@ -82,25 +97,25 @@ const NavBar = () => {
             <div className={`${styles.searchArea} row mx-0 mt-2`} >
               <div className={`${styles.searchRes} bg-white rounded-4 flex-column`} id='searchRes'></div>
             </div>
-            <ul className="navbar-nav text-capitalize fs-5">
+            <ul className={`${styles.navBar} navbar-nav text-capitalize fs-5`} ref={ref}>
                 
                 <li className="nav-item mx-4">
-                  <Link className="nav-link active" aria-current="page" href="/">home</Link>
+                  <Link className={`${styles.navLink} nav-link`} aria-current="page" href="/">home</Link>
                 </li>
                 <li className="nav-item mx-4">
-                  <Link href="/women" className="nav-link">women</Link>
+                  <Link href="/women" className={`${styles.navLink} nav-link`}>women</Link>
                 </li>
                 <li className="nav-item mx-4">
-                  <Link href="/mens" className="nav-link">men</Link>
+                  <Link href="/mens" className={`${styles.navLink} nav-link`}>men</Link>
                 </li>
                 <li className="nav-item mx-4">
-                  <Link href="/kids" className="nav-link">kids</Link>
+                  <Link href="/kids" className={`${styles.navLink} nav-link`}>kids</Link>
                 </li>
                 <li className="nav-item mx-4">
-                  <Link href="/aboutus" className="nav-link">about us</Link>
+                  <Link href="/aboutus" className={`${styles.navLink} nav-link`}>about us</Link>
                 </li>
                 <li className="nav-item mx-4">
-                  <Link href="/contactus" className="nav-link">contact us</Link>
+                  <Link href="/contactus" className={`${styles.navLink} nav-link`}>contact us</Link>
                 </li>
                 
               </ul>

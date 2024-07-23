@@ -16,10 +16,6 @@ const MensItemPay = () => {
   return (
     <div className='container-fluid '>
 
-      <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' >
-        <NavBar />
-      </div>
-
       <div className="row mx-0 p-1 d-xxl-block d-xl-block d-lg-block d-none">
         <div className="col-5 p-1 ms-5" style={{color:'rgba(171, 93, 2, 1)'}}>
           <MainHeading/>

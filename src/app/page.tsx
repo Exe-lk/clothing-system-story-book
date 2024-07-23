@@ -34,9 +34,6 @@ export default function Home() {
           <Header />
         </div> */}
         {isLogIn===true?router.push('/home') as any:''}
-        <div className='row m-2 d-xxl-block d-xl-block d-lg-block d-none' >
-          <NavBar />
-        </div>
 
         <div className="row m-0 position-relative">
             <Banner />

@@ -42,10 +42,6 @@ const MensPage = () => {
 
     <div className='container-fluid h-100'>
 
-      <div className='row my-3 d-xxl-block d-xl-block d-lg-block d-none '>
-        <NavBar />
-      </div>
-
       <div className='row mx-1 mx-sm-1 mx-md-1 mx-lg-0 mx-xl-0 mx-xxl-0 my-3 '>
         <nav aria-label="breadcrumb " className=' my-auto'>
           <ol className="breadcrumb fs-7 fs-sm-6 fs-md-5 fs-xxl-5 fs-xl-5 fs-lg-5">

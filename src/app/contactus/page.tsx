@@ -11,9 +11,6 @@ import  styles from './page.module.scss';
 const page = () => {
   return (
     <div className={`${styles.mainContainer} container-fluid h-100  w-100 m-0 p-0`}>
-      <div className="row  w-100 p-1 mx-0">
-        <NavBar />
-      </div>
       <div className={`${styles.banner} row  w-100 mx-xxl-0 mx-2 p-1 position-relative`}>
         <div className={`${styles.details} position-absolute top-0 left-0 p-xxl-5 p-xl-4 p-lg-3 p-md-3 p-sm-3 px-3 mx-xxl-5 mx-xl-3 mx-lg-3 mx-md-3 mx-sm-1 my-1 my-lg-5`}>
           <h1 className='mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-2 mt-5 fw-bolder' style={{color:'rgba(171, 93, 2, 1)'}}>CONTACT US</h1>

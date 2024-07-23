@@ -32,7 +32,7 @@ import it8three from '../../public/assets/kids cloths/item8/3.jpg';
 
 export const kidsCartList = [
   {
-  itemId: 'item1',
+  itemId: 1,
   images: [it1one,it1two,it1three],
   name: 'LILY FRONT BUTTON DETAILED PRINTED DRESS',
   availability: 'in-stock',
@@ -43,7 +43,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item2',
+  itemId: 2,
   images: [it2one,it2two,it2three],
   name: 'LILY FRILL DETAILED PRINTED DRESS',
   availability: 'in-stock',
@@ -54,7 +54,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item3',
+  itemId: 3,
   images: [it3one,it3two,it3three],
   name: 'LILY POLKA DOTTED PUFF SLEEVE DRESS',
   availability: 'in-stock',
@@ -65,7 +65,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item6',
+  itemId: 6,
   images: [it7one,it7two,it7three],
   name: 'BOY SCHOOL UNIFORM SHORT – ELASTICATED',
   availability: 'in-stock',
@@ -76,7 +76,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item5',
+  itemId: 5,
   images: [it5one,it5two,it5three],
   name: 'LILY LADDER LACE DETAILED PRINTED FROCK',
   availability: 'in-stock',
@@ -87,7 +87,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item7',
+  itemId: 7,
   images: [it6one,it6two,it6three],
   name: 'BOY SCHOOL UNIFORM SHIRT – LONG SLEEVE',
   availability: 'in-stock',
@@ -98,7 +98,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item4',
+  itemId: 4,
   images: [it4one,it4two,it4three],
   name: 'LILY SQUARE NECK TIERED PRINTED DRESS',
   availability: 'in-stock',
@@ -109,7 +109,7 @@ export const kidsCartList = [
   materials: 'Lorem ipsum'
   },
   {
-  itemId: 'item8',
+  itemId: 8,
   images: [it8one,it8two,it8three],
   name: 'LILY SMOCK DETAILED PRINTED STRAPPY DRESS',
   availability: 'in-stock',

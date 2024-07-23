@@ -80,7 +80,7 @@ const SideBar = () => {
                         </li>
                         <li className="nav-item d-flex align-items-center mx-auto rounded-2 my-4">
                           <i className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }></i>
-                          <a href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Home </a>
+                          <a href="/" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Home </a>
                             {/* <a href="#"><i className={`${styles.shortmenu} bi-house text-white` }></i></a> */}
                         </li>
                     
@@ -116,13 +116,13 @@ const SideBar = () => {
                           </ul>
                         </li> */}
 
-                        <li className='nav-item my-4'>
+                        <li className={`${styles.compoMenu} nav-item my-4`}>
                           <li className="nav-item d-flex align-items-center  mx-auto rounded-2" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" onClick={()=>{
                           setActive(!active);
                           }}>
                             <LuComponent className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>
                             <Link href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Components </Link>
-                            <i className={`${active===true ?'bi bi-caret-down-fill text-white mx-1':'bi bi-caret-right-fill text-white mx-1'} `}></i>
+                            <i className={`${active===true ?'bi bi-caret-down-fill text-white fs-7':'bi bi-caret-right-fill text-white fs-7'} `}></i>
                           </li>
 
                           <div className={`${active===true?'show':'collapse'}`} id="home-collapse">

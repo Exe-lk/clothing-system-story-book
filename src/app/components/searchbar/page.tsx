@@ -16,18 +16,14 @@ import NavBar from '@/components/Home/NavBar/NavBar';
 
 const page = () => {
   return (
-    <div className='container-fluid h-100' style={{background:'#F9F6EE'}}>
-
-      <div className='row my-3 d-xxl-block d-xl-block d-lg-block d-none '>
-        <NavBar />
-      </div>
+    <div className='container-fluid h-100' style={{background:'#EDEADE'}}>
 
       <div className='row my-3 ms-4'>
         <h3 className='fw-bold fs-4 fs-smx-xxl-2 mx-xl-2 mx-lg-2 mx-1 my-xxl-2 my-1 p-1  fs-md-3 fs-lg-3 fs-xl-3 fs-xxl-3'> <i className="bi bi-file-earmark-code"></i> <span>General Usage</span> </h3>
       </div>
 
       <div className='row my-3' >
-        <div className={`${styles.buttonWrapper} col-xxl-8 col-11 m-auto`} style={{background:'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)'}}>
+        <div className={`${styles.buttonWrapper} col-xxl-8 col-11 m-auto rounded-2`} style={{background:'#FFF'}}>
           <div className={`${styles.buttonCode} row mx-0`}>
 
             <code className='fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6'>

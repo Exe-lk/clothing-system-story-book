@@ -7,10 +7,10 @@ import seven from '../../public/assets/kids cloths/kids relateds/7.jpg';
 
 
 export const kidsRelatedItemsList:any = [
-  {'id':'item6' ,'name': six, 'favourite': false, 'des':'BOY SCHOOL UNIFORM SHIRT – LONG SLEEVE', 'price':'Rs 1700.00'},
-  {'id':'item2' ,'name': two, 'favourite': false, 'des':'LILY FRILL DETAILED PRINTED DRESS', 'price':'Rs 1700.00'},
-  {'id':'item6' ,'name': seven, 'favourite': false, 'des':'BOY SCHOOL UNIFORM SHORT – ELASTICATED', 'price':'Rs 1700.00'},
-  {'id':'item3' ,'name': three, 'favourite': false, 'des':'LILY POLKA DOTTED PUFF SLEEVE DRESS', 'price':'Rs 1700.00'},
-  {'id':'item4' ,'name': four, 'favourite': false, 'des':'LILY SQUARE NECK TIERED PRINTED DRESS', 'price':'Rs 1700.00'},
-  {'id':'item5' ,'name': five, 'favourite': false, 'des':'GIRL’S FLOWER PRINTED DRESS', 'price':'Rs 1700.00'}
+  {'id':6,'name': six, 'favourite': false, 'des':'BOY SCHOOL UNIFORM SHIRT – LONG SLEEVE', 'price':'Rs 1700.00'},
+  {'id':2 ,'name': two, 'favourite': false, 'des':'LILY FRILL DETAILED PRINTED DRESS', 'price':'Rs 1700.00'},
+  {'id':6 ,'name': seven, 'favourite': false, 'des':'BOY SCHOOL UNIFORM SHORT – ELASTICATED', 'price':'Rs 1700.00'},
+  {'id':3 ,'name': three, 'favourite': false, 'des':'LILY POLKA DOTTED PUFF SLEEVE DRESS', 'price':'Rs 1700.00'},
+  {'id':4 ,'name': four, 'favourite': false, 'des':'LILY SQUARE NECK TIERED PRINTED DRESS', 'price':'Rs 1700.00'},
+  {'id':5 ,'name': five, 'favourite': false, 'des':'GIRL’S FLOWER PRINTED DRESS', 'price':'Rs 1700.00'}
 ]
