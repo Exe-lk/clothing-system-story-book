@@ -36,7 +36,7 @@ export default function RootLayout({
       
         <body className='container-fluid d-flex justify-content-center m-0 p-0 overflow-x-hidden'>
 
-          <aside className="d-xxl-block d-xl-block d-lg-block d-none" style={{width:'70px'}}>
+          <aside className="d-xxl-block d-xl-block d-lg-block d-none bg-black" style={{width:'70px',zIndex:1001}}>
             <SideBar />
           </aside>
           <header className='container-fluid ms-0 ps-0 row bg-white m-0 p-xxl-2 d-flex align-items-start justify-content-sm-center justify-content-center justify-content-lg-around justify-content-md-between justify-content-xxl-around justify-content-xl-around p-0 w-100 position-fixed top-0 bg-white w-100' style={{zIndex:1000,height:'125px'}}>
