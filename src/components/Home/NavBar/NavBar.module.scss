@@ -4,15 +4,30 @@
     box-shadow: none !important;
     outline: none !important;
   }
-  .searchBar{
-    width: 25% !important;
-    -webkit-transition: width 0.4s ease-in-out !important;
-    transition: width 0.4s ease-in-out !important;
-    border: 1px solid #AB5D02 !important;
-  }
-  .searchBar:focus{
-    width: 100% !important;
-  }
+  
+  .search{
+    .searchBar{
+      width: 25% !important;
+      -webkit-transition: width 0.4s ease-in-out !important;
+      transition: width 0.4s ease-in-out !important;
+      border: 1px solid #AB5D02 !important;
+    }
+    .searchBar:focus{
+      width: 100% !important;
+    }
+    .searchRes{
+      border-bottom: 4px solid #AB5D02 !important;
+      border-right: 4px solid #AB5D02 !important;
+      border-left: 4px solid #AB5D02 !important;
+      ul:hover{
+        background-color: #AB5D0275 !important;
+        color: #AB5D02 !important;
+      }
+    }
+    .searchRes:active{
+      transition: height 0.5s ease-in-out !important;
+    }
+}
 
   .navBar{
     li.active{

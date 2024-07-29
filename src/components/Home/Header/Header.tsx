@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // import SearchBar from './Search/SearchBar';
 import MainHeading from './Heading/MainHeading';
 import NewArrivals from './Arrivals/NewArrivals';
@@ -43,25 +43,28 @@ const Header = () => {
     console.log(`filtered: ${filteredItems}`)
   }
 
+  const ref = useRef(null);
   useEffect(() => {
     window.addEventListener('mouseup',function(e){
       var searchBar = document.getElementById('searchRes');
       if(!(event.target as HTMLElement).closest('#searchRes')){
-        searchBar.style.display = 'none';
+        // searchBar.style.display = 'none';
+        setActiveSearch(false);
       }
     }); 
-  })
+    setActiveSearch(false)
+  },[])
   
   return (
     <>
       <div className={`${styles.search} col-3 d-xxl-block d-xl-block d-lg-block d-none  px-1 mb-1 ms-xxl-4 ms-xl-5 ms-lg-5`} >
+        
         <div className="row mx-0">
-          <div className="col-12 d-flex align-items-center justify-between my-0 py-0 rounded rounded-pill" style={{border:'1px solid black'}} onClick={()=>{
-            setActiveSearch(!activeSearch)
-            {activeSearch===true? document.getElementById('searchRes').style.display='flex':document.getElementById('searchRes').style.display='none'}
-            }}>
+          <div className="col-12 d-flex align-items-center justify-between my-0 py-0 rounded rounded-pill" style={{border:'1px solid black'}} >
             <div className="col-9 my-0 py-0">
-              <input className="border-0" type="search" value={searchItem} onChange={handleInputChange} placeholder="Search Products..." id='searchBar'/>
+              <input className="border-0" type="search" value={searchItem} onChange={handleInputChange} placeholder="Search Products..." id='searchBar' ref={ref} onClick={()=>{
+                setActiveSearch(!activeSearch)
+              }}/>
             </div>
             <div className="col-3 d-flex align-items-center justify-content-center my-0 py-0 ">
               <button className="btn border-none px-0 fs-4" type="submit">
@@ -69,9 +72,9 @@ const Header = () => {
               </button>
             </div> 
           </div>
-        </div> 
+        </div > 
 
-        <div className={`${styles.searchRes} row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll position-fixed bg-white w-25`} style={{top:'65px',zIndex:10000}} id='searchRes'>
+        <div className={`${styles.searchRes} ${activeSearch===true? 'd-xxl-flex d-xl-flex d-lg-flex d-none' : 'd-none'} row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll position-fixed bg-white w-25`} style={{top:'65px',zIndex:10000}} id='searchRes'>
           <div className="col-12 ">
             {filteredItems.length>0 ? filteredItems.map((item:any) => (
               <Link href={{pathname: `/${item.section}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none ' key={item.key}>
@@ -88,7 +91,7 @@ const Header = () => {
         </div>
         
       </div>
-      <div className='col-2 d-xxl-none d-xl-none d-lg-none d-block col-sm-2 col-md-2 m-xxl-auto m-auto p-0 text-center'>
+      <div className='col-2 d-xxl-none d-xl-none d-lg-none d-block col-sm-2 col-md-2 mt-2 p-0 text-center'>
         <NavBar />
       </div>
       <div className={`${styles.header} col-6 col-sm-6 col-md-6 col-xxl-3 col-xl-4 col-lg-3 d-flex align-items-center justify-content-center text-center mt-3 mt-xxl-0`}>

@@ -127,8 +127,8 @@ const SideBar = () => {
 
                           <div className={`${active===true?'show':'collapse'}`} id="home-collapse">
                             <ul className={`${styles.menuDetails} btn-toggle-nav list-unstyled fw-normal pb-1 small text-white d-none ms-4`} >
-                              <Link href='/components/button' className={`${styles.item} btn text-start w-100 text-white`}>Button</Link>
-                              <Link href='/components/searchbar' className={`${styles.item} btn text-start w-100 text-white`}>Search Bar</Link>
+                              <Link href='/button' className={`${styles.item} btn text-start w-100 text-white`}>Button</Link>
+                              <Link href='/searchbar' className={`${styles.item} btn text-start w-100 text-white`}>Search Bar</Link>
                               <Link href='#' className={`${styles.item} btn text-start w-100 text-white`}>Component 3</Link>
                             </ul>
 
@@ -138,7 +138,7 @@ const SideBar = () => {
                     
                         <li className="nav-item d-flex align-items-center  mx-auto rounded-2 my-4">
                           <AiOutlineForm className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>
-                          <a href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Forms </a>
+                          <a href="/forms" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Forms </a>
                             {/* <a href="#"><i className={`${styles.shortmenu} bi-house text-white` }></i></a> */}
                         </li>
                     

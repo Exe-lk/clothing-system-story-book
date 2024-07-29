@@ -14,7 +14,7 @@ const Documentation = () => {
 
 
       <Link href="/" className='nav-link fs-md-3 fs-sm-4 fs-4'>
-        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2">
+        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
             <i className="bi bi-house-door me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}></i>
             home
@@ -26,7 +26,7 @@ const Documentation = () => {
       </Link>
 
       <Link href="/women" className='nav-link fs-md-3 fs-sm-4 fs-4'>
-        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2">
+        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
             <HiArrowRightStartOnRectangle className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             getting started
@@ -38,7 +38,7 @@ const Documentation = () => {
       </Link>     
 
       <Link href="/mens" className='nav-link fs-md-3 fs-sm-4 fs-4'>
-        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2">
+        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
             <MdOutlineDashboard className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             dashboard
@@ -50,7 +50,7 @@ const Documentation = () => {
       </Link>
 
       <Link href="/kids" className='nav-link fs-md-3 fs-sm-4 fs-4'>
-        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2">
+        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
             <LuComponent className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             components
@@ -62,7 +62,7 @@ const Documentation = () => {
       </Link>
 
       <Link href="/aboutus" className='nav-link fs-md-3 fs-sm-4 fs-4'>
-        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2">
+        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
             <AiOutlineForm className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             forms
@@ -74,7 +74,7 @@ const Documentation = () => {
       </Link>
 
       <Link href="/contactus" className='nav-link fs-md-3 fs-sm-4 fs-4'>
-        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2">
+        <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
             <TbCards className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             cards
