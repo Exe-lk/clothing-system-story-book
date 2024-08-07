@@ -9,9 +9,6 @@ const Heading = () => {
       <div className="col-6 col-lg-9 d-flex justify-content-between align-items-center">
         <p className='d-block my-auto fw-bold'>all categories</p>
       </div>
-      <div className="col-6 col-lg-3 text-end">
-        <i className="bi bi-list d-block my-auto"></i>
-      </div>
     </div>
   )
 }

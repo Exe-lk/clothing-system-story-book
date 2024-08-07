@@ -23,7 +23,7 @@ const page = () => {
       </div>
 
       <div className='row my-3' >
-        <div className={`${styles.searchWrapper} col-xxl-8 col-11 m-auto rounded-2`} style={{background:'#FFF'}}>
+        <div className={`${styles.searchWrapper} col-10 m-auto rounded-2`} style={{background:'#FFF'}}>
           <div className={`${styles.searchCode} row mx-0`}>
 
             <code className='fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6'>
@@ -84,7 +84,7 @@ const page = () => {
       <div className='row my-5 d-flex align-items-start justify-content-center' >
           
         <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
-          <div className="row mx-0">
+          <div className="row mx-0 ">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <MdOutlineRoundedCorner className='fs-5 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1'/>
             </div>
@@ -92,11 +92,11 @@ const page = () => {
               <p className='p-0 m-0'>rounded</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 pb-4">
 
             <div className="col-5 col mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-0 d-flex align-items-center justify-content-between border border-black" >
 
@@ -131,12 +131,12 @@ const page = () => {
               <p className='p-0 m-0'>color</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           
-          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 pb-4">
 
             <div className="col-5 col mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 d-flex align-items-center justify-content-between border border-black " >
 
@@ -164,7 +164,7 @@ const page = () => {
 
         </div>
         <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
-          <div className="row mx-0">
+          <div className="row mx-0 ">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <IoIosColorFill className='fs-5 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
             </div>
@@ -172,12 +172,12 @@ const page = () => {
               <p className='p-0 m-0'>bg-color</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           
-          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 pb-4">
 
             <div className="col-5 col mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 d-flex align-items-center justify-content-between border border-black bg-danger " >
 
@@ -213,8 +213,8 @@ const page = () => {
               <p className='p-0 m-0'>padding</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           

@@ -56,10 +56,10 @@ export default function Home() {
           <InstaLove />
         </div>
 
-        <div className='row my-5 ' style={{background:'#BFBFBF'}}>
+        <div className='row my-5 '>
           <Subscribe />
         </div>
-        <div className='row m-2'>
+        <div className='row my-5'>
           <Footer />
         </div> 
       </div>

@@ -22,28 +22,28 @@
   }
 }
 
-// @media screen and (min-width : 992px) and (max-width: 1200px) {
-//   .instaLovePc{
-//     ul{
-//       li{
-//         .imge{
-//           height: 260px !important;
-//           width: 250px !important;
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+  .instaLovePc{
+    ul{
+      li{
+        .imge{
+          height: 190px !important;
+          width: 250px !important;
+        }
+      }
+    }
+  }
+}
 
-// @media screen and (min-width : 1200px) {
-//   .instaLovePc{
-//     ul{
-//       li{
-//         .imge{
-//           height: 260px !important;
-//           width: 300px !important;
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width : 1200px) {
+  .instaLovePc{
+    ul{
+      li{
+        .imge{
+          height: 260px !important;
+          width: 300px !important;
+        }
+      }
+    }
+  }
+}

@@ -102,12 +102,21 @@ const Header = () => {
         {/* {isLogIn===true?<IoCartOutline className="mx-3 "/>:''} */}
         
         {/* <CiHeart className="pe-2" style={{fontSize:'30px'}}/>*/}
-        <Link className='text-decoration-none fs-2 fs-sm-1' href="/myaccount"><IoCartOutline className="d-block mx-auto me-1 me-sm-2 me-xxl-4 me-xl-4 me-lg-3" style={{color: '#AB5D02'}}/> </Link>
+        <Link className='text-decoration-none fs-2 fs-sm-1' href="/myaccount">
+          <i className="bi bi-cart3 d-block mx-auto me-1 me-sm-2 me-xxl-4 me-xl-4 me-lg-3 position-relative p-0 text-black fs-2">
+            <span className={`${styles.cartItemCount} position-absolute start-100 translate-middle badge rounded-pill fs-7`} style={{background:'#F6B750'}}>3
+              <span className="visually-hidden">add cart items</span>
+            </span>
+          </i>
+        </Link>
 
-        <button className='btn d-xxl-block d-xl-block d-lg-block d-md-none d-none text-white text-uppercase py-lg-2 py-xl-2 px-3  me-4 rounded rounded-pill ' style={{backgroundColor: '#AB5D02',boxShadow: '0 1px 0 rgba(0, 0, 0, 0.11)'}} onClick={()=>{window.open( "/login", '_blank', "scrollbars=yes,top=0,left=350,width=800,height=1700" )
-        }} rel="opener">login</button>
+        <Link href='/login' className='text-decoration-none text-white'>
+          <button className='btn d-xxl-block d-xl-block d-lg-block d-md-none d-none text-white text-uppercase py-lg-2 py-xl-2 px-3  me-4 rounded rounded-pill ' style={{backgroundColor: '#AB5D02',boxShadow: '0 1px 0 rgba(0, 0, 0, 0.11)'}}>login</button>
+        </Link>
         {/* {isLogIn===true?window.close() as any:''} */}
-        <button className='d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-uppercase text-black bg-transparent border-0 fs-md-5 fs-sm-5 fs-7 '>login</button>
+        <Link href='/login' className='text-decoration-none text-white'>
+          <button className='d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-uppercase text-black bg-transparent border-0 fs-md-5 fs-sm-5 fs-7 '>login</button>
+        </Link>
 
         <button className="btn ms-xxl-4 ms-xl-3 ms-lg-1 py-lg-2 py-xl-2 px-3 text-white d-xxl-flex d-xl-flex d-lg-flex d-md-none d-none align-items-center text-uppercase rounded rounded-pill " style={{backgroundColor: '#AB5D02',boxShadow: '0 1px 0 rgba(0, 0, 0, 0.11)'}}>
           new arrivals

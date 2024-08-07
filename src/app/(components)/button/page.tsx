@@ -23,7 +23,7 @@ const page = () => {
       </div>
 
       <div className='row my-3' >
-        <div className={`${styles.buttonWrapper} col-xxl-10 col-11 m-auto rounded-2`} style={{background:'#FFF'}}>
+        <div className={`${styles.buttonWrapper} col-10 m-auto rounded-2`} style={{background:'#FFF'}}>
           <div className={`${styles.buttonCode} row mx-0`}>
 
             <code className='fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6'>
@@ -91,8 +91,10 @@ const page = () => {
               <p className='p-0 m-0'>rounded</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              {/* #FF69B4 */}
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
+              {/* #FF00FF */}
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
@@ -113,14 +115,15 @@ const page = () => {
               <p className='p-0 m-0'>size</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center ">
+          <div className="row mx-0 d-flex align-items-center justify-content-center h-100">
             <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>sm</button>
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>md</button>
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>lg</button>
+            <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center invisible' style={{background:'#AB5D02'}}>sm</button>
           </div>
         </div>
         <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
@@ -132,8 +135,8 @@ const page = () => {
               <p className='p-0 m-0'>bg-color</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center ">
@@ -153,8 +156,8 @@ const page = () => {
               <p className='p-0 m-0'>shadow</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center ">

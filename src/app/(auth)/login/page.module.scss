@@ -147,6 +147,7 @@
   .login{
     transition: translate .18s ease ;
     translate: 0;
+    background-color: rgba(249, 249, 249, 1) !important;
 
     .right{
       div{
@@ -171,6 +172,7 @@
     position: absolute;
     transition: none;
     translate: 1500px;
+     background-color: rgba(249, 249, 249, 1) !important;
 
     .right{
       div{

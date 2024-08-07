@@ -23,7 +23,7 @@ const page = () => {
       </div>
 
       <div className='row my-3' >
-        <div className={`${styles.formWrapper} col-xxl-8 col-11 m-auto rounded-2`} style={{background:'#FFF'}}>
+        <div className={`${styles.formWrapper} col-10 m-auto rounded-2`} style={{background:'#FFF'}}>
           <div className={`${styles.formCode} row mx-0`}>
 
             <code className='fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6'>
@@ -117,7 +117,7 @@ const page = () => {
 
       <div className='row my-5 d-flex align-items-start justify-content-center' >
           
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white py-2" >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <i className="bi bi-card-checklist fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1"></i>
@@ -171,8 +171,8 @@ const page = () => {
             
           </div>
 
-          <div className='col-12 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6 d-flex align-items-center justify-content-center py-2' style={{borderTop:'3px dotted #AB5D02'}}>
-            <button type="button" className="btn text-white" data-bs-toggle="modal" data-bs-target="#myModal" style={{background:'#AB5D02'}}>
+          <div className='col-12 d-flex align-items-center justify-content-center py-2' style={{borderTop:'3px dotted #AB5D02'}}>
+            <button type="button" className="btn text-white fs-7 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6" data-bs-toggle="modal" data-bs-target="#myModal" style={{background:'#AB5D02'}}>
               modal view
             </button>
           </div>
@@ -201,66 +201,88 @@ const page = () => {
 
             </div>
           </div>
+          </div>
         </div>
-        </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white py-3" >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
               <SlSizeFullscreen className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
             </div>
             <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>size</p>
-              <p className='p-0 m-0'>Button</p>
+              <p className='p-0 m-0'>Form</p>
             </div>
             <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
             </div>
           </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center ">
-            <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>sm</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>md</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>lg</button>
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+            <div className='col-12 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6 rounded-0 d-flex flex-column align-items-center justify-content-start my-2'>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="fName" className='w-25'>First Name</label>
+                <input type="text" id='fName' placeholder='sm...' className='w-25'/>
+              </div>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="lName" className='w-25'>Last Name</label>
+                <input type="text" id='lName' placeholder='md...' className='w-50'/>
+              </div>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="email" className='w-25'>Email</label>
+                <input type="text" id='email' placeholder='lg...' className='w-75'/>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
+        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <IoIosColorFill className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
             </div>
             <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
-              <p className='p-0 m-0'>bg-color</p>
-              <p className='p-0 m-0'>Button</p>
+              <p className='p-0 m-0'>disabled</p>
+              <p className='p-0 m-0'>Form</p>
             </div>
             <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
             </div>
           </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center ">
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-danger  ' >danger</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-warning' >warning</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-primary' >primary</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-secondary' >secondary</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-black' >black</button>
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+            <div className='col-12 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6 rounded-0 d-flex flex-column align-items-center justify-content-start my-2'>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="fName" className='w-25'>First Name</label>
+                <input type="text" id='fName' placeholder='no...' className='w-50'/>
+              </div>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="lName" className='w-25'>Last Name</label>
+                <input type="text" id='lName' placeholder='yes...' className='w-50' disabled/>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
               <RiShadowLine className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
             </div>
             <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
-              <p className='p-0 m-0'>shadow</p>
-              <p className='p-0 m-0'>Button</p>
+              <p className='p-0 m-0'>inputBorder</p>
+              <p className='p-0 m-0'>Form</p>
             </div>
             <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
             </div>
           </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center ">
-            <button className=' shadow-none btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>none</button>
-            <button className=' shadow-sm btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>small</button>
-            <button className=' shadow btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>medium</button>
-            <button className=' shadow-lg btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white' style={{background:'#AB5D02'}}>large</button>
+          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
+            <div className='col-12 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6 rounded-0 d-flex flex-column align-items-center justify-content-start my-2'>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="fName" className='w-25'>First Name</label>
+                <input type="text" id='fName' placeholder='yes...' className='w-50'/>
+              </div>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
+                <label htmlFor="lName" className='w-25'>Last Name</label>
+                <input type="text" id='lName' placeholder='no...' className='w-50 border-0'/>
+              </div>
+            </div>
           </div>
         </div>
        

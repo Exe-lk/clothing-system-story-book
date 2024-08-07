@@ -1,29 +1,44 @@
-import React from "react";
-import './SearchBar.css'
+import React from 'react';
+import './SearchBar.css';
 
-interface SearchBarProps {
-  color?: String, 
-  backgroundColor?: String
-  placeholder: string
+export interface SearchBarProps {
+  rounded?: "default" | "rounded10"| "rounded50"| "pill";
+  backgroundColor?: string;
+  color?: string;
+  padding?: 0 | 1 | 2 | 3;
+  label: string;
+  placeholder:string;
 }
 
-export const SearchBar = (
-  {
-    color= '#FFF',
-    backgroundColor,
-    placeholder,
-    ...props
-  }:SearchBarProps
-)=>{
-  return(
-    <>
-      <input type="text" placeholder={placeholder} className={`searchBar`}/>
-      <style jsx>{`
-        input {
-          background-color: ${backgroundColor};
-          color: ${color};
-        }
-      `}</style>
-    </>
-  )
-}
+/**
+ * Primary UI component for user interaction
+ */
+export const SearchBar = ({
+  backgroundColor,
+  label,
+  rounded = 'default',
+  padding = 1,
+  color,
+  placeholder,
+  ...props
+}: SearchBarProps) => {
+  // const mode = rounded ? 'storybook-button--primary' : 'storybook-button--secondary';
+  return (
+    <div>
+      <label htmlFor="inp">{label}</label>
+      <input
+        type="text"
+        id='inp'
+        className={['storybook-searchBar', `storybook-searchBar-padding--${padding}`, `storybook-searchBar-border--${rounded}`].join(' ')}
+        {...props}
+        placeholder={placeholder}
+      /> 
+        <style jsx>{`
+          input {
+            background-color: ${backgroundColor};
+            color: ${color}
+          }
+        `}</style>
+    </div>
+  );
+};

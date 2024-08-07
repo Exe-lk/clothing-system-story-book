@@ -43,7 +43,7 @@ const InstaLove = () => {
               return(
                 <ul className='list-unstyled' key={key}>
                   <li className='px-1'>
-                    <Image src={item.id} alt='item' className={`${styles.imge} img-flui h-100 w-100`}/>
+                    <Image src={item.id} alt='item' className={`${styles.imge} img-fluid h-100 w-100`}/>
                   </li>
                 </ul>
               )

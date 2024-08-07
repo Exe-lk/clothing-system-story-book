@@ -1,13 +1,26 @@
 .itemContainer{
   .imageContainer{
+    .discount{
+      top: 3% !important;
+      left: 6% !important;
+    }
     .heart{
       top: 3% !important;
       right: 6% !important;
     }
   }
+  .image:hover{
+    transform: scale(1.02);
+    transition: transform .5s ease-in-out;
+  }
   .itemDes{
     height: 100px !important;
     z-index: 99 !important;
+    width: 101% !important;
+
+    p{
+      text-transform: capitalize !important;
+    }
   }
 }
 
@@ -25,6 +38,7 @@
   .imageContainer:hover .addToCart{
     opacity: 1;
     transform: translateY(0px);
+    transform: scale(1.02);
     transition: transform 0.5s ease-in-out;
   }
 }

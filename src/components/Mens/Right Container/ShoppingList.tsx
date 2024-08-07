@@ -9,12 +9,12 @@ import eight from '../../../../public/assets/mens cloths/item8/1.jpg';
 
 
 export const shoppingList:any = [
-  {'id':1 ,'name': one, 'favourite': false, 'des':'THE JAHAAN NEHRU JACKET', 'price':'Rs 1700.00'},
-  {'id':2 ,'name': two, 'favourite': false, 'des':'THE JAHAAN NEHRU JACKET', 'price':'Rs 1700.00'},
-  {'id':3 ,'name': three, 'favourite': false, 'des':'THE AGNAR NEHRU COAT', 'price':'Rs 1700.00'},
-  {'id':4 ,'name': four, 'favourite': false, 'des':'THE KAIVALYA NEHRU JACKET', 'price':'Rs 1700.00'},
-  {'id':5 ,'name': five, 'favourite': false, 'des':'THE ASMAANI NEHRU JACKET', 'price':'Rs 1700.00'},
-  {'id':6 ,'name': six, 'favourite': false, 'des':'THE SUFIYANA KURTA', 'price':'Rs 1700.00'},
-  {'id':7 ,'name': seven, 'favourite': true, 'des':'THE ARNIT KURTA', 'price':'Rs 1700.00'},
-  {'id':8 ,'name': eight, 'favourite': false, 'des':'THE LEANDER SAFARI', 'price':'Rs 1700.00'}
+  {'id':1 ,'name': one, 'favourite': false, 'des':'The Jahaan Nehru Jacket', 'price':'Rs 1700.00'},
+  {'id':2 ,'name': two, 'favourite': false, 'des':'The Jahaan Nehru Jacket', 'price':'Rs 1700.00'},
+  {'id':3 ,'name': three, 'favourite': false, 'des':'The Agnar Nehru Coat', 'price':'Rs 1700.00'},
+  {'id':4 ,'name': four, 'favourite': false, 'des':'The Kaivalya Nehru Jacket', 'price':'Rs 1700.00'},
+  {'id':5 ,'name': five, 'favourite': false, 'des':'The Asmaani Nehru Jacket', 'price':'Rs 1700.00'},
+  {'id':6 ,'name': six, 'favourite': false, 'des':'The Sufiyana Kurta', 'price':'Rs 1700.00'},
+  {'id':7 ,'name': seven, 'favourite': true, 'des':'The Arnit Kurta', 'price':'Rs 1700.00'},
+  {'id':8 ,'name': eight, 'favourite': false, 'des':'The Leander Safari', 'price':'Rs 1700.00'}
 ]

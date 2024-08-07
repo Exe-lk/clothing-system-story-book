@@ -15,7 +15,7 @@ const Footer = () => {
   return (
 
     <>
-      {/* sidebar for xxl|xl|lg views */}
+      {/* footer for xxl|xl|lg views */}
       <div className='col-12 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row ing m-1 p-1 w-100 h-100 d-flex align-items-center justify-content-around">
 
@@ -41,9 +41,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-3 p-0 text-center">
+          <div className={`${styles.footerHeader} col-3 p-0 text-center`}>
               <div className='row mx-0 w-100 d-flex flex-column align-items-center justify-content-center text-uppercase text-center' >
-                <p className='h1 text-uppercase fs-lg-2 fs-xl-1 fs-xxl-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
+                <p className='h1 text-uppercase fs-lg-2 fs-xl-1 fs-xxl-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-13px'}}><b>nova</b></span></p>
                 <p className='text-capitalize fs-7 '>smiles.. colors.. memories..</p>
               </div>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
       </div>
       
-      {/* sidebar for md|sm|xs views */}
+      {/* footer for md|sm|xs views */}
       <div className='col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row mx-0 ">
           <div className="col-12 d-flex flex-column text-uppercase">
@@ -116,7 +116,7 @@ const Footer = () => {
               <p className='fs-7 fs-sm-6 fs-md-6'>LORUM IPSUM, LORUM,<br/> Sri Lanka, 10100</p>
             </div>
           </div>
-          <div className="col-8  p-0">
+          <div className={`${styles.footerHeader} col-8  p-0`}>
 
               <div className='row w-100 mx-1 mt-3 d-flex flex-column align-items-center justify-content-center text-uppercase text-center' >
                 <p className='h1 text-uppercase fs-3 fs-sm-2 fs-md-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
