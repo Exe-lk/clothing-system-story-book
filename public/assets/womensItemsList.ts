@@ -33,7 +33,7 @@ export const womensCartList = [
   {
   itemId: 1,
   images: [it1one,it1two,it1three,it1four],
-  name: 'V NECK BLACK CROP TOP',
+  name: 'V Neck Black Crop Top',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -44,7 +44,7 @@ export const womensCartList = [
   {
   itemId: 2,
   images: [it2one,it2two,it2three,it2four],
-  name: 'KATELYN TRAPPY DRESS',
+  name: 'Katelyn Trappy Dress',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -55,7 +55,7 @@ export const womensCartList = [
   {
   itemId: 3,
   images: [it3one,it3two,it3three,it3four],
-  name: 'FRONT V NECK SLEEVELESS DRESS',
+  name: 'Front V Neck Sleeveless Dress',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -66,7 +66,7 @@ export const womensCartList = [
   {
   itemId: 4,
   images: [it4one,it4two,it4three,it4four],
-  name: 'SELAH PUFF SLEEVE LONG SHIRT',
+  name: 'Selah Puff Sleeve Long Shirt',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -77,7 +77,7 @@ export const womensCartList = [
   {
   itemId: 5,
   images: [it5one,it5two,it5three,it5four],
-  name: 'AURORA CROP T SHIRT',
+  name: 'Aurora Crop T Shirt',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -88,7 +88,7 @@ export const womensCartList = [
   {
   itemId: 6,
   images: [it6one,it6two,it6three,it6four,it6five],
-  name: 'THEO ASH SHORT',
+  name: 'Theo Ash Short',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',

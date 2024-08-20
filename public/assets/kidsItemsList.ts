@@ -34,7 +34,7 @@ export const kidsCartList = [
   {
   itemId: 1,
   images: [it1one,it1two,it1three],
-  name: 'LILY FRONT BUTTON DETAILED PRINTED DRESS',
+  name: 'Lily Front Button Detailed Printed Dress',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -45,7 +45,7 @@ export const kidsCartList = [
   {
   itemId: 2,
   images: [it2one,it2two,it2three],
-  name: 'LILY FRILL DETAILED PRINTED DRESS',
+  name: 'Lily Frill Detailed Printed Dress',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -56,7 +56,7 @@ export const kidsCartList = [
   {
   itemId: 3,
   images: [it3one,it3two,it3three],
-  name: 'LILY POLKA DOTTED PUFF SLEEVE DRESS',
+  name: 'Lily Polka Dotted Puff Sleeve Dress',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -67,7 +67,7 @@ export const kidsCartList = [
   {
   itemId: 6,
   images: [it7one,it7two,it7three],
-  name: 'BOY SCHOOL UNIFORM SHORT – ELASTICATED',
+  name: 'Boy School Uniform Short – Elasticated',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -78,7 +78,7 @@ export const kidsCartList = [
   {
   itemId: 5,
   images: [it5one,it5two,it5three],
-  name: 'LILY LADDER LACE DETAILED PRINTED FROCK',
+  name: 'Lily Ladder Lace Detailed Printed Frock',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -89,7 +89,7 @@ export const kidsCartList = [
   {
   itemId: 7,
   images: [it6one,it6two,it6three],
-  name: 'BOY SCHOOL UNIFORM SHIRT – LONG SLEEVE',
+  name: 'Boy School Uniform Shirt – Long Sleeve',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -100,7 +100,7 @@ export const kidsCartList = [
   {
   itemId: 4,
   images: [it4one,it4two,it4three],
-  name: 'LILY SQUARE NECK TIERED PRINTED DRESS',
+  name: 'Lily Square Neck Tiered Printed Dress',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -111,7 +111,7 @@ export const kidsCartList = [
   {
   itemId: 8,
   images: [it8one,it8two,it8three],
-  name: 'LILY SMOCK DETAILED PRINTED STRAPPY DRESS',
+  name: 'Lily Smock Detailed Printed Strappy Dress',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',

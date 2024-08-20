@@ -36,6 +36,12 @@ export default function ComponentsLayout({
           <aside className="d-xxl-block d-xl-block d-lg-block d-none bg-black" style={{width:'70px',zIndex:1001}}>
             <SideBar />
           </aside>
+          <header className='container-fluid ms-0 ps-0 row bg-white m-0 p-xxl-2 d-flex align-items-start justify-content-sm-center justify-content-center justify-content-lg-around justify-content-md-between justify-content-xxl-around justify-content-xl-around p-0 w-100 position-fixed top-0 bg-white w-100' style={{zIndex:1000}}>
+            <Header />
+            <div className="d-xxl-flex d-xl-flex d-lg-flex d-none" style={{borderTop:'2px solid #00000024'}}>
+              <NavBar />
+            </div>
+          </header>
           <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 overflow-y-scroll'>
             <div className="mainContainer" style={{overflow:'clip'}}>
               {children}

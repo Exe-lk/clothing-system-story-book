@@ -42,7 +42,7 @@ export const mensCartList = [
   {
   itemId: 1,
   images: [it1one,it1two,it1three,it1four],
-  name: 'THE JAHAAN NEHRU JACKET',
+  name: 'The Jahaan Nehru Jacket',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -53,7 +53,7 @@ export const mensCartList = [
   {
   itemId: 2,
   images: [it2one,it2two,it2three,it2four],
-  name: 'THE JAHAAN NEHRU JACKET',
+  name: 'The Jahaan Nehru Jacket',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -64,7 +64,7 @@ export const mensCartList = [
   {
   itemId: 3,
   images: [it3one,it3two,it3three,it3four],
-  name: 'THE AGNAR NEHRU COAT',
+  name: 'The Agnar Nehru Coat',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -75,7 +75,7 @@ export const mensCartList = [
   {
   itemId: 4,
   images: [it4one,it4two,it4three,it4four],
-  name: 'THE KAIVALYA NEHRU JACKET',
+  name: 'The Kaivalya Nehru Jacket',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -86,7 +86,7 @@ export const mensCartList = [
   {
   itemId: 5,
   images: [it5one,it5two,it5three,it5four],
-  name: 'THE ASMAANI NEHRU JACKET',
+  name: 'The Asmaani Nehru Jacket',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -97,7 +97,7 @@ export const mensCartList = [
   {
   itemId: 6,
   images: [it6one,it6two,it6three,it6four],
-  name: 'THE SUFIYANA KURTA',
+  name: 'The Sufiyana Kurta',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -108,7 +108,7 @@ export const mensCartList = [
   {
   itemId: 7,
   images: [it7one,it7two,it7three,it7four],
-  name: 'THE ARNIT KURTA',
+  name: 'The Arnit Kurta',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -119,7 +119,7 @@ export const mensCartList = [
   {
   itemId: 8,
   images: [it8one,it8two,it8three,it8four],
-  name: 'THE LEANDER SAFARI',
+  name: 'The Leander Safari',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',

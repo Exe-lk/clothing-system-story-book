@@ -17,7 +17,8 @@ import { HiArrowRightStartOnRectangle } from "react-icons/hi2";
 
 
 const SideBar = () => {
-  const [active, setActive] = useState(false);
+  const [activeGettingStarted, setActivegettingStarted] = useState(false);
+  const [activeCmp, setActiveCmp] = useState(false);
   const {theme} = useTheme();
 
   return (
@@ -73,11 +74,28 @@ const SideBar = () => {
                         </span>
                     </a>
                     <ul className={`${styles.list} navbar-nav vh-100 w-100 d-block align-content-between overflow-y-scroll m-auto`} id="menu">
-                        <li className="nav-item d-flex align-items-center mx-auto rounded-2   ">
-                          <HiArrowRightStartOnRectangle className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>
-                          <a href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none me-2 fs-6 line-height-4 `}> Getting Started </a>
-                            {/* <a href="#"><i className={`${styles.shortmenu} bi-house text-white` }></i></a> */}
+                        <li className={`${styles.compoMenu} nav-item my-4`}>
+                          <li className="nav-item d-flex align-items-center mx-auto rounded-2" data-bs-toggle="collapse" data-bs-target="#home-getSt" aria-expanded="true" onClick={()=>{
+                          setActivegettingStarted(!activeGettingStarted);
+                          }}>
+                            <HiArrowRightStartOnRectangle className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>
+                            <Link href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Getting Started </Link>
+                            <i className={`${activeGettingStarted===true ?'bi bi-caret-down-fill text-white fs-7':'bi bi-caret-right-fill text-white fs-7'} `}></i>
+                          </li>
+
+                          <div className={`${activeGettingStarted===true?'show':'collapse'}`} id="home-getSt">
+                            <ul className={`${styles.menuDetails} btn-toggle-nav list-unstyled fw-normal pb-1 small text-white d-none ms-4`} >
+                              <Link href='/getting-started/installation' className={`${styles.item} btn text-start w-100 text-white`}>Installation</Link>
+                              <Link href='/getting-started/development' className={`${styles.item} btn text-start w-100 text-white`}>Development</Link>
+                              <Link href='/getting-started/folder-structure' className={`${styles.item} btn text-start w-100 text-white`}>Folder Structure</Link>
+                              <Link href='/getting-started/bootstrap-variables' className={`${styles.item} btn text-start w-100 text-white`}>Bootstrap Variables</Link>
+                              <Link href='/getting-started/project-structure' className={`${styles.item} btn text-start w-100 text-white`}>Project Structure</Link>
+                            </ul>
+
+                          </div>
                         </li>
+
+
                         <li className="nav-item d-flex align-items-center mx-auto rounded-2 my-4">
                           <i className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }></i>
                           <a href="/" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Home </a>
@@ -117,15 +135,15 @@ const SideBar = () => {
                         </li> */}
 
                         <li className={`${styles.compoMenu} nav-item my-4`}>
-                          <li className="nav-item d-flex align-items-center  mx-auto rounded-2" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" onClick={()=>{
-                          setActive(!active);
+                          <li className="nav-item d-flex align-items-center mx-auto rounded-2" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" onClick={()=>{
+                          setActiveCmp(!activeCmp);
                           }}>
                             <LuComponent className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>
                             <Link href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Components </Link>
-                            <i className={`${active===true ?'bi bi-caret-down-fill text-white fs-7':'bi bi-caret-right-fill text-white fs-7'} `}></i>
+                            <i className={`${activeCmp===true ?'bi bi-caret-down-fill text-white fs-7':'bi bi-caret-right-fill text-white fs-7'} `}></i>
                           </li>
 
-                          <div className={`${active===true?'show':'collapse'}`} id="home-collapse">
+                          <div className={`${activeCmp===true?'show':'collapse'}`} id="home-collapse">
                             <ul className={`${styles.menuDetails} btn-toggle-nav list-unstyled fw-normal pb-1 small text-white d-none ms-4`} >
                               <Link href='/button' className={`${styles.item} btn text-start w-100 text-white`}>Button</Link>
                               <Link href='/searchbar' className={`${styles.item} btn text-start w-100 text-white`}>Search Bar</Link>
@@ -141,7 +159,6 @@ const SideBar = () => {
                           <a href="/forms" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Forms </a>
                             {/* <a href="#"><i className={`${styles.shortmenu} bi-house text-white` }></i></a> */}
                         </li>
-                    
                     
                         <li className="nav-item d-flex align-items-center  mx-auto rounded-2 my-4">
                           <TbCards className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>

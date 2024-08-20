@@ -1,0 +1,22 @@
+.breadCrumb{
+  background-color: #ffffff80 !important;
+  backdrop-filter: blur(.5rem) !important;
+  height: 50px !important;
+  box-shadow: 0 1.6rem 3rem #0000000d !important;
+  will-change: backdrop-filter !important;
+  border-bottom: 0 solid #f8f9fa !important;
+}
+
+.start{
+  margin-top: 65px !important;
+}
+
+.copy:hover{
+  background-color: #4d69fa !important;
+  color: #FFF !important;
+}
+
+.next:hover{
+  background-color: #46bcaa !important;
+  color: #FFF !important;
+}

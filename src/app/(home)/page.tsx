@@ -59,7 +59,7 @@ export default function Home() {
         <div className='row my-5 '>
           <Subscribe />
         </div>
-        <div className='row my-5'>
+        <div className='row m-2'>
           <Footer />
         </div> 
       </div>

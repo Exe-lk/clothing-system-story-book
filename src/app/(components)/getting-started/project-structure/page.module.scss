@@ -1,0 +1,70 @@
+.breadCrumb{
+  background-color: #ffffff80 !important;
+  backdrop-filter: blur(.5rem) !important;
+  height: 50px !important;
+  box-shadow: 0 1.6rem 3rem #0000000d !important;
+  will-change: backdrop-filter !important;
+  border-bottom: 0 solid #f8f9fa !important;
+}
+
+.start{
+  margin-top: 65px !important;
+}
+
+.copy:hover{
+  background-color: #4d69fa !important;
+  color: #FFF !important;
+}
+
+.next:hover{
+  background-color: #46bcaa !important;
+  color: #FFF !important;
+}
+
+@media screen and (min-width : 0) and (max-width: 575px) {
+
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {}
+
+@media screen and (min-width : 1200px) and (max-width: 1400px) {
+  // .left{
+  //   position: fixed !important;
+  // }
+  // .right{
+  //   margin-left: 330px !important;
+  // }
+}
+
+@media screen and (min-width : 1401px){
+  .left{
+    position: fixed !important;
+  }
+  .right{
+    margin-left: 365px !important;
+  }
+}
+
+.keyWord{
+  color: #4d69fa !important;
+}
+
+.comment{
+  color: #adb5bd !important;
+}
+
+.string{
+  color: #46bcaa !important;
+}
+
+.className{
+  color: #f35421 !important;
+}
+
+.spread{
+  color: #d63384 !important;
+}
