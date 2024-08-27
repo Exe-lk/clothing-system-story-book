@@ -1,0 +1,77 @@
+.sideNav::-webkit-scrollbar {
+  display: none; 
+}
+
+.list::-webkit-scrollbar {
+  display: none; 
+}
+
+.sideNav:hover {
+  width: 200px;
+  background-color: #05050b99;
+  backdrop-filter: blur(.3rem);
+}
+
+.sideNav:hover a span{
+  margin-left: auto;
+}
+
+.sideNav:hover a span p{
+  display: flex !important;
+}
+
+.sideNav .list>li{
+  width: 100%;
+  margin: auto;
+}
+
+.sideNav:hover .list li{
+  opacity: 1;
+  padding: 0 !important;
+}
+
+.sideNav .list li:not(:nth-child(1),:nth-child(4)):hover{
+  background-color: #232328;
+}
+
+.sideNav .list li:nth-child(1) li:hover,
+.sideNav .list li:nth-child(4) li:hover{
+  background-color: #232328;
+}
+
+.sideNav .list li:nth-child(1) div ul .item:hover,
+.sideNav .list li:nth-child(4) div ul .item:hover{
+  background-color: #232328;
+  width: 100%;
+}
+.sideNav:hover .list li .menuDetails{
+  display: block !important;
+}
+
+.sideNav:hover .list .compoMenu{
+  i{
+    padding-left: 10px !important;
+  }
+}
+  
+.shortmenu {
+  float: right;
+  display: block;
+  opacity: 1;
+  place-items: center;
+}
+
+.sideNav{
+  background: black;
+  box-shadow: 2px 1px 2px rgba(0,0,0,.1);
+  position:fixed;
+  top:0;
+  flex-direction: column!important;
+  width: 70px;
+  left:0;
+  overflow-x:hidden;
+  padding-bottom:40px;
+  transition: width .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  z-index: 1000000;
+}

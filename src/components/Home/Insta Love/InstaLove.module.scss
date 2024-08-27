@@ -1,0 +1,49 @@
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .instaLoveMobile{
+    img{
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .instaLoveMobile{
+    img{
+      height: 350px;
+    }
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+  .instaLoveMobile{
+    img{
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+  .instaLovePc{
+    ul{
+      li{
+        .imge{
+          height: 190px !important;
+          width: 250px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 1200px) {
+  .instaLovePc{
+    ul{
+      li{
+        .imge{
+          height: 260px !important;
+          width: 300px !important;
+        }
+      }
+    }
+  }
+}

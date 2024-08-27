@@ -1,0 +1,19 @@
+.main{
+  li{
+    .right{
+      .icon2:hover{
+        transform: scale(1.2) !important;
+        color: #000 !important;
+        transition: transform .2s ease-in-out;
+      }
+      .icon2:active{
+        outline: none !important;
+        border: none !important;
+        box-shadow:none !important;
+        transform: scale(1.6) !important;
+        color: #000 !important;
+        transition: transform .2s ease-in-out;
+      }
+    }
+  }
+}

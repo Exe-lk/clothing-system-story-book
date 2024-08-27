@@ -1,0 +1,14 @@
+.right{
+  .infoForm,
+  .infoPassword{
+    input{
+      background-color: #F1F1F147;
+    }
+    input:focus,
+    input:active{
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+@media screen and (min-width : 1200px){
+  .bannerImageContainer{
+    .heading{
+      font-size: 60px !important;
+    }
+    .text{
+      font-size: 45px !important;
+    }
+  }
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+  .bannerImageContainer{
+    .heading{
+      font-size: 40px !important;
+    }
+    .text{
+      font-size: 30px !important;
+    }
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .bannerImageContainer{
+    .heading{
+      font-size: 30px !important;
+    }
+    .text{
+      font-size: 20px !important;
+    }
+  }
+}
+
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .bannerImageContainer{
+    .heading{
+      font-size: 18px !important;
+    }
+    .text{
+      font-size: 12px !important;
+    }
+  }
+}

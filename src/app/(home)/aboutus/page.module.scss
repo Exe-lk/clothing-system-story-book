@@ -1,0 +1,93 @@
+.mainContainer{
+  .banner{
+    .details{
+      h1{
+        font-size: 70px;
+      }
+    }
+  }
+  .carsoul{
+    .carsoulInd{
+      button{
+        background-color: rgba(217, 217, 217, 1);
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 1px solid #000;
+      }
+    }
+    .controlBtn{
+      span{
+        filter: invert(100%) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 1200px) {
+  .mainContainer{
+    .banner{
+      .details{
+        h1{
+          font-size: 55px;
+        }
+      }
+    }
+  }
+  .mission{
+    img{
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width : 992px) {
+  .mainContainer{
+    .banner{
+      .details{
+        h1{
+          font-size: 45px;
+        }
+      }
+    }
+  }
+  .mission{
+    img{
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .mainContainer{
+    .banner{
+      .details{
+        h1{
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .mission{
+    img{
+      height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .mainContainer{
+    .banner{
+      .details{
+        h1{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .mission{
+    img{
+      height: 400px;
+    }
+  }
+}

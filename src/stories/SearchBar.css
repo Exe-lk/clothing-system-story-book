@@ -1,0 +1,33 @@
+.storybook-searchBar {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px solid black;
+  display: inline-block;
+  line-height: 1;
+  padding: .1rem;
+  margin-left: .5rem;
+}
+
+.storybook-searchBar-padding--0{
+  padding: 0;
+}
+
+.storybook-searchBar-padding--2{
+  padding: .2rem;
+}
+
+.storybook-searchBar-padding--3{
+  padding: .3rem;
+}
+
+.storybook-searchBar-border--default{
+  border-radius: 0;
+}
+.storybook-searchBar-border--rounded10 {
+  border-radius: .25rem;
+}
+.storybook-searchBar-border--rounded50 {
+  border-radius: .5rem ;
+}
+.storybook-searchBar-border--pill {
+  border-radius: 50rem;
+}
