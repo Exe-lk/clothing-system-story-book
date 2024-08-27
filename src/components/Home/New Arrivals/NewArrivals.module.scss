@@ -1,0 +1,89 @@
+.itemContainer{
+  .imageContainer{
+    .discount{
+      top: 3% !important;
+      left: 6% !important;
+      transition: transform 0.3s ease-in-out !important;
+    }
+    .heart{
+      top: 3% !important;
+      right: 6% !important;
+      transition: transform 0.3s ease-in-out !important;
+    }
+  }
+  .image:hover{
+    transform: scale(1.02);
+    transition: transform .5s ease-in-out;
+  }
+
+  .imageContainer:hover .discount,
+  .imageContainer:hover .heart {
+    transform: scale(1.2) !important;
+  }
+
+  .itemDes{
+    height: 100px !important;
+    z-index: 99 !important;
+    width: 101% !important;
+    transform: scale(1.02) !important;
+
+    p{
+      text-transform: capitalize !important;
+    }
+  }
+}
+
+
+@media screen and (min-width : 991px) {
+  .itemContainer{
+    .imageContainer{
+      .addToCart{
+        z-index: 2 !important;
+        opacity: 0;
+        transform: translateY(100%);
+      }
+    }
+  }
+  .imageContainer:hover .addToCart{
+    opacity: 1;
+    transform: translateY(0px);
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .itemContainer{
+    height: 300px;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+    .itemDes{
+      height: 70px !important;
+    }
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .itemContainer{
+    height: 300px;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+  .itemContainer{
+    height: 350px !important;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+    .itemDes{
+      height: 80px !important;
+    }
+  }
+}

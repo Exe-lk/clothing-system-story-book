@@ -1,0 +1,49 @@
+.showMore.active.focus, .showMore.active:focus, .showMore.focus, .showMore:active.focus, .showMore:active:focus, .showMore:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .forMens{
+    right: -63px !important;
+  }
+  .forKids{
+    right: -43px !important;
+  }
+  .forWomens{
+    right: -28px !important;
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .forMens,.forKids{
+    right: -87px !important;
+  }
+  .forWomens{
+    right: -28px !important;
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+  .forMens{
+    right: -120px !important; 
+  }
+  .forKids{
+    right: -160px !important;
+  }
+  .forWomens{
+    right: -28px !important;
+  }
+}
+
+@media screen and (min-width : 991px) {
+  .forMens{
+    right: -75px !important;
+  }
+  .forKids{
+    right: -45px !important;
+  }
+  .forWomens{
+    right: -28px !important;
+  }
+}

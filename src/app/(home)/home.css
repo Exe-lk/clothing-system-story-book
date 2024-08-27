@@ -1,0 +1,56 @@
+/* .wrapper{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+:root {
+  --animation-curve: cubic-bezier(1, 0, 0, 1);
+}
+
+body{
+  overflow-x: clip;
+  /* font-family: "Montserrat", sans-serif !important; */
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+  /* background-color: #FFF !important; */
+}
+
+input:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (min-width : 992px) {
+  header{
+    height: 125px;
+  }
+  main .mainContainer{
+    padding-top: 125px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width : 991px) {
+  header{
+    height: 65px;
+  }
+  main .mainContainer{
+    padding-top: 65px;
+  }
+}
+
+@media screen and (min-width : 1401px) {
+  .container-xxl { max-width: 2500px; };
+}
+
+@media screen and (min-width : 1201px) and (max-width: 1400px){
+  .container-xl { max-width: 1400px; };
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px){
+  .container-lg { max-width: 1100px; };
+}
