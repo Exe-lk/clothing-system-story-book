@@ -7,12 +7,30 @@ body{
   /* font-family: "Montserrat", sans-serif !important; */
   font-optical-sizing: auto !important;
   font-style: normal !important;
-  background-color: #EDEADE;
+  /* background-color: #EDEADE !important; */
 }
 
 input:focus{
   outline: none !important;
   box-shadow: none !important;
+}
+
+@media screen and (min-width : 992px) {
+  header{
+    height: 125px;
+  }
+  main .mainContainer{
+    padding-top: 125px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width : 991px) {
+  header{
+    height: 65px;
+  }
+  main .mainContainer{
+    padding-top: 65px;
+  }
 }
 
 @media screen and (min-width : 1401px) {

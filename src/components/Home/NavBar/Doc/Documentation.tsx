@@ -15,7 +15,7 @@ const Documentation = () => {
 
       <Link href="/" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
-          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
+          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <i className="bi bi-house-door me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}></i>
             home
           </div>
@@ -25,9 +25,9 @@ const Documentation = () => {
         </li>
       </Link>
 
-      <Link href="/women" className='nav-link fs-md-3 fs-sm-4 fs-4'>
+      <Link href="/getting-started" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
-          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
+          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <HiArrowRightStartOnRectangle className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             getting started
           </div>
@@ -39,7 +39,7 @@ const Documentation = () => {
 
       <Link href="/mens" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
-          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
+          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <MdOutlineDashboard className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             dashboard
           </div>
@@ -51,7 +51,7 @@ const Documentation = () => {
 
       <Link href="/kids" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
-          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
+          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <LuComponent className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             components
           </div>
@@ -61,9 +61,9 @@ const Documentation = () => {
         </li>
       </Link>
 
-      <Link href="/aboutus" className='nav-link fs-md-3 fs-sm-4 fs-4'>
+      <Link href="/forms" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
-          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
+          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <AiOutlineForm className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             forms
           </div>
@@ -73,9 +73,9 @@ const Documentation = () => {
         </li>
       </Link>
 
-      <Link href="/contactus" className='nav-link fs-md-3 fs-sm-4 fs-4'>
+      <Link href="/cards" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
-          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start`}>
+          <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <TbCards className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
             cards
           </div>

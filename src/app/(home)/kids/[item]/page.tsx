@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import styles from './page.module.scss';
-import React, {use, useState} from 'react';
+import React, {use, useEffect, useRef, useState} from 'react';
 import Header from '@/components/Home/Header/Header';
 import NavBar from '@/components/Home/NavBar/NavBar';
 import Path from '@/components/Mens/Page Path/Path';
@@ -23,13 +23,39 @@ import { IoHeartCircleSharp } from "react-icons/io5";
 import { BiHeartCircle } from "react-icons/bi";
 import Link from 'next/link';
 
+interface Item {
+  id: number;
+  name: string;
+  favourite: boolean;
+  des: string;
+  price: string
+}
 
 const KidsItem = () => {
-  const {theme} = useTheme();
   const [value, setValue] = useState(0);
   const searchParams = useSearchParams();
-  const pathName = usePathname();
-  
+  const ref = useRef<HTMLDivElement>();
+  const [items, setItems] = useState<Item []>(kidsRelatedItemsList);
+  const toggleFavourite = (id:number) =>{
+    setItems(prevItems=>
+      prevItems.map(item=>
+        item.id === id ? {...item, favourite: !item.favourite}: item
+      )
+    )
+  }
+  useEffect(() => {
+    const allLink = ref.current.querySelectorAll('div');
+    function changeMenuActive(this:any){{
+      allLink.forEach(n=>{
+        n.classList.remove(`${styles.active}`)
+      })
+      this.classList.add(`${styles.active}`)
+    }}
+
+    allLink.forEach(e=>{
+      e.addEventListener('click', changeMenuActive)
+    })
+  },[])
   return (
 
     <>
@@ -57,26 +83,26 @@ const KidsItem = () => {
 
                   <div className={`${styles.carsoulIndi} carousel-indicators`} style={{marginBottom:'-20px'}}>
                     <button type="button" data-bs-target="#kidsItems" data-bs-slide-to="0" className="active w-25">
-                      <img src={item.images[0].src} alt='item' className="img-fluid d-block w-100" />
+                      <img src={item.images[0].src} alt='item' className="img-fluid d-block w-100 rounded-3" />
                     </button>
                     <button type="button" data-bs-target="#kidsItems" data-bs-slide-to="1" className=' w-25'>
-                      <img src={item.images[1].src} alt='item' className="img-fluid d-block w-100" />
+                      <img src={item.images[1].src} alt='item' className="img-fluid d-block w-100 rounded-3" />
                     </button>
                     <button type="button" data-bs-target="#kidsItems" data-bs-slide-to="2" className=' w-25'>
-                      <img src={item.images[2].src} alt='item' className="img-fluid d-block w-100" />
+                      <img src={item.images[2].src} alt='item' className="img-fluid d-block w-100 rounded-3" />
                     </button>
                   </div>
 
 
                   <div className="carousel-inner h-100">
                     <div className="carousel-item active">
-                      <img src={item.images[0].src} alt='item' className="img-fluid d-block w-100" />
+                      <img src={item.images[0].src} alt='item' className="img-fluid d-block w-100 rounded-3" />
                     </div>
                     <div className="carousel-item">
-                      <img src={item.images[1].src} alt='item' className="img-fluid d-block w-100" />
+                      <img src={item.images[1].src} alt='item' className="img-fluid d-block w-100 rounded-3" />
                     </div>
                     <div className="carousel-item">
-                      <img src={item.images[2].src} alt='item' className="img-fluid d-block w-100" />
+                      <img src={item.images[2].src} alt='item' className="img-fluid d-block w-100 rounded-3" />
                     </div>
                   </div>
                 </div>
@@ -126,12 +152,11 @@ const KidsItem = () => {
                     <div className="col-12 p-0">
                       <h4 className='text-capitalize fs-xxl-2 fs-xl-2 fs-lg-2 fs-md-2 fs-sm-3 fs-3 fw-bold'>colors</h4>
                     </div>
-                    <div className="col-12 ms-2 my-1 ps-3 ">
-                      {/* <div className='d-flex align-items-center justify-content-center px-4 py-1'> */}
-                        <div className='rounded-circle border border-black me-xxl-5 me-xl-5 me-lg-5 me-md-4 me-sm-3 me-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[0], height:'20px', width:'20px' }}></div>
-                        <div className='rounded-circle border border-black mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[1], height:'20px', width:'20px' }}></div>
-                        <div className='rounded-circle border border-black mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[2], height:'20px', width:'20px' }}></div>
-                        <div className='rounded-circle border border-black mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[3], height:'20px', width:'20px' }}></div>
+                    <div className={`${styles.colorCont} col-12 ms-2 my-1 ps-3 `} ref={ref}>
+                        <div className={`${styles.colorItem} rounded-circle me-xxl-5 me-xl-5 me-lg-5 me-md-4 me-sm-3 me-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[0], height:'20px', width:'20px' }}></div>
+                        <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[1], height:'20px', width:'20px' }}></div>
+                        <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[2], height:'20px', width:'20px' }}></div>
+                        <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[3], height:'20px', width:'20px' }}></div>
                       {/* </div> */}
                     </div>
                   </div>
@@ -170,13 +195,10 @@ const KidsItem = () => {
                     </div>
                   </div>
                   <div className='mx-0 my-1 p-2 ' >
-                    <div className="col-12 d-grid">
-                      <button className='btn text-capitalize text-white fw-bold fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 m-0 p-1' style={{background:'rgba(171, 93, 2, 1)'}} onClick={()=>{
-                        window.open(`${pathName}/${item.itemId}/pay`, '_blank', "scrollbars=yes,top=0,left=350,width=800,height=1700")
-                        console.log(pathName)
-                      }}>
+                    <div className="col-12">
+                      <Link href={`/kids/${item.itemId}&${item.name}/pay`} className='btn text-capitalize text-white fw-bold fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 m-0 p-1 w-50' style={{background:'rgba(171, 93, 2, 1)'}}>
                         pay now
-                      </button>
+                      </Link>
                     </div>
                   </div>
 
@@ -188,20 +210,23 @@ const KidsItem = () => {
                 <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>related items</h1>
                 <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-                {/* <div className={`${styles.newArrivals} row mx-0 my-2`}> */}
-                  {
-                    kidsRelatedItemsList.map((item:any, key:any)=>{
+                {
+                    items.map((item:any, key:any)=>{
                       return(
                         <div className={`${styles.itemContainer} col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-3 my-2 m-sm-2 m-md-2 p-0 h-100 `} key={key}>
                           <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
-                            <Link href={{pathname: "/kids/#", query: {id: item.id, name: item.des}}} className='text-decoration-none text-black p-0'>
-                              <img src={item.name.src} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0`}/>
-                              {!item.favourite?(<i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>):(<i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>)}  
-                              <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} style={{background:'rgba(171, 93, 2, 0.66)'}}>
-                                <i className="bi bi-cart3 w-auto ps-0 pe-2 fs-xxl-6"></i>
-                                <p className='w-auto p-0 m-0 text-capitalize fs-xxl-6'>add to cart</p>
-                              </div>      
-                            </Link>
+                            <Image src={item.name} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
+                            {
+                              item.favourite? <i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
+                                toggleFavourite(item.id)
+                              }}></i> : <i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
+                                toggleFavourite(item.id)
+                              }}></i>
+                            }
+                            <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} style={{background:'rgba(171, 93, 2, 0.66)'}}>
+                              <i className="bi bi-cart3 w-auto ps-0 pe-2 fs-xxl-6"></i>
+                              <p className='w-auto p-0 m-0 text-capitalize fs-xxl-6'>add to cart</p>
+                            </div>      
                           </div>
                           <div className={`${styles.itemDes} row mx-0 d-flex align-items-center justify-content-between position-relative bg-white`} >
                             <p className='text-start fs-6 fs-sm-6 fs-xxl-5 fs-xl-5 fs-lg-5 p-0 mb-0 position-absolute top-0' style={{color:'#5A5A5A'}}>{item.des}</p>
@@ -211,7 +236,6 @@ const KidsItem = () => {
                       )
                     })
                   }
-                {/* </div> */}
 
               </div>
 
